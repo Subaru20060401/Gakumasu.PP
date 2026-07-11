@@ -284,10 +284,12 @@ export function estimateStats(input: ProduceInput): StatEstimate {
         (f.trigger === "lesson_sp" || f.trigger === "lesson_normal") && f.tstat && f.tstat !== "any"
           ? STAT_LABEL[f.tstat]
           : "";
+      // イベント系は eventUp 倍率が掛かるのでラベルにも明示。
+      const multLabel = mult !== 1 ? ` ×${r1(mult)}(イベント上昇)` : "";
       const label =
         f.trigger === "init"
           ? `${STAT_LABEL[f.stat]}初期値`
-          : `${tstatLabel}${TRIGGER_LABEL[f.trigger]} +${per}×${occ}回`;
+          : `${tstatLabel}${TRIGGER_LABEL[f.trigger]} +${per}×${occ}回${multLabel}`;
       cc.lines.push({ label, value: Math.round(amount), stat: f.stat });
     }
     if (cc.lines.length) contributions.push(cc);

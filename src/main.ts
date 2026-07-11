@@ -16,7 +16,7 @@ const input: ProduceInput = {
   supports: Array.from({ length: 6 }, () => ({ cardId: null, limitBreak: 4 })),
   memories: defaultMemories(),
   challenge: { slot1: null, slot2: null, slot3: null },
-  lessons: Array.from({ length: 5 }, () => ({ stat: "vo" as const, sp: false })),
+  lessons: Array.from({ length: 5 }, () => ({ stat: "vo" as const, sp: true })),
   schedule: { odekake: 0, shikyu: 4, sodan: 2, shido: 0, jugyo: 0, rest: 0 },
   exam: { midScore: 6000, midRank: 1, finalScore: 12000, finalRank: 1 },
   difficulty: "hajimeLegend",

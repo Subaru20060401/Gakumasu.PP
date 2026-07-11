@@ -356,6 +356,8 @@ function memorySlot(ab: MemoryAbility, stat: ParamType): HTMLElement {
       render();
     }));
     for (const kind of ["init", "bonus"] as const) {
+      // パラボ行は「なし」の下（1列目）を空けてレア度を初期値と縦に揃える。
+      if (kind === "bonus") chips.push(h("span", { class: "mem-chip-spacer" }));
       for (const rarity of RARITY_ASC) {
         const val = kind === "init" ? `${MEMORY_INIT_VALUE[rarity]}` : `${MEMORY_BONUS_VALUE[rarity]}%`;
         const selected = ab.kind === kind && ab.rarity === rarity;
