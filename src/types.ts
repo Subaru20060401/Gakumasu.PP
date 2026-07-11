@@ -188,6 +188,8 @@ export interface SupportCard {
   rewardSkill?: { name: string; rarity: string; type: string }; // イベントで渡すスキルカード
   // 固有Pアイテムのドリンク生成（trigger発動ごとにcount個, cap回まで）。
   drinkGen?: { resource: "drink"; trigger: FlatTrigger; tstat?: ParamType | "any"; count: number; cap: number | null };
+  // 固有Pアイテムのパラメータ上昇（条件は達成前提で計算, 凸非依存の固定値）。
+  pItemFlat?: { stat: ParamType; trigger: FlatTrigger; tstat?: ParamType | "any"; value: number; cap: number | null };
 }
 
 /** メモリーアビリティのレアリティ（虹+/虹/金/銀）。 */
@@ -255,6 +257,7 @@ export interface ChallengePItem {
   paramBonusPct: number; // パラメータボーナス%
   rivalScorePct: number; // ライバルスコア増加%
   note: string;
+  flat?: { stat: ParamType; trigger: FlatTrigger; value: number; cap: number | null }; // 高難易度: スキル獲得時+15 等
 }
 
 /** サポカ1枠分の選択状態（カード + 凸数0〜4）。 */

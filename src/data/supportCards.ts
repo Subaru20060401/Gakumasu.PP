@@ -804,6 +804,12 @@ export const SUPPORT_CARDS: SupportCard[] = [
    "name": "花海メモリアル",
    "rarity": "SSR",
    "plan": "センス"
+  },
+  "pItemFlat": {
+   "stat": "da",
+   "trigger": "skill",
+   "value": 35,
+   "cap": 2
   }
  },
  {
@@ -1263,6 +1269,12 @@ export const SUPPORT_CARDS: SupportCard[] = [
    "trigger": "skill",
    "count": 1,
    "cap": 2
+  },
+  "pItemFlat": {
+   "stat": "da",
+   "trigger": "skill",
+   "value": 30,
+   "cap": 2
   }
  },
  {
@@ -1720,6 +1732,12 @@ export const SUPPORT_CARDS: SupportCard[] = [
    "name": "お礼のティーセット",
    "rarity": "SSR",
    "plan": "センス"
+  },
+  "pItemFlat": {
+   "stat": "vo",
+   "trigger": "shido",
+   "value": 30,
+   "cap": 1
   }
  },
  {
@@ -1951,6 +1969,12 @@ export const SUPPORT_CARDS: SupportCard[] = [
    "name": "体力作りの教材？",
    "rarity": "SSR",
    "plan": "ロジック"
+  },
+  "pItemFlat": {
+   "stat": "vo",
+   "trigger": "skill",
+   "value": 30,
+   "cap": 2
   }
  },
  {
@@ -2024,6 +2048,12 @@ export const SUPPORT_CARDS: SupportCard[] = [
    "name": "ピークタイムフラッグ",
    "rarity": "SSR",
    "plan": "センス"
+  },
+  "pItemFlat": {
+   "stat": "da",
+   "trigger": "skill",
+   "value": 20,
+   "cap": 3
   }
  },
  {
@@ -2634,6 +2664,12 @@ export const SUPPORT_CARDS: SupportCard[] = [
    "name": "パワーをくれるモノ",
    "rarity": "SSR",
    "plan": "フリー"
+  },
+  "pItemFlat": {
+   "stat": "da",
+   "trigger": "jugyo",
+   "value": 10,
+   "cap": 2
   }
  },
  {
@@ -3025,6 +3061,12 @@ export const SUPPORT_CARDS: SupportCard[] = [
    "name": "体力自慢の本気",
    "rarity": "SSR",
    "plan": "アノマリー"
+  },
+  "pItemFlat": {
+   "stat": "vi",
+   "trigger": "odekake",
+   "value": 15,
+   "cap": null
   }
  },
  {
@@ -4151,6 +4193,12 @@ export const SUPPORT_CARDS: SupportCard[] = [
    "name": "とうちょーのきろく",
    "rarity": "SSR",
    "plan": "フリー"
+  },
+  "pItemFlat": {
+   "stat": "vi",
+   "trigger": "jugyo",
+   "value": 15,
+   "cap": null
   }
  },
  {
@@ -5851,6 +5899,12 @@ export const SUPPORT_CARDS: SupportCard[] = [
    "name": "居眠り注意！",
    "rarity": "SR",
    "plan": "アノマリー"
+  },
+  "pItemFlat": {
+   "stat": "vi",
+   "trigger": "sodan",
+   "value": 10,
+   "cap": 2
   }
  },
  {
@@ -5930,6 +5984,12 @@ export const SUPPORT_CARDS: SupportCard[] = [
    "name": "懐かしパーティー論争",
    "rarity": "SR",
    "plan": "センス"
+  },
+  "pItemFlat": {
+   "stat": "vo",
+   "trigger": "shikyu",
+   "value": 20,
+   "cap": 1
   }
  },
  {
@@ -6155,6 +6215,12 @@ export const SUPPORT_CARDS: SupportCard[] = [
    "name": "切磋琢磨のタオル",
    "rarity": "SR",
    "plan": "アノマリー"
+  },
+  "pItemFlat": {
+   "stat": "vo",
+   "trigger": "sodan",
+   "value": 30,
+   "cap": 1
   }
  },
  {
@@ -6307,6 +6373,12 @@ export const SUPPORT_CARDS: SupportCard[] = [
    "name": "ほくほくハンバーガー",
    "rarity": "SR",
    "plan": "アノマリー"
+  },
+  "pItemFlat": {
+   "stat": "vo",
+   "trigger": "skill",
+   "value": 20,
+   "cap": 1
   }
  },
  {
@@ -6459,6 +6531,13 @@ export const SUPPORT_CARDS: SupportCard[] = [
    "name": "幸せの詰め合わせ",
    "rarity": "SR",
    "plan": "ロジック"
+  },
+  "pItemFlat": {
+   "stat": "vo",
+   "trigger": "lesson_sp",
+   "value": 20,
+   "cap": 2,
+   "tstat": "vo"
   }
  },
  {
@@ -6538,6 +6617,12 @@ export const SUPPORT_CARDS: SupportCard[] = [
    "name": "はじめてのけんか？",
    "rarity": "SR",
    "plan": "センス"
+  },
+  "pItemFlat": {
+   "stat": "vi",
+   "trigger": "skill",
+   "value": 15,
+   "cap": 2
   }
  },
  {
@@ -6622,6 +6707,12 @@ export const SUPPORT_CARDS: SupportCard[] = [
    "resource": "drink",
    "trigger": "skill",
    "count": 1,
+   "cap": 2
+  },
+  "pItemFlat": {
+   "stat": "da",
+   "trigger": "skill",
+   "value": 20,
    "cap": 2
   }
  },
@@ -6777,6 +6868,12 @@ export const SUPPORT_CARDS: SupportCard[] = [
    "name": "ゲレンデを駆ける赤",
    "rarity": "SR",
    "plan": "アノマリー"
+  },
+  "pItemFlat": {
+   "stat": "vi",
+   "trigger": "skill",
+   "value": 15,
+   "cap": 1
   }
  },
  {
@@ -7229,6 +7326,12 @@ export const SUPPORT_CARDS: SupportCard[] = [
    "trigger": "skill",
    "count": 1,
    "cap": 2
+  },
+  "pItemFlat": {
+   "stat": "da",
+   "trigger": "skill",
+   "value": 20,
+   "cap": 2
   }
  },
  {
@@ -7303,6 +7406,12 @@ export const SUPPORT_CARDS: SupportCard[] = [
    "name": "メリハリストレッチ",
    "rarity": "SR",
    "plan": "ロジック"
+  },
+  "pItemFlat": {
+   "stat": "vi",
+   "trigger": "skill",
+   "value": 30,
+   "cap": 1
   }
  },
  {
@@ -7382,6 +7491,12 @@ export const SUPPORT_CARDS: SupportCard[] = [
    "name": "かごいっぱいの成果",
    "rarity": "SR",
    "plan": "アノマリー"
+  },
+  "pItemFlat": {
+   "stat": "vo",
+   "trigger": "skill",
+   "value": 30,
+   "cap": 1
   }
  },
  {
@@ -7456,6 +7571,12 @@ export const SUPPORT_CARDS: SupportCard[] = [
    "name": "落ち葉つかみの型",
    "rarity": "SR",
    "plan": "ロジック"
+  },
+  "pItemFlat": {
+   "stat": "vi",
+   "trigger": "shido",
+   "value": 30,
+   "cap": 2
   }
  },
  {
@@ -7536,6 +7657,12 @@ export const SUPPORT_CARDS: SupportCard[] = [
    "name": "ふっかつのアイス",
    "rarity": "SR",
    "plan": "センス"
+  },
+  "pItemFlat": {
+   "stat": "vi",
+   "trigger": "skill",
+   "value": 30,
+   "cap": 1
   }
  },
  {
@@ -7892,6 +8019,12 @@ export const SUPPORT_CARDS: SupportCard[] = [
    "name": "のびのびバンド",
    "rarity": "SR",
    "plan": "アノマリー"
+  },
+  "pItemFlat": {
+   "stat": "da",
+   "trigger": "skill",
+   "value": 6,
+   "cap": null
   }
  },
  {
@@ -8050,6 +8183,12 @@ export const SUPPORT_CARDS: SupportCard[] = [
    "name": "お残しにんじん",
    "rarity": "SR",
    "plan": "フリー"
+  },
+  "pItemFlat": {
+   "stat": "vo",
+   "trigger": "skill",
+   "value": 6,
+   "cap": null
   }
  },
  {
@@ -8208,6 +8347,12 @@ export const SUPPORT_CARDS: SupportCard[] = [
    "name": "絆のなわとび",
    "rarity": "SR",
    "plan": "アノマリー"
+  },
+  "pItemFlat": {
+   "stat": "vi",
+   "trigger": "skill",
+   "value": 6,
+   "cap": null
   }
  },
  {
@@ -8896,6 +9041,12 @@ export const SUPPORT_CARDS: SupportCard[] = [
    "name": "カワイイのつくり方",
    "rarity": "SR",
    "plan": "ロジック"
+  },
+  "pItemFlat": {
+   "stat": "da",
+   "trigger": "skill",
+   "value": 6,
+   "cap": null
   }
  },
  {
@@ -9806,6 +9957,12 @@ export const SUPPORT_CARDS: SupportCard[] = [
    "name": "ウチュウジンデアル",
    "rarity": "SR",
    "plan": "センス"
+  },
+  "pItemFlat": {
+   "stat": "vo",
+   "trigger": "skill",
+   "value": 6,
+   "cap": null
   }
  },
  {
@@ -9861,6 +10018,12 @@ export const SUPPORT_CARDS: SupportCard[] = [
    "name": "可愛い隠しバスタオル",
    "rarity": "SR",
    "plan": "ロジック"
+  },
+  "pItemFlat": {
+   "stat": "vo",
+   "trigger": "skill",
+   "value": 6,
+   "cap": null
   }
  },
  {
@@ -9917,6 +10080,12 @@ export const SUPPORT_CARDS: SupportCard[] = [
    "name": "咲季オススメマット",
    "rarity": "SR",
    "plan": "ロジック"
+  },
+  "pItemFlat": {
+   "stat": "vi",
+   "trigger": "skill",
+   "value": 6,
+   "cap": null
   }
  },
  {
@@ -9996,6 +10165,12 @@ export const SUPPORT_CARDS: SupportCard[] = [
    "name": "ダブルボトル",
    "rarity": "SR",
    "plan": "センス"
+  },
+  "pItemFlat": {
+   "stat": "da",
+   "trigger": "skill",
+   "value": 6,
+   "cap": null
   }
  },
  {
@@ -10407,6 +10582,12 @@ export const SUPPORT_CARDS: SupportCard[] = [
    "name": "打倒！墾田永年私財法",
    "rarity": "SR",
    "plan": "フリー"
+  },
+  "pItemFlat": {
+   "stat": "vo",
+   "trigger": "exam",
+   "value": 26,
+   "cap": null
   }
  },
  {
@@ -10537,6 +10718,12 @@ export const SUPPORT_CARDS: SupportCard[] = [
    "name": "手作りのご褒美",
    "rarity": "SR",
    "plan": "フリー"
+  },
+  "pItemFlat": {
+   "stat": "vi",
+   "trigger": "exam",
+   "value": 26,
+   "cap": null
   }
  },
  {
@@ -10747,6 +10934,12 @@ export const SUPPORT_CARDS: SupportCard[] = [
    "name": "お姉さま大百科",
    "rarity": "SR",
    "plan": "フリー"
+  },
+  "pItemFlat": {
+   "stat": "da",
+   "trigger": "exam",
+   "value": 26,
+   "cap": null
   }
  },
  {
@@ -10815,6 +11008,13 @@ export const SUPPORT_CARDS: SupportCard[] = [
    "name": "例のSSDの秘密",
    "rarity": "SR",
    "plan": "フリー"
+  },
+  "pItemFlat": {
+   "stat": "da",
+   "trigger": "lesson_normal",
+   "value": 13,
+   "cap": null,
+   "tstat": "da"
   }
  },
  {
@@ -10883,6 +11083,13 @@ export const SUPPORT_CARDS: SupportCard[] = [
    "name": "一緒にお昼寝ポプリ",
    "rarity": "SR",
    "plan": "フリー"
+  },
+  "pItemFlat": {
+   "stat": "vo",
+   "trigger": "lesson_normal",
+   "value": 13,
+   "cap": null,
+   "tstat": "vo"
   }
  },
  {
@@ -10951,6 +11158,13 @@ export const SUPPORT_CARDS: SupportCard[] = [
    "name": "私が見つけた逸材メモ",
    "rarity": "SR",
    "plan": "フリー"
+  },
+  "pItemFlat": {
+   "stat": "vi",
+   "trigger": "lesson_normal",
+   "value": 13,
+   "cap": null,
+   "tstat": "vi"
   }
  },
  {

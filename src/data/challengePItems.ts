@@ -46,7 +46,13 @@ export const CHALLENGE_PITEMS: ChallengePItem[] = [
   "lessonCap": 30,
   "paramBonusPct": 0.0,
   "rivalScorePct": 40,
-  "note": ""
+  "note": "",
+  "flat": {
+   "stat": "vo",
+   "trigger": "skill",
+   "value": 15,
+   "cap": 5
+  }
  },
  {
   "id": "free1_4",
@@ -57,7 +63,13 @@ export const CHALLENGE_PITEMS: ChallengePItem[] = [
   "lessonCap": 30,
   "paramBonusPct": 0.0,
   "rivalScorePct": 40,
-  "note": ""
+  "note": "",
+  "flat": {
+   "stat": "da",
+   "trigger": "skill",
+   "value": 15,
+   "cap": 5
+  }
  },
  {
   "id": "free1_5",
@@ -68,7 +80,13 @@ export const CHALLENGE_PITEMS: ChallengePItem[] = [
   "lessonCap": 30,
   "paramBonusPct": 0.0,
   "rivalScorePct": 40,
-  "note": ""
+  "note": "",
+  "flat": {
+   "stat": "vi",
+   "trigger": "skill",
+   "value": 15,
+   "cap": 5
+  }
  },
  {
   "id": "sense2_6",

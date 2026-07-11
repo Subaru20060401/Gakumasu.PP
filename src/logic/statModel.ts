@@ -292,7 +292,43 @@ export function estimateStats(input: ProduceInput): StatEstimate {
           : `${tstatLabel}${TRIGGER_LABEL[f.trigger]} +${per}×${occ}回${multLabel}`;
       cc.lines.push({ label, value: Math.round(amount), stat: f.stat });
     }
+    // 固有Pアイテムのパラメータ上昇（条件達成前提, 凸非依存）。
+    if (card.pItemFlat) {
+      const pf = card.pItemFlat;
+      let occ = occurrence(pf.trigger, pf.tstat);
+      if (pf.cap != null) occ = Math.min(pf.cap, occ);
+      if (occ > 0) {
+        const amt = pf.value * occ;
+        flatGain[pf.stat] += amt;
+        cc.lines.push({
+          label: `固有Pアイテム(${TRIGGER_LABEL[pf.trigger]}) +${pf.value}×${occ}回`,
+          value: Math.round(amt),
+          stat: pf.stat,
+        });
+      }
+    }
     if (cc.lines.length) contributions.push(cc);
+  }
+
+  // チャレンジPアイテムのフラット（高難易度: スキル獲得時+15 等）。
+  for (const cid of [input.challenge.slot1, input.challenge.slot2, input.challenge.slot3]) {
+    const ci = challengePItemById(cid);
+    if (!ci?.flat) continue;
+    let occ = occurrence(ci.flat.trigger, undefined);
+    if (ci.flat.cap != null) occ = Math.min(ci.flat.cap, occ);
+    if (occ <= 0) continue;
+    const amt = ci.flat.value * occ;
+    flatGain[ci.flat.stat] += amt;
+    contributions.push({
+      name: `チャレンジ: ${ci.name}`,
+      lines: [
+        {
+          label: `${TRIGGER_LABEL[ci.flat.trigger]} +${ci.flat.value}×${occ}回`,
+          value: Math.round(amt),
+          stat: ci.flat.stat,
+        },
+      ],
+    });
   }
 
   for (const s of STATS) {
