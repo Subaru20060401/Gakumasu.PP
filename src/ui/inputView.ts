@@ -4,6 +4,7 @@
 
 import { challengePItemsFor } from "../data/challengePItems";
 import { idolById, IDOLS, SUPPORT_CARDS } from "../data/sampleData";
+import { optimizeLessonRouting, planTotal } from "../logic/optimize";
 import { computeIdolBonus } from "../logic/statModel";
 import {
   DIFFICULTY_LABEL,
@@ -274,44 +275,86 @@ export function buildInputForm(input: ProduceInput, onSubmit: () => void): HTMLE
   form.append(sectionTitle("⑤ チャレンジPアイテム（3枠）"));
   form.append(challengeBox);
 
-  // ⑦ レッスン（5回・週4/7/12/14/16・通常/SP）
+  // ⑥ レッスン（5回・週4/7/12/14/16・通常/SP）＋ ⑦ 授業（確定4回）
   form.append(sectionTitle("⑥ レッスン（5回・属性＋通常/SP）"));
   const WEEKS = [4, 7, 12, 14, 16];
-  input.lessons.forEach((slot, i) => {
-    const statSeg = segmented(STAT_OPTS, slot.stat, (v) => (slot.stat = v));
-    const spSeg = segmented<string>(
-      [
-        { value: "normal", label: "通常" },
-        { value: "sp", label: "SP" },
-      ],
-      slot.sp ? "sp" : "normal",
-      (v) => (slot.sp = v === "sp"),
-    );
-    form.append(
-      h(
-        "div",
-        { class: "lesson-row" },
-        h("span", { class: "lesson-week" }, `${i + 1}回目(${WEEKS[i]}週)`),
-        statSeg,
-        spSeg,
-      ),
-    );
-  });
-
-  // ⑦ 授業（確定4回・週1/2/6/15・上昇値100/100/150/200）
-  form.append(sectionTitle("⑦ 授業（確定4回・属性を選択）"));
   const CLASS_WEEKS = [1, 2, 6, 15];
   const CLASS_VALS = [100, 100, 150, 200];
-  input.classes.forEach((_, i) => {
-    form.append(
-      h(
-        "div",
-        { class: "lesson-row" },
-        h("span", { class: "lesson-week" }, `${i + 1}回目(${CLASS_WEEKS[i]}週・+${CLASS_VALS[i]})`),
-        segmented(STAT_OPTS, input.classes[i], (v) => (input.classes[i] = v)),
+
+  // 最適化結果を反映するため、レッスン/授業のsegmentedは再描画可能にする。
+  const lessonBox = h("div", {});
+  const classBox = h("div", {});
+  function renderLessons() {
+    lessonBox.replaceChildren(
+      ...input.lessons.map((slot, i) =>
+        h(
+          "div",
+          { class: "lesson-row" },
+          h("span", { class: "lesson-week" }, `${i + 1}回目(${WEEKS[i]}週)`),
+          segmented(STAT_OPTS, slot.stat, (v) => (slot.stat = v)),
+          segmented<string>(
+            [
+              { value: "normal", label: "通常" },
+              { value: "sp", label: "SP" },
+            ],
+            slot.sp ? "sp" : "normal",
+            (v) => (slot.sp = v === "sp"),
+          ),
+        ),
       ),
     );
-  });
+  }
+  function renderClasses() {
+    classBox.replaceChildren(
+      ...input.classes.map((_, i) =>
+        h(
+          "div",
+          { class: "lesson-row" },
+          h(
+            "span",
+            { class: "lesson-week" },
+            `${i + 1}回目(${CLASS_WEEKS[i]}週・+${CLASS_VALS[i]})`,
+          ),
+          segmented(STAT_OPTS, input.classes[i], (v) => (input.classes[i] = v)),
+        ),
+      ),
+    );
+  }
+
+  // レッスン最適化ボタン。編成を固定し、レッスン/授業の属性割当のみ全探索して合計ステ最大の踏み順に置換。
+  const optimizeNote = h("p", { class: "field-label", style: "margin:6px 0 0" });
+  const optimizeBtn = h(
+    "button",
+    {
+      type: "button",
+      class: "btn-optimize",
+      onclick: () => {
+        if (!input.idolId) {
+          optimizeNote.textContent = "先にアイドルを選択してください。";
+          return;
+        }
+        const before = planTotal(input);
+        const best = optimizeLessonRouting(input);
+        best.lessons.forEach((s, i) => (input.lessons[i].stat = s));
+        best.classes.forEach((s, i) => (input.classes[i] = s));
+        renderLessons();
+        renderClasses();
+        const diff = best.total - before;
+        const sign = diff >= 0 ? "+" : "";
+        optimizeNote.textContent = `最適化: 合計ステ ${before.toLocaleString()} → ${best.total.toLocaleString()}（${sign}${diff.toLocaleString()}）　Vo${best.vo}/Da${best.da}/Vi${best.vi}`;
+        onSubmit();
+      },
+    },
+    "⚡ レッスンを自動最適化（合計ステ最大）",
+  );
+
+  renderLessons();
+  form.append(lessonBox);
+  form.append(sectionTitle("⑦ 授業（確定4回・属性を選択）"));
+  renderClasses();
+  form.append(classBox);
+  form.append(optimizeBtn);
+  form.append(optimizeNote);
 
   // ⑧ スケジュール
   form.append(sectionTitle("⑧ スケジュール（おでかけ・活動支給など）"));
