@@ -4,6 +4,7 @@
 
 import { challengePItemsFor } from "../data/challengePItems";
 import { idolById, IDOLS, SUPPORT_CARDS } from "../data/sampleData";
+import { computeIdolBonus } from "../logic/statModel";
 import {
   DIFFICULTY_LABEL,
   MEMORY_BONUS_VALUE,
@@ -193,7 +194,11 @@ export function buildInputForm(input: ProduceInput, onSubmit: () => void): HTMLE
     }
     const b = input.idolBonus;
     idolBonusBox.replaceChildren(
-      h("p", { class: "field-label" }, "レッスンボーナス%（才能開花で変わる・実カードに合わせて調整可）"),
+      h(
+        "p",
+        { class: "field-label" },
+        "レッスンボーナス%（凸3以上で才能開花3ぶん自動加算・実カードに合わせて調整可）",
+      ),
       h(
         "div",
         { class: "sched-grid" },
@@ -207,7 +212,7 @@ export function buildInputForm(input: ProduceInput, onSubmit: () => void): HTMLE
   function onIdolChange() {
     submitBtn.disabled = !input.idolId;
     const idol = idolById(input.idolId);
-    input.idolBonus = idol ? { vo: idol.bonusVo, da: idol.bonusDa, vi: idol.bonusVi } : null;
+    input.idolBonus = idol ? computeIdolBonus(idol, input.idolLimitBreak) : null;
     const p = plan();
     // プラン不一致のサポカ/チャレンジをクリア。
     for (const s of input.supports) {
@@ -244,7 +249,13 @@ export function buildInputForm(input: ProduceInput, onSubmit: () => void): HTMLE
       segmented(
         LB.map((n) => ({ value: n, label: `${n}凸` })),
         input.idolLimitBreak,
-        (v) => (input.idolLimitBreak = v),
+        (v) => {
+          input.idolLimitBreak = v;
+          // 才能開花3の境界でパラボが変わるので再計算・再描画。
+          const idol = idolById(input.idolId);
+          if (idol) input.idolBonus = computeIdolBonus(idol, v);
+          renderIdolBonus();
+        },
       ),
     ),
   );

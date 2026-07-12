@@ -98,9 +98,12 @@ export interface Idol {
   baseVo: number;
   baseDa: number;
   baseVi: number;
-  bonusVo: number; // レッスンボーナス%
+  bonusVo: number; // レッスンボーナス%（才能開花3未満の値 = 最大 − 才能開花3増分）
   bonusDa: number;
   bonusVi: number;
+  bloom3Vo: number; // 才能開花3で増えるレッスンボーナス%（凸3以上で加算）
+  bloom3Da: number;
+  bloom3Vi: number;
   uniqueSkill: string; // 固有スキルカード名
   uniqueSkillType: string; // アクティブ/メンタル
   uniqueSkillEffect: string;

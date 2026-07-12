@@ -17,6 +17,7 @@ import { idolById, supportById } from "../data/sampleData";
 import {
   type CardContribution,
   type FlatTrigger,
+  type Idol,
   type LessonSlot,
   PARAM_CAP,
   type ProduceInput,
@@ -27,6 +28,21 @@ import { memoriesContribution } from "./memory";
 type Stat = "vo" | "da" | "vi";
 const STATS: Stat[] = ["vo", "da", "vi"];
 const clampLb = (lb: number) => Math.max(0, Math.min(4, lb));
+
+/**
+ * アイドルの実効レッスンボーナス%（才能開花＝凸差を反映）。
+ * データの bonus* は「才能開花3未満」の値。凸3以上で bloom3* を加算＝最大パラボ。
+ * 初・N.I.A分は最大値に既に含む（レジェンドは解放前提のため常時加算）。
+ */
+export function computeIdolBonus(idol: Idol, lb: number): Record<Stat, number> {
+  const add = clampLb(lb) >= 3;
+  const r1 = (x: number) => Math.round(x * 10) / 10;
+  return {
+    vo: r1(idol.bonusVo + (add ? idol.bloom3Vo : 0)),
+    da: r1(idol.bonusDa + (add ? idol.bloom3Da : 0)),
+    vi: r1(idol.bonusVi + (add ? idol.bloom3Vi : 0)),
+  };
+}
 const at = (arr: number[] | null | undefined, k: number) => (arr ? (arr[k] ?? 0) : 0);
 
 // レッスン上昇値（5回=週4/7/12/14/16）。クリア + ボーナス(+90上限時)。
@@ -47,7 +63,6 @@ const EXAM_PARAM_REWARD_LEGEND = {
 
 /** 調整パラメータ。 */
 export const MODEL = {
-  idolLbPerStar: 0.04,
   // スキルカード(SSR)獲得回数はプラン×おすすめ効果(6種)ごとに変わる想定。
   // 現在判明しているのは「全力」(アノマリー)のみ=10〜15枚平均で12。他5種は要提供、暫定的に同値を流用。
   skillSsrOccByEffect: {
@@ -135,11 +150,8 @@ export function estimateStats(input: ProduceInput): StatEstimate {
 
   // パラボ% = アイドル + メモリー + チャレンジ + サポカ（内訳表示のため出典別に保持）。
   // アイドルのレッスンボーナスは才能開花で変わるため、上書き入力があれば優先。
-  const bonusIdol: Record<Stat, number> = input.idolBonus ?? {
-    vo: idol.bonusVo,
-    da: idol.bonusDa,
-    vi: idol.bonusVi,
-  };
+  const bonusIdol: Record<Stat, number> =
+    input.idolBonus ?? computeIdolBonus(idol, input.idolLimitBreak);
   const bonusMemory: Record<Stat, number> = { vo: mem.bonusVo, da: mem.bonusDa, vi: mem.bonusVi };
   const bonusChallenge: Record<Stat, number> = { vo: 0, da: 0, vi: 0 };
   const bonusSupport: Record<Stat, number> = { vo: 0, da: 0, vi: 0 };
@@ -153,12 +165,11 @@ export function estimateStats(input: ProduceInput): StatEstimate {
   const capFactor = legendActive ? Math.min(1, challengeCap / 90) : 1;
   const passiveBonus: Record<Stat, number> = { vo: 0, da: 0, vi: 0 };
 
-  // 初期値（アイドル×凸 + メモリー）。
-  const idolLb = 1 + MODEL.idolLbPerStar * clampLb(input.idolLimitBreak);
+  // 初期パラメータ（特訓4の最大値。才能開花＝凸はパラメータには影響しない）＋メモリー初期値。
   const base: Record<Stat, number> = {
-    vo: idol.baseVo * idolLb + mem.initVo,
-    da: idol.baseDa * idolLb + mem.initDa,
-    vi: idol.baseVi * idolLb + mem.initVi,
+    vo: idol.baseVo + mem.initVo,
+    da: idol.baseDa + mem.initDa,
+    vi: idol.baseVi + mem.initVi,
   };
 
   // レッスン獲得（固定上昇値, パーフェクト前提）。
