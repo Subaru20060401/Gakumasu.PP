@@ -16,7 +16,6 @@ import { challengePItemById } from "../data/challengePItems";
 import { idolById, supportById } from "../data/sampleData";
 import {
   type CardContribution,
-  EVENT_TRIGGERS,
   type FlatTrigger,
   type LessonSlot,
   PARAM_CAP,
@@ -70,7 +69,6 @@ export const MODEL = {
   examOcc: 2, // 中間+最終
 };
 
-const eventSet = new Set(EVENT_TRIGGERS);
 const r1 = (n: number) => Math.round(n * 10) / 10; // 小数第一で丸め
 
 /** 発動契機の表示名。 */
@@ -170,6 +168,12 @@ export function estimateStats(input: ProduceInput): StatEstimate {
     const bonus = ((slot.sp ? LESSON.spBonus : LESSON.normalBonus)[i] ?? 0) * capFactor;
     for (const s of STATS) lessonGain[s] += s === slot.stat ? clear + bonus : bonus;
   });
+  // 授業4回（週1/2/6/15, 上昇値100/100/150/200）。パラボ対象なのでレッスン獲得に加算。
+  const CLASS_VALUES = [100, 100, 150, 200];
+  input.classes.forEach((stat, i) => {
+    lessonGain[stat] += CLASS_VALUES[i] ?? 0;
+  });
+
   // 通常/SP レッスン回数（フラット発動用）。
   const lessonCount = { normal: { vo: 0, da: 0, vi: 0 }, sp: { vo: 0, da: 0, vi: 0 } };
   for (const slot of input.lessons) lessonCount[slot.sp ? "sp" : "normal"][slot.stat]++;
@@ -204,7 +208,7 @@ export function estimateStats(input: ProduceInput): StatEstimate {
       case "shido":
         return sc.shido;
       case "jugyo":
-        return sc.jugyo;
+        return input.classes.length; // 授業は確定4回
       case "rest":
         return sc.rest;
       case "exam":
@@ -269,27 +273,36 @@ export function estimateStats(input: ProduceInput): StatEstimate {
         });
     }
     if (card.type !== "as") cardCount[card.type]++;
-    const eventMult = 1 + at(card.eventUp, k) / 100;
+    // サポートイベント（1プロデュース1回）。eventUp%で増幅。※アビリティには掛からない。
+    if (card.supportEvent) {
+      const se = card.supportEvent;
+      const eu = at(card.eventUp, k);
+      const amt = se.value * (1 + eu / 100);
+      flatGain[se.stat] += amt;
+      cc.lines.push({
+        label: `サポートイベント +${se.value}${eu ? `（イベント上昇+${r1(eu)}%）` : ""}`,
+        value: Math.round(amt),
+        stat: se.stat,
+      });
+    }
     for (const f of card.flats) {
       let occ = occurrence(f.trigger, f.tstat);
       if (f.cap != null) occ = Math.min(f.cap, occ);
       if (occ <= 0) continue;
       const per = at(f.values, k);
       if (!per) continue;
-      const mult = f.trigger !== "init" && eventSet.has(f.trigger) ? eventMult : 1;
-      const amount = per * occ * mult;
+      // アビリティのフラットは eventUp 非適用（サポートイベント側にのみ掛かる）。
+      const amount = per * occ;
       if (f.trigger === "init") initGain[f.stat] += amount;
       else flatGain[f.stat] += amount;
       const tstatLabel =
         (f.trigger === "lesson_sp" || f.trigger === "lesson_normal") && f.tstat && f.tstat !== "any"
           ? STAT_LABEL[f.tstat]
           : "";
-      // イベント系は eventUp 倍率が掛かるのでラベルにも明示。
-      const multLabel = mult !== 1 ? ` ×${r1(mult)}(イベント上昇)` : "";
       const label =
         f.trigger === "init"
           ? `${STAT_LABEL[f.stat]}初期値`
-          : `${tstatLabel}${TRIGGER_LABEL[f.trigger]} +${per}×${occ}回${multLabel}`;
+          : `${tstatLabel}${TRIGGER_LABEL[f.trigger]} +${per}×${occ}回`;
       cc.lines.push({ label, value: Math.round(amount), stat: f.stat });
     }
     // 固有Pアイテムのパラメータ上昇（条件達成前提, 凸非依存）。

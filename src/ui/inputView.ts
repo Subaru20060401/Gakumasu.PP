@@ -287,8 +287,23 @@ export function buildInputForm(input: ProduceInput, onSubmit: () => void): HTMLE
     );
   });
 
+  // ⑦ 授業（確定4回・週1/2/6/15・上昇値100/100/150/200）
+  form.append(sectionTitle("⑦ 授業（確定4回・属性を選択）"));
+  const CLASS_WEEKS = [1, 2, 6, 15];
+  const CLASS_VALS = [100, 100, 150, 200];
+  input.classes.forEach((_, i) => {
+    form.append(
+      h(
+        "div",
+        { class: "lesson-row" },
+        h("span", { class: "lesson-week" }, `${i + 1}回目(${CLASS_WEEKS[i]}週・+${CLASS_VALS[i]})`),
+        segmented(STAT_OPTS, input.classes[i], (v) => (input.classes[i] = v)),
+      ),
+    );
+  });
+
   // ⑧ スケジュール
-  form.append(sectionTitle("⑦ スケジュール（おでかけ・活動支給など）"));
+  form.append(sectionTitle("⑧ スケジュール（おでかけ・活動支給など）"));
   form.append(schedulePresets(input));
   const schedGrid = h(
     "div",
@@ -297,7 +312,6 @@ export function buildInputForm(input: ProduceInput, onSubmit: () => void): HTMLE
     numberField("活動支給", input.schedule.shikyu, (v) => (input.schedule.shikyu = v), { min: 0, max: 18 }),
     numberField("相談", input.schedule.sodan, (v) => (input.schedule.sodan = v), { min: 0, max: 18 }),
     numberField("特別指導", input.schedule.shido, (v) => (input.schedule.shido = v), { min: 0, max: 18 }),
-    numberField("授業", input.schedule.jugyo, (v) => (input.schedule.jugyo = v), { min: 0, max: 18 }),
     numberField("休む", input.schedule.rest, (v) => (input.schedule.rest = v), { min: 0, max: 18 }),
   );
   // presetから数値を書き換えたら再描画するため、schedGridをboxに入れて再生成。
@@ -404,7 +418,6 @@ function schedulePresets(input: ProduceInput): HTMLElement {
         input.schedule.shikyu,
         input.schedule.sodan,
         input.schedule.shido,
-        input.schedule.jugyo,
         input.schedule.rest,
       ];
       grid.querySelectorAll<HTMLInputElement>("input").forEach((el, i) => {

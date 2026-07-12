@@ -190,6 +190,8 @@ export interface SupportCard {
   drinkGen?: { resource: "drink"; trigger: FlatTrigger; tstat?: ParamType | "any"; count: number; cap: number | null };
   // 固有Pアイテムのパラメータ上昇（条件は達成前提で計算, 凸非依存の固定値）。
   pItemFlat?: { stat: ParamType; trigger: FlatTrigger; tstat?: ParamType | "any"; value: number; cap: number | null };
+  // サポートイベント（1プロデュース1回発生）のパラメータ。eventUpで増幅（SSR20/SR15/R10）。
+  supportEvent?: { stat: ParamType; value: number };
 }
 
 /** メモリーアビリティのレアリティ（虹+/虹/金/銀）。 */
@@ -300,6 +302,7 @@ export interface ProduceInput {
   memories: Memory[]; // 4個 × アビリティ3つ
   challenge: { slot1: string | null; slot2: string | null; slot3: string | null };
   lessons: LessonSlot[]; // 5回のレッスン（週4/7/12/14/16, 属性+通常/SP）
+  classes: ParamType[]; // 授業4回（週1/2/6/15, 上昇値100/100/150/200）の属性
   schedule: Schedule;
   exam: ExamInput;
   difficulty: Difficulty;

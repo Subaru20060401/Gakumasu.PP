@@ -79,6 +79,10 @@ export const SUPPORT_CARDS: SupportCard[] = [
    "name": "あつあつはふはふ",
    "rarity": "SSR",
    "type": "アクティブ"
+  },
+  "supportEvent": {
+   "stat": "vi",
+   "value": 20
   }
  },
  {
@@ -147,6 +151,10 @@ export const SUPPORT_CARDS: SupportCard[] = [
    "name": "恋心のゆくえ",
    "rarity": "SSR",
    "plan": "アノマリー"
+  },
+  "supportEvent": {
+   "stat": "vi",
+   "value": 20
   }
  },
  {
@@ -219,6 +227,10 @@ export const SUPPORT_CARDS: SupportCard[] = [
    "name": "お手並み拝見",
    "rarity": "SSR",
    "type": "メンタル"
+  },
+  "supportEvent": {
+   "stat": "da",
+   "value": 20
   }
  },
  {
@@ -359,6 +371,10 @@ export const SUPPORT_CARDS: SupportCard[] = [
    "name": "想定外のチケット",
    "rarity": "SSR",
    "plan": "センス"
+  },
+  "supportEvent": {
+   "stat": "vi",
+   "value": 20
   }
  },
  {
@@ -438,6 +454,10 @@ export const SUPPORT_CARDS: SupportCard[] = [
    "name": "ガタゴトすやすや",
    "rarity": "SSR",
    "type": "アクティブ"
+  },
+  "supportEvent": {
+   "stat": "vo",
+   "value": 20
   }
  },
  {
@@ -507,6 +527,10 @@ export const SUPPORT_CARDS: SupportCard[] = [
    "name": "頭上に注意！",
    "rarity": "SSR",
    "type": "メンタル"
+  },
+  "supportEvent": {
+   "stat": "da",
+   "value": 20
   }
  },
  {
@@ -580,6 +604,10 @@ export const SUPPORT_CARDS: SupportCard[] = [
    "name": "夢を叶えるために",
    "rarity": "SSR",
    "plan": "センス"
+  },
+  "supportEvent": {
+   "stat": "vi",
+   "value": 20
   }
  },
  {
@@ -648,6 +676,10 @@ export const SUPPORT_CARDS: SupportCard[] = [
    "name": "咲季の完全食・改",
    "rarity": "SSR",
    "plan": "ロジック"
+  },
+  "supportEvent": {
+   "stat": "vi",
+   "value": 20
   }
  },
  {
@@ -726,6 +758,10 @@ export const SUPPORT_CARDS: SupportCard[] = [
    "name": "せーのでぱくっ！",
    "rarity": "SSR",
    "type": "アクティブ"
+  },
+  "supportEvent": {
+   "stat": "vi",
+   "value": 20
   }
  },
  {
@@ -810,6 +846,10 @@ export const SUPPORT_CARDS: SupportCard[] = [
    "trigger": "skill",
    "value": 35,
    "cap": 2
+  },
+  "supportEvent": {
+   "stat": "da",
+   "value": 20
   }
  },
  {
@@ -890,6 +930,10 @@ export const SUPPORT_CARDS: SupportCard[] = [
    "name": "お姉ちゃん、参戦！",
    "rarity": "SSR",
    "type": "アクティブ"
+  },
+  "supportEvent": {
+   "stat": "vi",
+   "value": 20
   }
  },
  {
@@ -963,6 +1007,10 @@ export const SUPPORT_CARDS: SupportCard[] = [
    "name": "ふれんどめもりーず",
    "rarity": "SSR",
    "type": "アクティブ"
+  },
+  "supportEvent": {
+   "stat": "vo",
+   "value": 20
   }
  },
  {
@@ -1031,6 +1079,10 @@ export const SUPPORT_CARDS: SupportCard[] = [
    "name": "寒空リサイタル",
    "rarity": "SSR",
    "type": "メンタル"
+  },
+  "supportEvent": {
+   "stat": "vo",
+   "value": 20
   }
  },
  {
@@ -1109,6 +1161,10 @@ export const SUPPORT_CARDS: SupportCard[] = [
    "name": "あこがれ不良ムーブ",
    "rarity": "SSR",
    "type": "アクティブ"
+  },
+  "supportEvent": {
+   "stat": "vo",
+   "value": 20
   }
  },
  {
@@ -1184,6 +1240,10 @@ export const SUPPORT_CARDS: SupportCard[] = [
    "name": "無我の境地",
    "rarity": "SSR",
    "plan": "センス"
+  },
+  "supportEvent": {
+   "stat": "da",
+   "value": 20
   }
  },
  {
@@ -1275,6 +1335,10 @@ export const SUPPORT_CARDS: SupportCard[] = [
    "trigger": "skill",
    "value": 30,
    "cap": 2
+  },
+  "supportEvent": {
+   "stat": "da",
+   "value": 20
   }
  },
  {
@@ -1349,6 +1413,10 @@ export const SUPPORT_CARDS: SupportCard[] = [
    "name": "いたずらサンタさん",
    "rarity": "SSR",
    "type": "メンタル"
+  },
+  "supportEvent": {
+   "stat": "da",
+   "value": 20
   }
  },
  {
@@ -1428,6 +1496,10 @@ export const SUPPORT_CARDS: SupportCard[] = [
    "name": "寝心地は良好",
    "rarity": "SSR",
    "plan": "ロジック"
+  },
+  "supportEvent": {
+   "stat": "da",
+   "value": 20
   }
  },
  {
@@ -1506,6 +1578,10 @@ export const SUPPORT_CARDS: SupportCard[] = [
    "name": "奥義、受け流し！",
    "rarity": "SSR",
    "type": "アクティブ"
+  },
+  "supportEvent": {
+   "stat": "vo",
+   "value": 20
   }
  },
  {
@@ -1579,6 +1655,10 @@ export const SUPPORT_CARDS: SupportCard[] = [
    "name": "ほぐれるひととき",
    "rarity": "SSR",
    "type": "メンタル"
+  },
+  "supportEvent": {
+   "stat": "vi",
+   "value": 20
   }
  },
  {
@@ -1653,6 +1733,10 @@ export const SUPPORT_CARDS: SupportCard[] = [
    "name": "対象、ロックオン",
    "rarity": "SSR",
    "type": "メンタル"
+  },
+  "supportEvent": {
+   "stat": "vo",
+   "value": 20
   }
  },
  {
@@ -1738,6 +1822,10 @@ export const SUPPORT_CARDS: SupportCard[] = [
    "trigger": "shido",
    "value": 30,
    "cap": 1
+  },
+  "supportEvent": {
+   "stat": "vo",
+   "value": 20
   }
  },
  {
@@ -1817,6 +1905,10 @@ export const SUPPORT_CARDS: SupportCard[] = [
    "name": "月刊アニメトーク♪",
    "rarity": "SSR",
    "plan": "ロジック"
+  },
+  "supportEvent": {
+   "stat": "vi",
+   "value": 20
   }
  },
  {
@@ -1895,6 +1987,10 @@ export const SUPPORT_CARDS: SupportCard[] = [
    "name": "しぼまない思い出",
    "rarity": "SSR",
    "plan": "アノマリー"
+  },
+  "supportEvent": {
+   "stat": "vo",
+   "value": 20
   }
  },
  {
@@ -1975,6 +2071,10 @@ export const SUPPORT_CARDS: SupportCard[] = [
    "trigger": "skill",
    "value": 30,
    "cap": 2
+  },
+  "supportEvent": {
+   "stat": "vo",
+   "value": 20
   }
  },
  {
@@ -2054,6 +2154,10 @@ export const SUPPORT_CARDS: SupportCard[] = [
    "trigger": "skill",
    "value": 20,
    "cap": 3
+  },
+  "supportEvent": {
+   "stat": "da",
+   "value": 20
   }
  },
  {
@@ -2128,6 +2232,10 @@ export const SUPPORT_CARDS: SupportCard[] = [
    "name": "夏夜に咲く思い出",
    "rarity": "SSR",
    "type": "アクティブ"
+  },
+  "supportEvent": {
+   "stat": "da",
+   "value": 20
   }
  },
  {
@@ -2207,6 +2315,10 @@ export const SUPPORT_CARDS: SupportCard[] = [
    "name": "面白くて心配な子",
    "rarity": "SSR",
    "plan": "アノマリー"
+  },
+  "supportEvent": {
+   "stat": "vo",
+   "value": 20
   }
  },
  {
@@ -2285,6 +2397,10 @@ export const SUPPORT_CARDS: SupportCard[] = [
    "name": "手作りサブスク弁当",
    "rarity": "SSR",
    "plan": "ロジック"
+  },
+  "supportEvent": {
+   "stat": "vo",
+   "value": 20
   }
  },
  {
@@ -2359,6 +2475,10 @@ export const SUPPORT_CARDS: SupportCard[] = [
    "name": "包まれるやさしさ",
    "rarity": "SSR",
    "plan": "センス"
+  },
+  "supportEvent": {
+   "stat": "vi",
+   "value": 20
   }
  },
  {
@@ -2432,6 +2552,10 @@ export const SUPPORT_CARDS: SupportCard[] = [
    "name": "おとものミミズク",
    "rarity": "SSR",
    "plan": "ロジック"
+  },
+  "supportEvent": {
+   "stat": "vi",
+   "value": 20
   }
  },
  {
@@ -2511,6 +2635,10 @@ export const SUPPORT_CARDS: SupportCard[] = [
    "name": "居残りの生徒会",
    "rarity": "SSR",
    "plan": "アノマリー"
+  },
+  "supportEvent": {
+   "stat": "da",
+   "value": 20
   }
  },
  {
@@ -2585,6 +2713,10 @@ export const SUPPORT_CARDS: SupportCard[] = [
    "name": "思い出カタメコイメ",
    "rarity": "SSR",
    "plan": "アノマリー"
+  },
+  "supportEvent": {
+   "stat": "vi",
+   "value": 20
   }
  },
  {
@@ -2670,6 +2802,10 @@ export const SUPPORT_CARDS: SupportCard[] = [
    "trigger": "jugyo",
    "value": 10,
    "cap": 2
+  },
+  "supportEvent": {
+   "stat": "da",
+   "value": 20
   }
  },
  {
@@ -2750,6 +2886,10 @@ export const SUPPORT_CARDS: SupportCard[] = [
    "name": "幼馴染の意地",
    "rarity": "SSR",
    "plan": "ロジック"
+  },
+  "supportEvent": {
+   "stat": "vo",
+   "value": 20
   }
  },
  {
@@ -2829,6 +2969,10 @@ export const SUPPORT_CARDS: SupportCard[] = [
    "name": "対戦お願いします！",
    "rarity": "SSR",
    "type": "メンタル"
+  },
+  "supportEvent": {
+   "stat": "vi",
+   "value": 20
   }
  },
  {
@@ -2903,6 +3047,10 @@ export const SUPPORT_CARDS: SupportCard[] = [
    "name": "夢へのスタートライン",
    "rarity": "SSR",
    "plan": "センス"
+  },
+  "supportEvent": {
+   "stat": "da",
+   "value": 20
   }
  },
  {
@@ -2982,6 +3130,10 @@ export const SUPPORT_CARDS: SupportCard[] = [
    "name": "ひとりだちシューズ",
    "rarity": "SSR",
    "plan": "フリー"
+  },
+  "supportEvent": {
+   "stat": "da",
+   "value": 20
   }
  },
  {
@@ -3067,6 +3219,10 @@ export const SUPPORT_CARDS: SupportCard[] = [
    "trigger": "odekake",
    "value": 15,
    "cap": null
+  },
+  "supportEvent": {
+   "stat": "vi",
+   "value": 20
   }
  },
  {
@@ -3146,6 +3302,10 @@ export const SUPPORT_CARDS: SupportCard[] = [
    "name": "ゆうじょーのきろく",
    "rarity": "SSR",
    "plan": "ロジック"
+  },
+  "supportEvent": {
+   "stat": "da",
+   "value": 20
   }
  },
  {
@@ -3225,6 +3385,10 @@ export const SUPPORT_CARDS: SupportCard[] = [
    "name": "お姉さまビッグラブ",
    "rarity": "SSR",
    "plan": "ロジック"
+  },
+  "supportEvent": {
+   "stat": "vo",
+   "value": 20
   }
  },
  {
@@ -3243,6 +3407,10 @@ export const SUPPORT_CARDS: SupportCard[] = [
    "name": "バレンタイン大作戦！",
    "rarity": "SSR",
    "type": "メンタル"
+  },
+  "supportEvent": {
+   "stat": "vi",
+   "value": 20
   }
  },
  {
@@ -3297,6 +3465,10 @@ export const SUPPORT_CARDS: SupportCard[] = [
    "name": "ぜったいいっぱい！",
    "rarity": "SSR",
    "plan": "アノマリー"
+  },
+  "supportEvent": {
+   "stat": "vo",
+   "value": 20
   }
  },
  {
@@ -3359,6 +3531,10 @@ export const SUPPORT_CARDS: SupportCard[] = [
    "name": "すごすぎるバトン",
    "rarity": "SSR",
    "plan": "フリー"
+  },
+  "supportEvent": {
+   "stat": "da",
+   "value": 20
   }
  },
  {
@@ -3432,6 +3608,10 @@ export const SUPPORT_CARDS: SupportCard[] = [
    "name": "練習再開！",
    "rarity": "SSR",
    "type": "メンタル"
+  },
+  "supportEvent": {
+   "stat": "vo",
+   "value": 20
   }
  },
  {
@@ -3511,6 +3691,10 @@ export const SUPPORT_CARDS: SupportCard[] = [
    "name": "はいぼくせんげん",
    "rarity": "SSR",
    "plan": "アノマリー"
+  },
+  "supportEvent": {
+   "stat": "da",
+   "value": 20
   }
  },
  {
@@ -3589,6 +3773,10 @@ export const SUPPORT_CARDS: SupportCard[] = [
    "name": "ぬくもりふたりぶん",
    "rarity": "SSR",
    "plan": "ロジック"
+  },
+  "supportEvent": {
+   "stat": "vi",
+   "value": 20
   }
  },
  {
@@ -3663,6 +3851,10 @@ export const SUPPORT_CARDS: SupportCard[] = [
    "name": "光の夜",
    "rarity": "SSR",
    "type": "メンタル"
+  },
+  "supportEvent": {
+   "stat": "da",
+   "value": 20
   }
  },
  {
@@ -3737,6 +3929,10 @@ export const SUPPORT_CARDS: SupportCard[] = [
    "name": "紅葉ランニング",
    "rarity": "SSR",
    "type": "メンタル"
+  },
+  "supportEvent": {
+   "stat": "vi",
+   "value": 20
   }
  },
  {
@@ -3816,6 +4012,10 @@ export const SUPPORT_CARDS: SupportCard[] = [
    "name": "ほかほか焼き芋",
    "rarity": "SSR",
    "type": "メンタル"
+  },
+  "supportEvent": {
+   "stat": "da",
+   "value": 20
   }
  },
  {
@@ -3912,6 +4112,10 @@ export const SUPPORT_CARDS: SupportCard[] = [
    "trigger": "skill",
    "count": 1,
    "cap": 4
+  },
+  "supportEvent": {
+   "stat": "vi",
+   "value": 20
   }
  },
  {
@@ -3984,6 +4188,10 @@ export const SUPPORT_CARDS: SupportCard[] = [
    "name": "つやつやでふさふさ",
    "rarity": "SSR",
    "plan": "センス"
+  },
+  "supportEvent": {
+   "stat": "vo",
+   "value": 20
   }
  },
  {
@@ -4040,6 +4248,10 @@ export const SUPPORT_CARDS: SupportCard[] = [
    "name": "いじっぱりバルーン",
    "rarity": "SSR",
    "plan": "ロジック"
+  },
+  "supportEvent": {
+   "stat": "da",
+   "value": 20
   }
  },
  {
@@ -4114,6 +4326,10 @@ export const SUPPORT_CARDS: SupportCard[] = [
    "name": "とろけた時間",
    "rarity": "SSR",
    "plan": "フリー"
+  },
+  "supportEvent": {
+   "stat": "vo",
+   "value": 20
   }
  },
  {
@@ -4199,6 +4415,10 @@ export const SUPPORT_CARDS: SupportCard[] = [
    "trigger": "jugyo",
    "value": 15,
    "cap": null
+  },
+  "supportEvent": {
+   "stat": "vi",
+   "value": 20
   }
  },
  {
@@ -4267,6 +4487,10 @@ export const SUPPORT_CARDS: SupportCard[] = [
    "name": "その本、おもしろい？",
    "rarity": "SSR",
    "type": "アクティブ"
+  },
+  "supportEvent": {
+   "stat": "vi",
+   "value": 20
   }
  },
  {
@@ -4352,6 +4576,10 @@ export const SUPPORT_CARDS: SupportCard[] = [
    "trigger": "skill",
    "count": 1,
    "cap": 4
+  },
+  "supportEvent": {
+   "stat": "da",
+   "value": 20
   }
  },
  {
@@ -4420,6 +4648,10 @@ export const SUPPORT_CARDS: SupportCard[] = [
    "name": "873シューター",
    "rarity": "SSR",
    "plan": "ロジック"
+  },
+  "supportEvent": {
+   "stat": "da",
+   "value": 20
   }
  },
  {
@@ -4488,6 +4720,10 @@ export const SUPPORT_CARDS: SupportCard[] = [
    "name": "交わる感情",
    "rarity": "SSR",
    "type": "アクティブ"
+  },
+  "supportEvent": {
+   "stat": "vi",
+   "value": 20
   }
  },
  {
@@ -4544,6 +4780,10 @@ export const SUPPORT_CARDS: SupportCard[] = [
    "name": "オーバーパワーボール",
    "rarity": "SSR",
    "plan": "センス"
+  },
+  "supportEvent": {
+   "stat": "vo",
+   "value": 20
   }
  },
  {
@@ -4606,6 +4846,10 @@ export const SUPPORT_CARDS: SupportCard[] = [
    "name": "はじける水しぶき",
    "rarity": "SSR",
    "type": "アクティブ"
+  },
+  "supportEvent": {
+   "stat": "vo",
+   "value": 20
   }
  },
  {
@@ -4685,6 +4929,10 @@ export const SUPPORT_CARDS: SupportCard[] = [
    "name": "負けず嫌いの勲章",
    "rarity": "SSR",
    "plan": "ロジック"
+  },
+  "supportEvent": {
+   "stat": "da",
+   "value": 20
   }
  },
  {
@@ -4764,6 +5012,10 @@ export const SUPPORT_CARDS: SupportCard[] = [
    "name": "お泊り猛勉強",
    "rarity": "SSR",
    "type": "メンタル"
+  },
+  "supportEvent": {
+   "stat": "vi",
+   "value": 20
   }
  },
  {
@@ -4819,6 +5071,10 @@ export const SUPPORT_CARDS: SupportCard[] = [
    "name": "虹かけるクロス",
    "rarity": "SSR",
    "plan": "フリー"
+  },
+  "supportEvent": {
+   "stat": "da",
+   "value": 20
   }
  },
  {
@@ -4875,6 +5131,10 @@ export const SUPPORT_CARDS: SupportCard[] = [
    "name": "みずたまりスキップ",
    "rarity": "SSR",
    "type": "メンタル"
+  },
+  "supportEvent": {
+   "stat": "vo",
+   "value": 20
   }
  },
  {
@@ -4954,6 +5214,10 @@ export const SUPPORT_CARDS: SupportCard[] = [
    "name": "天川ラーメン巡り",
    "rarity": "SSR",
    "plan": "フリー"
+  },
+  "supportEvent": {
+   "stat": "vo",
+   "value": 20
   }
  },
  {
@@ -5022,6 +5286,10 @@ export const SUPPORT_CARDS: SupportCard[] = [
    "name": "得体のしれないモノ",
    "rarity": "SSR",
    "plan": "フリー"
+  },
+  "supportEvent": {
+   "stat": "vi",
+   "value": 20
   }
  },
  {
@@ -5078,6 +5346,10 @@ export const SUPPORT_CARDS: SupportCard[] = [
    "name": "満開ペアヘアピン",
    "rarity": "SSR",
    "plan": "フリー"
+  },
+  "supportEvent": {
+   "stat": "vi",
+   "value": 20
   }
  },
  {
@@ -5133,6 +5405,10 @@ export const SUPPORT_CARDS: SupportCard[] = [
    "name": "悔しさの象徴",
    "rarity": "SSR",
    "plan": "フリー"
+  },
+  "supportEvent": {
+   "stat": "da",
+   "value": 20
   }
  },
  {
@@ -5189,6 +5465,10 @@ export const SUPPORT_CARDS: SupportCard[] = [
    "name": "花萌ゆ季節",
    "rarity": "SSR",
    "type": "メンタル"
+  },
+  "supportEvent": {
+   "stat": "vo",
+   "value": 20
   }
  },
  {
@@ -5245,6 +5525,10 @@ export const SUPPORT_CARDS: SupportCard[] = [
    "name": "陽だまりの生徒会室",
    "rarity": "SSR",
    "type": "メンタル"
+  },
+  "supportEvent": {
+   "stat": "vi",
+   "value": 20
   }
  },
  {
@@ -5324,6 +5608,10 @@ export const SUPPORT_CARDS: SupportCard[] = [
    "name": "星のリトルプリンス",
    "rarity": "SSR",
    "plan": "フリー"
+  },
+  "supportEvent": {
+   "stat": "vi",
+   "value": 20
   }
  },
  {
@@ -5403,6 +5691,10 @@ export const SUPPORT_CARDS: SupportCard[] = [
    "name": "心のアルバム",
    "rarity": "SSR",
    "type": "アクティブ"
+  },
+  "supportEvent": {
+   "stat": "da",
+   "value": 20
   }
  },
  {
@@ -5482,6 +5774,10 @@ export const SUPPORT_CARDS: SupportCard[] = [
    "name": "ティーパーティ",
    "rarity": "SSR",
    "type": "メンタル"
+  },
+  "supportEvent": {
+   "stat": "vo",
+   "value": 20
   }
  },
  {
@@ -5537,6 +5833,10 @@ export const SUPPORT_CARDS: SupportCard[] = [
    "name": "仲直りのきっかけ",
    "rarity": "SSR",
    "plan": "フリー"
+  },
+  "supportEvent": {
+   "stat": "vi",
+   "value": 20
   }
  },
  {
@@ -5592,6 +5892,10 @@ export const SUPPORT_CARDS: SupportCard[] = [
    "name": "曇りをぬぐったタオル",
    "rarity": "SSR",
    "plan": "フリー"
+  },
+  "supportEvent": {
+   "stat": "vo",
+   "value": 20
   }
  },
  {
@@ -5660,6 +5964,10 @@ export const SUPPORT_CARDS: SupportCard[] = [
    "name": "スカウト遮り帽",
    "rarity": "SSR",
    "plan": "フリー"
+  },
+  "supportEvent": {
+   "stat": "vo",
+   "value": 20
   }
  },
  {
@@ -5728,6 +6036,10 @@ export const SUPPORT_CARDS: SupportCard[] = [
    "name": "光のステージ",
    "rarity": "SSR",
    "type": "メンタル"
+  },
+  "supportEvent": {
+   "stat": "da",
+   "value": 20
   }
  },
  {
@@ -5790,6 +6102,10 @@ export const SUPPORT_CARDS: SupportCard[] = [
    "name": "夢にあふれた大荷物",
    "rarity": "SSR",
    "plan": "フリー"
+  },
+  "supportEvent": {
+   "stat": "da",
+   "value": 20
   }
  },
  {
@@ -5905,6 +6221,10 @@ export const SUPPORT_CARDS: SupportCard[] = [
    "trigger": "sodan",
    "value": 10,
    "cap": 2
+  },
+  "supportEvent": {
+   "stat": "vi",
+   "value": 15
   }
  },
  {
@@ -5990,6 +6310,10 @@ export const SUPPORT_CARDS: SupportCard[] = [
    "trigger": "shikyu",
    "value": 20,
    "cap": 1
+  },
+  "supportEvent": {
+   "stat": "vo",
+   "value": 15
   }
  },
  {
@@ -6063,6 +6387,10 @@ export const SUPPORT_CARDS: SupportCard[] = [
    "name": "のんびりアフタヌーン",
    "rarity": "SR",
    "plan": "アノマリー"
+  },
+  "supportEvent": {
+   "stat": "vi",
+   "value": 15
   }
  },
  {
@@ -6142,6 +6470,10 @@ export const SUPPORT_CARDS: SupportCard[] = [
    "name": "もぐもぐ定食",
    "rarity": "SR",
    "plan": "ロジック"
+  },
+  "supportEvent": {
+   "stat": "vi",
+   "value": 15
   }
  },
  {
@@ -6221,6 +6553,10 @@ export const SUPPORT_CARDS: SupportCard[] = [
    "trigger": "sodan",
    "value": 30,
    "cap": 1
+  },
+  "supportEvent": {
+   "stat": "vo",
+   "value": 15
   }
  },
  {
@@ -6300,6 +6636,10 @@ export const SUPPORT_CARDS: SupportCard[] = [
    "name": "演技のたしなみ",
    "rarity": "SR",
    "plan": "ロジック"
+  },
+  "supportEvent": {
+   "stat": "vi",
+   "value": 15
   }
  },
  {
@@ -6379,6 +6719,10 @@ export const SUPPORT_CARDS: SupportCard[] = [
    "trigger": "skill",
    "value": 20,
    "cap": 1
+  },
+  "supportEvent": {
+   "stat": "vo",
+   "value": 15
   }
  },
  {
@@ -6452,6 +6796,10 @@ export const SUPPORT_CARDS: SupportCard[] = [
    "name": "お洗濯の必需品",
    "rarity": "SR",
    "plan": "センス"
+  },
+  "supportEvent": {
+   "stat": "da",
+   "value": 15
   }
  },
  {
@@ -6538,6 +6886,10 @@ export const SUPPORT_CARDS: SupportCard[] = [
    "value": 20,
    "cap": 2,
    "tstat": "vo"
+  },
+  "supportEvent": {
+   "stat": "vo",
+   "value": 15
   }
  },
  {
@@ -6623,6 +6975,10 @@ export const SUPPORT_CARDS: SupportCard[] = [
    "trigger": "skill",
    "value": 15,
    "cap": 2
+  },
+  "supportEvent": {
+   "stat": "vi",
+   "value": 15
   }
  },
  {
@@ -6714,6 +7070,10 @@ export const SUPPORT_CARDS: SupportCard[] = [
    "trigger": "skill",
    "value": 20,
    "cap": 2
+  },
+  "supportEvent": {
+   "stat": "da",
+   "value": 15
   }
  },
  {
@@ -6794,6 +7154,10 @@ export const SUPPORT_CARDS: SupportCard[] = [
    "name": "味見はいかが",
    "rarity": "SR",
    "type": "メンタル"
+  },
+  "supportEvent": {
+   "stat": "vo",
+   "value": 15
   }
  },
  {
@@ -6874,6 +7238,10 @@ export const SUPPORT_CARDS: SupportCard[] = [
    "trigger": "skill",
    "value": 15,
    "cap": 1
+  },
+  "supportEvent": {
+   "stat": "vi",
+   "value": 15
   }
  },
  {
@@ -6948,6 +7316,10 @@ export const SUPPORT_CARDS: SupportCard[] = [
    "name": "たたいてかぶって",
    "rarity": "SR",
    "plan": "アノマリー"
+  },
+  "supportEvent": {
+   "stat": "da",
+   "value": 15
   }
  },
  {
@@ -7022,6 +7394,10 @@ export const SUPPORT_CARDS: SupportCard[] = [
    "name": "お直し刺繍セット",
    "rarity": "SR",
    "plan": "ロジック"
+  },
+  "supportEvent": {
+   "stat": "vo",
+   "value": 15
   }
  },
  {
@@ -7096,6 +7472,10 @@ export const SUPPORT_CARDS: SupportCard[] = [
    "name": "おひるねブランケット",
    "rarity": "SR",
    "plan": "センス"
+  },
+  "supportEvent": {
+   "stat": "vo",
+   "value": 15
   }
  },
  {
@@ -7168,6 +7548,10 @@ export const SUPPORT_CARDS: SupportCard[] = [
    "name": "ごきげんようレッスン",
    "rarity": "SR",
    "plan": "センス"
+  },
+  "supportEvent": {
+   "stat": "vi",
+   "value": 15
   }
  },
  {
@@ -7247,6 +7631,10 @@ export const SUPPORT_CARDS: SupportCard[] = [
    "name": "激痛のちぽかぽか",
    "rarity": "SR",
    "plan": "ロジック"
+  },
+  "supportEvent": {
+   "stat": "vo",
+   "value": 15
   }
  },
  {
@@ -7332,6 +7720,10 @@ export const SUPPORT_CARDS: SupportCard[] = [
    "trigger": "skill",
    "value": 20,
    "cap": 2
+  },
+  "supportEvent": {
+   "stat": "da",
+   "value": 15
   }
  },
  {
@@ -7412,6 +7804,10 @@ export const SUPPORT_CARDS: SupportCard[] = [
    "trigger": "skill",
    "value": 30,
    "cap": 1
+  },
+  "supportEvent": {
+   "stat": "vi",
+   "value": 15
   }
  },
  {
@@ -7497,6 +7893,10 @@ export const SUPPORT_CARDS: SupportCard[] = [
    "trigger": "skill",
    "value": 30,
    "cap": 1
+  },
+  "supportEvent": {
+   "stat": "vo",
+   "value": 15
   }
  },
  {
@@ -7577,6 +7977,10 @@ export const SUPPORT_CARDS: SupportCard[] = [
    "trigger": "shido",
    "value": 30,
    "cap": 2
+  },
+  "supportEvent": {
+   "stat": "vi",
+   "value": 15
   }
  },
  {
@@ -7663,6 +8067,10 @@ export const SUPPORT_CARDS: SupportCard[] = [
    "trigger": "skill",
    "value": 30,
    "cap": 1
+  },
+  "supportEvent": {
+   "stat": "vi",
+   "value": 15
   }
  },
  {
@@ -7737,6 +8145,10 @@ export const SUPPORT_CARDS: SupportCard[] = [
    "name": "おさぼりタオル",
    "rarity": "SR",
    "plan": "フリー"
+  },
+  "supportEvent": {
+   "stat": "da",
+   "value": 15
   }
  },
  {
@@ -7799,6 +8211,10 @@ export const SUPPORT_CARDS: SupportCard[] = [
    "name": "ビシッバシッ竹刀",
    "rarity": "SR",
    "plan": "アノマリー"
+  },
+  "supportEvent": {
+   "stat": "vo",
+   "value": 15
   }
  },
  {
@@ -7861,6 +8277,10 @@ export const SUPPORT_CARDS: SupportCard[] = [
    "name": "お似合いネクタイ",
    "rarity": "SR",
    "plan": "センス"
+  },
+  "supportEvent": {
+   "stat": "da",
+   "value": 15
   }
  },
  {
@@ -7940,6 +8360,10 @@ export const SUPPORT_CARDS: SupportCard[] = [
    "name": "へとへとできゅー",
    "rarity": "SR",
    "plan": "ロジック"
+  },
+  "supportEvent": {
+   "stat": "vi",
+   "value": 15
   }
  },
  {
@@ -8025,6 +8449,10 @@ export const SUPPORT_CARDS: SupportCard[] = [
    "trigger": "skill",
    "value": 6,
    "cap": null
+  },
+  "supportEvent": {
+   "stat": "da",
+   "value": 15
   }
  },
  {
@@ -8104,6 +8532,10 @@ export const SUPPORT_CARDS: SupportCard[] = [
    "name": "おもてなしの気持ち",
    "rarity": "SR",
    "plan": "アノマリー"
+  },
+  "supportEvent": {
+   "stat": "vi",
+   "value": 15
   }
  },
  {
@@ -8189,6 +8621,10 @@ export const SUPPORT_CARDS: SupportCard[] = [
    "trigger": "skill",
    "value": 6,
    "cap": null
+  },
+  "supportEvent": {
+   "stat": "vo",
+   "value": 15
   }
  },
  {
@@ -8268,6 +8704,10 @@ export const SUPPORT_CARDS: SupportCard[] = [
    "name": "噛み締めたタオル",
    "rarity": "SR",
    "plan": "ロジック"
+  },
+  "supportEvent": {
+   "stat": "vo",
+   "value": 15
   }
  },
  {
@@ -8353,6 +8793,10 @@ export const SUPPORT_CARDS: SupportCard[] = [
    "trigger": "skill",
    "value": 6,
    "cap": null
+  },
+  "supportEvent": {
+   "stat": "vi",
+   "value": 15
   }
  },
  {
@@ -8371,6 +8815,10 @@ export const SUPPORT_CARDS: SupportCard[] = [
    "name": "ギャルめいきんぐ！",
    "rarity": "SR",
    "plan": "センス"
+  },
+  "supportEvent": {
+   "stat": "da",
+   "value": 15
   }
  },
  {
@@ -8450,6 +8898,10 @@ export const SUPPORT_CARDS: SupportCard[] = [
    "name": "小さなお客さん",
    "rarity": "SR",
    "type": "アクティブ"
+  },
+  "supportEvent": {
+   "stat": "vi",
+   "value": 15
   }
  },
  {
@@ -8529,6 +8981,10 @@ export const SUPPORT_CARDS: SupportCard[] = [
    "name": "草笛ハーモニー",
    "rarity": "SR",
    "type": "メンタル"
+  },
+  "supportEvent": {
+   "stat": "da",
+   "value": 15
   }
  },
  {
@@ -8590,6 +9046,10 @@ export const SUPPORT_CARDS: SupportCard[] = [
    "name": "ディテールが肝心",
    "rarity": "SR",
    "type": "アクティブ"
+  },
+  "supportEvent": {
+   "stat": "vo",
+   "value": 15
   }
  },
  {
@@ -8663,6 +9123,10 @@ export const SUPPORT_CARDS: SupportCard[] = [
    "name": "愛情レインボー",
    "rarity": "SR",
    "type": "メンタル"
+  },
+  "supportEvent": {
+   "stat": "vi",
+   "value": 15
   }
  },
  {
@@ -8736,6 +9200,10 @@ export const SUPPORT_CARDS: SupportCard[] = [
    "count": 1,
    "cap": 2,
    "tstat": "da"
+  },
+  "supportEvent": {
+   "stat": "da",
+   "value": 15
   }
  },
  {
@@ -8809,6 +9277,10 @@ export const SUPPORT_CARDS: SupportCard[] = [
    "count": 1,
    "cap": 2,
    "tstat": "vi"
+  },
+  "supportEvent": {
+   "stat": "vi",
+   "value": 15
   }
  },
  {
@@ -8882,6 +9354,10 @@ export const SUPPORT_CARDS: SupportCard[] = [
    "count": 1,
    "cap": 2,
    "tstat": "vo"
+  },
+  "supportEvent": {
+   "stat": "vo",
+   "value": 15
   }
  },
  {
@@ -8962,6 +9438,10 @@ export const SUPPORT_CARDS: SupportCard[] = [
    "name": "ほっこりはんぶんこ",
    "rarity": "SR",
    "plan": "フリー"
+  },
+  "supportEvent": {
+   "stat": "da",
+   "value": 15
   }
  },
  {
@@ -9047,6 +9527,10 @@ export const SUPPORT_CARDS: SupportCard[] = [
    "trigger": "skill",
    "value": 6,
    "cap": null
+  },
+  "supportEvent": {
+   "stat": "da",
+   "value": 15
   }
  },
  {
@@ -9103,6 +9587,10 @@ export const SUPPORT_CARDS: SupportCard[] = [
    "name": "イケてるセーター",
    "rarity": "SR",
    "plan": "センス"
+  },
+  "supportEvent": {
+   "stat": "da",
+   "value": 15
   }
  },
  {
@@ -9159,6 +9647,10 @@ export const SUPPORT_CARDS: SupportCard[] = [
    "name": "旬の味わい",
    "rarity": "SR",
    "type": "アクティブ"
+  },
+  "supportEvent": {
+   "stat": "vi",
+   "value": 15
   }
  },
  {
@@ -9238,6 +9730,10 @@ export const SUPPORT_CARDS: SupportCard[] = [
    "name": "こうかい……？",
    "rarity": "SR",
    "type": "アクティブ"
+  },
+  "supportEvent": {
+   "stat": "da",
+   "value": 15
   }
  },
  {
@@ -9312,6 +9808,10 @@ export const SUPPORT_CARDS: SupportCard[] = [
    "name": "小さい秋見つけた",
    "rarity": "SR",
    "plan": "センス"
+  },
+  "supportEvent": {
+   "stat": "da",
+   "value": 15
   }
  },
  {
@@ -9391,6 +9891,10 @@ export const SUPPORT_CARDS: SupportCard[] = [
    "name": "ぜったいマル秘レシピ",
    "rarity": "SR",
    "plan": "ロジック"
+  },
+  "supportEvent": {
+   "stat": "vi",
+   "value": 15
   }
  },
  {
@@ -9470,6 +9974,10 @@ export const SUPPORT_CARDS: SupportCard[] = [
    "name": "気になる……",
    "rarity": "SR",
    "type": "メンタル"
+  },
+  "supportEvent": {
+   "stat": "vo",
+   "value": 15
   }
  },
  {
@@ -9538,6 +10046,10 @@ export const SUPPORT_CARDS: SupportCard[] = [
    "name": "お嬢様の恩返し",
    "rarity": "SR",
    "plan": "ロジック"
+  },
+  "supportEvent": {
+   "stat": "da",
+   "value": 15
   }
  },
  {
@@ -9606,6 +10118,10 @@ export const SUPPORT_CARDS: SupportCard[] = [
    "name": "優しさミルクシュガー",
    "rarity": "SR",
    "plan": "ロジック"
+  },
+  "supportEvent": {
+   "stat": "vo",
+   "value": 15
   }
  },
  {
@@ -9686,6 +10202,10 @@ export const SUPPORT_CARDS: SupportCard[] = [
    "name": "大きくてつやつや",
    "rarity": "SR",
    "plan": "ロジック"
+  },
+  "supportEvent": {
+   "stat": "vi",
+   "value": 15
   }
  },
  {
@@ -9754,6 +10274,10 @@ export const SUPPORT_CARDS: SupportCard[] = [
    "name": "きっかけの帯",
    "rarity": "SR",
    "plan": "センス"
+  },
+  "supportEvent": {
+   "stat": "da",
+   "value": 15
   }
  },
  {
@@ -9833,6 +10357,10 @@ export const SUPPORT_CARDS: SupportCard[] = [
    "name": "ハンターの戦利品",
    "rarity": "SR",
    "plan": "フリー"
+  },
+  "supportEvent": {
+   "stat": "da",
+   "value": 15
   }
  },
  {
@@ -9901,6 +10429,10 @@ export const SUPPORT_CARDS: SupportCard[] = [
    "name": "切れた鼻緒が結んだ絆",
    "rarity": "SR",
    "type": "メンタル"
+  },
+  "supportEvent": {
+   "stat": "vi",
+   "value": 15
   }
  },
  {
@@ -9963,6 +10495,10 @@ export const SUPPORT_CARDS: SupportCard[] = [
    "trigger": "skill",
    "value": 6,
    "cap": null
+  },
+  "supportEvent": {
+   "stat": "vo",
+   "value": 15
   }
  },
  {
@@ -10024,6 +10560,10 @@ export const SUPPORT_CARDS: SupportCard[] = [
    "trigger": "skill",
    "value": 6,
    "cap": null
+  },
+  "supportEvent": {
+   "stat": "vo",
+   "value": 15
   }
  },
  {
@@ -10086,6 +10626,10 @@ export const SUPPORT_CARDS: SupportCard[] = [
    "trigger": "skill",
    "value": 6,
    "cap": null
+  },
+  "supportEvent": {
+   "stat": "vi",
+   "value": 15
   }
  },
  {
@@ -10171,6 +10715,10 @@ export const SUPPORT_CARDS: SupportCard[] = [
    "trigger": "skill",
    "value": 6,
    "cap": null
+  },
+  "supportEvent": {
+   "stat": "da",
+   "value": 15
   }
  },
  {
@@ -10239,6 +10787,10 @@ export const SUPPORT_CARDS: SupportCard[] = [
    "name": "キメ顔で自撮り",
    "rarity": "SR",
    "type": "メンタル"
+  },
+  "supportEvent": {
+   "stat": "da",
+   "value": 15
   }
  },
  {
@@ -10306,6 +10858,10 @@ export const SUPPORT_CARDS: SupportCard[] = [
    "name": "なに聴いてるの？",
    "rarity": "SR",
    "type": "アクティブ"
+  },
+  "supportEvent": {
+   "stat": "vo",
+   "value": 15
   }
  },
  {
@@ -10379,6 +10935,10 @@ export const SUPPORT_CARDS: SupportCard[] = [
    "name": "お姉ちゃんだもの！",
    "rarity": "SR",
    "type": "アクティブ"
+  },
+  "supportEvent": {
+   "stat": "vi",
+   "value": 15
   }
  },
  {
@@ -10452,6 +11012,10 @@ export const SUPPORT_CARDS: SupportCard[] = [
    "name": "美鈴からの贈り物",
    "rarity": "SR",
    "plan": "フリー"
+  },
+  "supportEvent": {
+   "stat": "vo",
+   "value": 15
   }
  },
  {
@@ -10514,6 +11078,10 @@ export const SUPPORT_CARDS: SupportCard[] = [
    "name": "おアツイ視線",
    "rarity": "SR",
    "type": "メンタル"
+  },
+  "supportEvent": {
+   "stat": "vo",
+   "value": 15
   }
  },
  {
@@ -10588,6 +11156,10 @@ export const SUPPORT_CARDS: SupportCard[] = [
    "trigger": "exam",
    "value": 26,
    "cap": null
+  },
+  "supportEvent": {
+   "stat": "vo",
+   "value": 15
   }
  },
  {
@@ -10656,6 +11228,10 @@ export const SUPPORT_CARDS: SupportCard[] = [
    "name": "ご指導ご鞭撻",
    "rarity": "SR",
    "type": "アクティブ"
+  },
+  "supportEvent": {
+   "stat": "vi",
+   "value": 15
   }
  },
  {
@@ -10724,6 +11300,10 @@ export const SUPPORT_CARDS: SupportCard[] = [
    "trigger": "exam",
    "value": 26,
    "cap": null
+  },
+  "supportEvent": {
+   "stat": "vi",
+   "value": 15
   }
  },
  {
@@ -10786,6 +11366,10 @@ export const SUPPORT_CARDS: SupportCard[] = [
    "name": "ストレッチ談議",
    "rarity": "SR",
    "type": "アクティブ"
+  },
+  "supportEvent": {
+   "stat": "da",
+   "value": 15
   }
  },
  {
@@ -10866,6 +11450,10 @@ export const SUPPORT_CARDS: SupportCard[] = [
    "count": 2,
    "cap": null,
    "tstat": "da"
+  },
+  "supportEvent": {
+   "stat": "da",
+   "value": 15
   }
  },
  {
@@ -10940,6 +11528,10 @@ export const SUPPORT_CARDS: SupportCard[] = [
    "trigger": "exam",
    "value": 26,
    "cap": null
+  },
+  "supportEvent": {
+   "stat": "da",
+   "value": 15
   }
  },
  {
@@ -11015,6 +11607,10 @@ export const SUPPORT_CARDS: SupportCard[] = [
    "value": 13,
    "cap": null,
    "tstat": "da"
+  },
+  "supportEvent": {
+   "stat": "da",
+   "value": 15
   }
  },
  {
@@ -11090,6 +11686,10 @@ export const SUPPORT_CARDS: SupportCard[] = [
    "value": 13,
    "cap": null,
    "tstat": "vo"
+  },
+  "supportEvent": {
+   "stat": "vo",
+   "value": 15
   }
  },
  {
@@ -11165,6 +11765,10 @@ export const SUPPORT_CARDS: SupportCard[] = [
    "value": 13,
    "cap": null,
    "tstat": "vi"
+  },
+  "supportEvent": {
+   "stat": "vi",
+   "value": 15
   }
  },
  {
@@ -11232,6 +11836,10 @@ export const SUPPORT_CARDS: SupportCard[] = [
    "name": "朝一の助け舟",
    "rarity": "SR",
    "plan": "フリー"
+  },
+  "supportEvent": {
+   "stat": "vo",
+   "value": 15
   }
  },
  {
@@ -11299,6 +11907,10 @@ export const SUPPORT_CARDS: SupportCard[] = [
    "name": "誓いの花びら",
    "rarity": "SR",
    "plan": "フリー"
+  },
+  "supportEvent": {
+   "stat": "vi",
+   "value": 15
   }
  },
  {
@@ -11344,7 +11956,11 @@ export const SUPPORT_CARDS: SupportCard[] = [
      13.0
     ]
    }
-  ]
+  ],
+  "supportEvent": {
+   "stat": "da",
+   "value": 10
+  }
  },
  {
   "id": "r-157",
@@ -11401,7 +12017,11 @@ export const SUPPORT_CARDS: SupportCard[] = [
      11.0
     ]
    }
-  ]
+  ],
+  "supportEvent": {
+   "stat": "vi",
+   "value": 10
+  }
  },
  {
   "id": "r-158",
@@ -11458,7 +12078,11 @@ export const SUPPORT_CARDS: SupportCard[] = [
      11.0
     ]
    }
-  ]
+  ],
+  "supportEvent": {
+   "stat": "vo",
+   "value": 10
+  }
  },
  {
   "id": "r-159",
@@ -11515,7 +12139,11 @@ export const SUPPORT_CARDS: SupportCard[] = [
      11.0
     ]
    }
-  ]
+  ],
+  "supportEvent": {
+   "stat": "da",
+   "value": 10
+  }
  },
  {
   "id": "r-160",
@@ -11572,7 +12200,11 @@ export const SUPPORT_CARDS: SupportCard[] = [
      7.0
     ]
    }
-  ]
+  ],
+  "supportEvent": {
+   "stat": "vo",
+   "value": 10
+  }
  },
  {
   "id": "r-161",
@@ -11629,7 +12261,11 @@ export const SUPPORT_CARDS: SupportCard[] = [
      8.0
     ]
    }
-  ]
+  ],
+  "supportEvent": {
+   "stat": "vi",
+   "value": 10
+  }
  },
  {
   "id": "r-162",
@@ -11686,7 +12322,11 @@ export const SUPPORT_CARDS: SupportCard[] = [
      8.0
     ]
    }
-  ]
+  ],
+  "supportEvent": {
+   "stat": "da",
+   "value": 10
+  }
  },
  {
   "id": "r-163",
@@ -11731,7 +12371,11 @@ export const SUPPORT_CARDS: SupportCard[] = [
      7.0
     ]
    }
-  ]
+  ],
+  "supportEvent": {
+   "stat": "da",
+   "value": 10
+  }
  },
  {
   "id": "r-164",
@@ -11782,7 +12426,11 @@ export const SUPPORT_CARDS: SupportCard[] = [
      3.0
     ]
    }
-  ]
+  ],
+  "supportEvent": {
+   "stat": "vo",
+   "value": 10
+  }
  },
  {
   "id": "r-165",
@@ -11833,7 +12481,11 @@ export const SUPPORT_CARDS: SupportCard[] = [
      3.0
     ]
    }
-  ]
+  ],
+  "supportEvent": {
+   "stat": "vi",
+   "value": 10
+  }
  },
  {
   "id": "r-166",
@@ -11884,7 +12536,11 @@ export const SUPPORT_CARDS: SupportCard[] = [
      8.0
     ]
    }
-  ]
+  ],
+  "supportEvent": {
+   "stat": "vo",
+   "value": 10
+  }
  },
  {
   "id": "r-167",
@@ -11935,7 +12591,11 @@ export const SUPPORT_CARDS: SupportCard[] = [
      3.0
     ]
    }
-  ]
+  ],
+  "supportEvent": {
+   "stat": "da",
+   "value": 10
+  }
  },
  {
   "id": "r-168",
@@ -11980,6 +12640,10 @@ export const SUPPORT_CARDS: SupportCard[] = [
      7.0
     ]
    }
-  ]
+  ],
+  "supportEvent": {
+   "stat": "vi",
+   "value": 10
+  }
  }
 ];
