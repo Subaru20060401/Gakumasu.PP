@@ -12645,5 +12645,1648 @@ export const SUPPORT_CARDS: SupportCard[] = [
    "stat": "vi",
    "value": 10
   }
- }
+ },
+{
+  "id": "sp-000",
+  "name": "次の曲は〜ッあの曲だ！！",
+  "rarity": "ssr",
+  "type": "vo",
+  "plan": "logic",
+  "imageUrl": "https://image01.seesaawiki.jp/g/u/gakumasu/b9b30a5287c0b668-s.png",
+  "paramBonus": [
+    6.5,
+    7.0,
+    7.5,
+    8.0,
+    8.5
+  ],
+  "lessonSupport": [
+    66.1,
+    74.6,
+    83.1,
+    91.5,
+    100.0
+  ],
+  "eventUp": [
+    50.0,
+    75.0,
+    75.0,
+    75.0,
+    100.0
+  ],
+  "spRates": [],
+  "flats": [
+    {
+      "stat": "vo",
+      "trigger": "delete",
+      "cap": 4,
+      "values": [
+        15.0,
+        15.0,
+        20.0,
+        20.0,
+        20.0
+      ]
+    },
+    {
+      "stat": "vo",
+      "trigger": "lesson_sp",
+      "cap": null,
+      "values": [
+        13.0,
+        13.0,
+        13.0,
+        17.0,
+        17.0
+      ],
+      "tstat": "vo"
+    },
+    {
+      "stat": "vo",
+      "trigger": "skill",
+      "cap": 4,
+      "values": [
+        16.0,
+        16.0,
+        16.0,
+        16.0,
+        22.0
+      ]
+    }
+  ],
+  "rewardPItem": {
+    "name": "全力おうえんうちわ",
+    "rarity": "SSR",
+    "plan": "logic"
+  },
+  "supportEvent": {
+    "stat": "vo",
+    "value": 20
+  }
+},
+{
+  "id": "sp-001",
+  "name": "パーティー楽しみだねっ！",
+  "rarity": "ssr",
+  "type": "da",
+  "plan": "anomaly",
+  "imageUrl": "https://image01.seesaawiki.jp/g/u/gakumasu/bc7a6f2f207c116d-s.png",
+  "paramBonus": [
+    6.5,
+    7.0,
+    7.5,
+    8.0,
+    8.5
+  ],
+  "lessonSupport": [
+    66.1,
+    74.6,
+    83.1,
+    91.5,
+    100.0
+  ],
+  "eventUp": [
+    50.0,
+    75.0,
+    75.0,
+    75.0,
+    100.0
+  ],
+  "spRates": [],
+  "flats": [
+    {
+      "stat": "da",
+      "trigger": "enhance",
+      "cap": null,
+      "values": [
+        5.0,
+        5.0,
+        5.0,
+        5.0,
+        7.0
+      ]
+    },
+    {
+      "stat": "da",
+      "trigger": "exam",
+      "cap": 2,
+      "values": [
+        11.0,
+        11.0,
+        11.0,
+        17.0,
+        17.0
+      ]
+    }
+  ],
+  "rewardPItem": {
+    "name": "おかいものバッグ",
+    "rarity": "SSR",
+    "plan": "anomaly"
+  },
+  "supportEvent": {
+    "stat": "da",
+    "value": 20
+  }
+},
+{
+  "id": "sp-002",
+  "name": "みいつけた。",
+  "rarity": "ssr",
+  "type": "vo",
+  "plan": "logic",
+  "imageUrl": "https://image01.seesaawiki.jp/g/u/gakumasu/10849424c029b296-s.png",
+  "paramBonus": [
+    6.5,
+    7.0,
+    7.5,
+    8.0,
+    8.5
+  ],
+  "lessonSupport": [
+    66.1,
+    74.6,
+    83.1,
+    91.5,
+    100.0
+  ],
+  "eventUp": [
+    50.0,
+    75.0,
+    75.0,
+    75.0,
+    100.0
+  ],
+  "spRates": [],
+  "flats": [
+    {
+      "stat": "vo",
+      "trigger": "skill",
+      "cap": null,
+      "values": [
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        3.0
+      ]
+    },
+    {
+      "stat": "vo",
+      "trigger": "shikyu",
+      "cap": null,
+      "values": [
+        9.0,
+        9.0,
+        9.0,
+        12.0,
+        12.0
+      ]
+    }
+  ],
+  "rewardPItem": {
+    "name": "迷子のゆくえ",
+    "rarity": "SSR",
+    "plan": "logic"
+  },
+  "supportEvent": {
+    "stat": "vo",
+    "value": 20
+  }
+},
+{
+  "id": "sp-003",
+  "name": "オシャレもメイクも♪",
+  "rarity": "ssr",
+  "type": "vi",
+  "plan": "sense",
+  "imageUrl": "https://image01.seesaawiki.jp/g/u/gakumasu/d6d2faa19930caf7-s.png",
+  "paramBonus": [
+    6.5,
+    7.0,
+    7.5,
+    8.0,
+    8.5
+  ],
+  "lessonSupport": [
+    66.1,
+    74.6,
+    83.1,
+    91.5,
+    100.0
+  ],
+  "eventUp": [
+    50.0,
+    75.0,
+    75.0,
+    75.0,
+    100.0
+  ],
+  "spRates": [],
+  "flats": [
+    {
+      "stat": "vi",
+      "trigger": "odekake",
+      "cap": null,
+      "values": [
+        8.0,
+        8.0,
+        8.0,
+        8.0,
+        11.0
+      ]
+    },
+    {
+      "stat": "vi",
+      "trigger": "exam",
+      "cap": 2,
+      "values": [
+        11.0,
+        11.0,
+        11.0,
+        17.0,
+        17.0
+      ]
+    }
+  ],
+  "rewardPItem": {
+    "name": "ぴったしコレクション",
+    "rarity": "SSR",
+    "plan": "sense"
+  },
+  "supportEvent": {
+    "stat": "vi",
+    "value": 20
+  }
+},
+{
+  "id": "sp-004",
+  "name": "貸せ、手本を見せてやる！",
+  "rarity": "ssr",
+  "type": "vi",
+  "plan": "free",
+  "imageUrl": "https://image01.seesaawiki.jp/g/u/gakumasu/b24771626b76bf90-s.png",
+  "paramBonus": null,
+  "lessonSupport": [
+    66.1,
+    74.6,
+    83.1,
+    91.5,
+    100.0
+  ],
+  "eventUp": [
+    50.0,
+    75.0,
+    75.0,
+    75.0,
+    100.0
+  ],
+  "spRates": [
+    {
+      "stat": "all",
+      "values": [
+        14.0,
+        14.0,
+        21.0,
+        21.0,
+        21.0
+      ]
+    }
+  ],
+  "flats": [
+    {
+      "stat": "vi",
+      "trigger": "init",
+      "cap": null,
+      "values": [
+        52.0,
+        55.0,
+        59.0,
+        62.0,
+        65.0
+      ]
+    },
+    {
+      "stat": "vi",
+      "trigger": "pitem",
+      "cap": 6,
+      "values": [
+        8.0,
+        8.0,
+        8.0,
+        8.0,
+        11.0
+      ]
+    }
+  ],
+  "rewardPItem": {
+    "name": "めちゃかわプリ",
+    "rarity": "SSR",
+    "plan": "free"
+  },
+  "supportEvent": {
+    "stat": "vi",
+    "value": 20
+  }
+},
+{
+  "id": "sp-005",
+  "name": "ぜったいに取るんだ！",
+  "rarity": "ssr",
+  "type": "vo",
+  "plan": "free",
+  "paramBonus": null,
+  "lessonSupport": [
+    66.1,
+    74.6,
+    83.1,
+    91.5,
+    100.0
+  ],
+  "eventUp": [
+    50.0,
+    75.0,
+    75.0,
+    75.0,
+    100.0
+  ],
+  "spRates": [
+    {
+      "stat": "all",
+      "values": [
+        14.0,
+        14.0,
+        21.0,
+        21.0,
+        21.0
+      ]
+    }
+  ],
+  "flats": [
+    {
+      "stat": "vo",
+      "trigger": "init",
+      "cap": null,
+      "values": [
+        52.0,
+        55.0,
+        59.0,
+        62.0,
+        65.0
+      ]
+    },
+    {
+      "stat": "vo",
+      "trigger": "skill_ssr",
+      "cap": null,
+      "values": [
+        3.0,
+        3.0,
+        3.0,
+        3.0,
+        5.0
+      ]
+    }
+  ],
+  "rewardSkill": {
+    "name": "執念キャッチャー",
+    "rarity": "SSR",
+    "type": ""
+  },
+  "supportEvent": {
+    "stat": "vo",
+    "value": 20
+  }
+},
+{
+  "id": "sp-006",
+  "name": "大運動会、開催っ！",
+  "rarity": "ssr",
+  "type": "vo",
+  "plan": "free",
+  "paramBonus": null,
+  "lessonSupport": [
+    66.1,
+    74.6,
+    83.1,
+    91.5,
+    100.0
+  ],
+  "eventUp": [
+    50.0,
+    75.0,
+    75.0,
+    75.0,
+    100.0
+  ],
+  "spRates": [],
+  "flats": [
+    {
+      "stat": "vo",
+      "trigger": "init",
+      "cap": null,
+      "values": [
+        52.0,
+        55.0,
+        59.0,
+        62.0,
+        65.0
+      ]
+    },
+    {
+      "stat": "vo",
+      "trigger": "jugyo",
+      "cap": null,
+      "values": [
+        5.0,
+        5.0,
+        5.0,
+        7.0,
+        7.0
+      ]
+    },
+    {
+      "stat": "vo",
+      "trigger": "lesson_sp",
+      "cap": 4,
+      "values": [
+        15.0,
+        15.0,
+        15.0,
+        15.0,
+        21.0
+      ]
+    }
+  ],
+  "rewardSkill": {
+    "name": "勝利をつかめ！",
+    "rarity": "SSR",
+    "type": ""
+  },
+  "supportEvent": {
+    "stat": "vo",
+    "value": 20
+  }
+},
+{
+  "id": "sp-007",
+  "name": "仲直りしましょう",
+  "rarity": "ssr",
+  "type": "vo",
+  "plan": "free",
+  "imageUrl": "https://image01.seesaawiki.jp/g/u/gakumasu/b850e1cc76f31fb0-s.png",
+  "paramBonus": null,
+  "lessonSupport": null,
+  "eventUp": [
+    50.0,
+    75.0,
+    75.0,
+    75.0,
+    100.0
+  ],
+  "spRates": [],
+  "flats": [
+    {
+      "stat": "vo",
+      "trigger": "init",
+      "cap": null,
+      "values": [
+        52.0,
+        55.0,
+        59.0,
+        62.0,
+        65.0
+      ]
+    },
+    {
+      "stat": "vo",
+      "trigger": "jugyo",
+      "cap": null,
+      "values": [
+        4.0,
+        4.0,
+        4.0,
+        4.0,
+        5.0
+      ]
+    },
+    {
+      "stat": "vo",
+      "trigger": "delete",
+      "cap": null,
+      "values": [
+        6.0,
+        6.0,
+        6.0,
+        8.0,
+        8.0
+      ]
+    }
+  ],
+  "rewardSkill": {
+    "name": "月明かりに包まれて",
+    "rarity": "SSR",
+    "type": ""
+  },
+  "supportEvent": {
+    "stat": "vo",
+    "value": 20
+  }
+},
+{
+  "id": "sp-008",
+  "name": "盛り上げてこー！",
+  "rarity": "ssr",
+  "type": "da",
+  "plan": "free",
+  "imageUrl": "https://image02.seesaawiki.jp/g/u/gakumasu/2c31daab04cdde51-s.png",
+  "paramBonus": null,
+  "lessonSupport": [
+    66.1,
+    74.6,
+    83.1,
+    91.5,
+    100.0
+  ],
+  "eventUp": [
+    50.0,
+    75.0,
+    75.0,
+    75.0,
+    100.0
+  ],
+  "spRates": [
+    {
+      "stat": "all",
+      "values": [
+        14.0,
+        14.0,
+        21.0,
+        21.0,
+        21.0
+      ]
+    }
+  ],
+  "flats": [
+    {
+      "stat": "da",
+      "trigger": "init",
+      "cap": null,
+      "values": [
+        52.0,
+        55.0,
+        59.0,
+        62.0,
+        65.0
+      ]
+    },
+    {
+      "stat": "da",
+      "trigger": "lesson_sp",
+      "cap": null,
+      "values": [
+        9.0,
+        9.0,
+        9.0,
+        9.0,
+        13.0
+      ],
+      "tstat": "da"
+    },
+    {
+      "stat": "da",
+      "trigger": "jugyo",
+      "cap": null,
+      "values": [
+        4.0,
+        4.0,
+        4.0,
+        5.0,
+        5.0
+      ]
+    }
+  ],
+  "rewardPItem": {
+    "name": "わいわいタンバリン",
+    "rarity": "SSR",
+    "plan": "free"
+  },
+  "supportEvent": {
+    "stat": "da",
+    "value": 20
+  }
+},
+{
+  "id": "sp-009",
+  "name": "お母さんか！",
+  "rarity": "ssr",
+  "type": "da",
+  "plan": "free",
+  "imageUrl": "https://image01.seesaawiki.jp/g/u/gakumasu/487b8cf5b90ab59e-s.png",
+  "paramBonus": [
+    6.5,
+    7.0,
+    7.5,
+    8.0,
+    8.5
+  ],
+  "lessonSupport": [
+    66.1,
+    74.6,
+    83.1,
+    91.5,
+    100.0
+  ],
+  "eventUp": [
+    50.0,
+    75.0,
+    75.0,
+    75.0,
+    100.0
+  ],
+  "spRates": [],
+  "flats": [
+    {
+      "stat": "da",
+      "trigger": "lesson_sp",
+      "cap": null,
+      "values": [
+        9.0,
+        9.0,
+        9.0,
+        9.0,
+        13.0
+      ],
+      "tstat": "da"
+    },
+    {
+      "stat": "da",
+      "trigger": "sodan",
+      "cap": null,
+      "values": [
+        9.0,
+        9.0,
+        9.0,
+        14.0,
+        14.0
+      ]
+    }
+  ],
+  "rewardPItem": {
+    "name": "好き嫌い禁止！",
+    "rarity": "SSR",
+    "plan": "free"
+  },
+  "supportEvent": {
+    "stat": "da",
+    "value": 20
+  }
+},
+{
+  "id": "sp-010",
+  "name": "すっかり仲良しって感じ♪",
+  "rarity": "ssr",
+  "type": "da",
+  "plan": "sense",
+  "imageUrl": "https://image02.seesaawiki.jp/g/u/gakumasu/b3b90dbfff43ff61-s.png",
+  "paramBonus": null,
+  "lessonSupport": [
+    66.1,
+    74.6,
+    83.1,
+    91.5,
+    100.0
+  ],
+  "eventUp": [
+    50.0,
+    75.0,
+    75.0,
+    75.0,
+    100.0
+  ],
+  "spRates": [
+    {
+      "stat": "all",
+      "values": [
+        14.0,
+        14.0,
+        21.0,
+        21.0,
+        21.0
+      ]
+    }
+  ],
+  "flats": [
+    {
+      "stat": "da",
+      "trigger": "init",
+      "cap": null,
+      "values": [
+        52.0,
+        55.0,
+        59.0,
+        62.0,
+        65.0
+      ]
+    },
+    {
+      "stat": "da",
+      "trigger": "lesson_sp",
+      "cap": null,
+      "values": [
+        9.0,
+        9.0,
+        9.0,
+        9.0,
+        13.0
+      ],
+      "tstat": "da"
+    },
+    {
+      "stat": "da",
+      "trigger": "exam",
+      "cap": 2,
+      "values": [
+        11.0,
+        11.0,
+        11.0,
+        17.0,
+        17.0
+      ]
+    }
+  ],
+  "rewardPItem": {
+    "name": "勝利をその手に",
+    "rarity": "SSR",
+    "plan": "sense"
+  },
+  "supportEvent": {
+    "stat": "da",
+    "value": 20
+  }
+},
+{
+  "id": "sp-011",
+  "name": "迷子のおしらせです",
+  "rarity": "ssr",
+  "type": "vi",
+  "plan": "logic",
+  "imageUrl": "https://image02.seesaawiki.jp/g/u/gakumasu/fa51d4557997bc64-s.png",
+  "paramBonus": null,
+  "lessonSupport": null,
+  "eventUp": [
+    50.0,
+    75.0,
+    75.0,
+    75.0,
+    100.0
+  ],
+  "spRates": [
+    {
+      "stat": "all",
+      "values": [
+        14.0,
+        14.0,
+        21.0,
+        21.0,
+        21.0
+      ]
+    }
+  ],
+  "flats": [
+    {
+      "stat": "vi",
+      "trigger": "init",
+      "cap": null,
+      "values": [
+        52.0,
+        55.0,
+        59.0,
+        62.0,
+        65.0
+      ]
+    },
+    {
+      "stat": "vi",
+      "trigger": "skill",
+      "cap": null,
+      "values": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        2.0
+      ]
+    },
+    {
+      "stat": "vi",
+      "trigger": "enhance",
+      "cap": null,
+      "values": [
+        5.0,
+        5.0,
+        5.0,
+        7.0,
+        7.0
+      ]
+    }
+  ],
+  "rewardPItem": {
+    "name": "迷子のお呼び出し",
+    "rarity": "SSR",
+    "plan": "logic"
+  },
+  "supportEvent": {
+    "stat": "vi",
+    "value": 20
+  }
+},
+{
+  "id": "sp-012",
+  "name": "みんなの意見を聞かせて♪",
+  "rarity": "ssr",
+  "type": "vo",
+  "plan": "anomaly",
+  "imageUrl": "https://image01.seesaawiki.jp/g/u/gakumasu/67e020f1339dba46-s.png",
+  "paramBonus": null,
+  "lessonSupport": null,
+  "eventUp": [
+    50.0,
+    75.0,
+    75.0,
+    75.0,
+    100.0
+  ],
+  "spRates": [
+    {
+      "stat": "all",
+      "values": [
+        14.0,
+        14.0,
+        21.0,
+        21.0,
+        21.0
+      ]
+    }
+  ],
+  "flats": [
+    {
+      "stat": "vo",
+      "trigger": "init",
+      "cap": null,
+      "values": [
+        52.0,
+        55.0,
+        59.0,
+        62.0,
+        65.0
+      ]
+    },
+    {
+      "stat": "vo",
+      "trigger": "jugyo",
+      "cap": null,
+      "values": [
+        4.0,
+        4.0,
+        4.0,
+        4.0,
+        5.0
+      ]
+    },
+    {
+      "stat": "vo",
+      "trigger": "enhance",
+      "cap": null,
+      "values": [
+        5.0,
+        5.0,
+        5.0,
+        7.0,
+        7.0
+      ]
+    }
+  ],
+  "rewardPItem": {
+    "name": "麻央にぴったし",
+    "rarity": "SSR",
+    "plan": "anomaly"
+  },
+  "supportEvent": {
+    "stat": "vo",
+    "value": 20
+  }
+},
+{
+  "id": "sp-013",
+  "name": "わたしと美鈴、超仲良し",
+  "rarity": "ssr",
+  "type": "vi",
+  "plan": "free",
+  "imageUrl": "https://image01.seesaawiki.jp/g/u/gakumasu/689ad3adc54d31b5-s.png",
+  "paramBonus": [
+    6.5,
+    7.0,
+    7.5,
+    8.0,
+    8.5
+  ],
+  "lessonSupport": [
+    66.1,
+    74.6,
+    83.1,
+    91.5,
+    100.0
+  ],
+  "eventUp": [
+    50.0,
+    75.0,
+    75.0,
+    75.0,
+    100.0
+  ],
+  "spRates": [],
+  "flats": [
+    {
+      "stat": "vi",
+      "trigger": "lesson_sp",
+      "cap": null,
+      "values": [
+        9.0,
+        9.0,
+        9.0,
+        9.0,
+        13.0
+      ],
+      "tstat": "vi"
+    },
+    {
+      "stat": "vi",
+      "trigger": "skill",
+      "cap": null,
+      "values": [
+        1.0,
+        1.0,
+        1.0,
+        2.0,
+        2.0
+      ]
+    }
+  ],
+  "rewardPItem": {
+    "name": "勝利より大切なもの",
+    "rarity": "SSR",
+    "plan": "free"
+  },
+  "supportEvent": {
+    "stat": "vi",
+    "value": 20
+  }
+},
+{
+  "id": "sp-014",
+  "name": "さあ、もう一戦！",
+  "rarity": "ssr",
+  "type": "vo",
+  "plan": "free",
+  "imageUrl": "https://image01.seesaawiki.jp/g/u/gakumasu/a84796c0da1c007c-s.png",
+  "paramBonus": [
+    6.5,
+    7.0,
+    7.5,
+    8.0,
+    8.5
+  ],
+  "lessonSupport": [
+    66.1,
+    74.6,
+    83.1,
+    91.5,
+    100.0
+  ],
+  "eventUp": [
+    50.0,
+    75.0,
+    75.0,
+    75.0,
+    100.0
+  ],
+  "spRates": [],
+  "flats": [
+    {
+      "stat": "vo",
+      "trigger": "lesson_sp",
+      "cap": null,
+      "values": [
+        9.0,
+        9.0,
+        9.0,
+        9.0,
+        13.0
+      ],
+      "tstat": "vo"
+    },
+    {
+      "stat": "vo",
+      "trigger": "skill",
+      "cap": null,
+      "values": [
+        1.0,
+        1.0,
+        1.0,
+        2.0,
+        2.0
+      ]
+    }
+  ],
+  "rewardSkill": {
+    "name": "勝負はこれから！",
+    "rarity": "SSR",
+    "type": ""
+  },
+  "supportEvent": {
+    "stat": "vo",
+    "value": 20
+  }
+},
+{
+  "id": "sp-015",
+  "name": "さみだれ",
+  "rarity": "ssr",
+  "type": "vi",
+  "plan": "anomaly",
+  "imageUrl": "https://image02.seesaawiki.jp/g/u/gakumasu/6f0f7e27f45980ae-s.png",
+  "paramBonus": [
+    6.5,
+    7.0,
+    7.5,
+    8.0,
+    8.5
+  ],
+  "lessonSupport": [
+    66.1,
+    74.6,
+    83.1,
+    91.5,
+    100.0
+  ],
+  "eventUp": [
+    50.0,
+    75.0,
+    75.0,
+    75.0,
+    100.0
+  ],
+  "spRates": [],
+  "flats": [
+    {
+      "stat": "vi",
+      "trigger": "lesson_sp",
+      "cap": null,
+      "values": [
+        9.0,
+        9.0,
+        9.0,
+        9.0,
+        13.0
+      ],
+      "tstat": "vi"
+    },
+    {
+      "stat": "vi",
+      "trigger": "enhance",
+      "cap": null,
+      "values": [
+        5.0,
+        5.0,
+        5.0,
+        7.0,
+        7.0
+      ]
+    }
+  ],
+  "rewardSkill": {
+    "name": "雨宿りのバス停",
+    "rarity": "SSR",
+    "type": ""
+  },
+  "supportEvent": {
+    "stat": "vi",
+    "value": 20
+  }
+},
+{
+  "id": "sp-016",
+  "name": "プロデュースって大変ね",
+  "rarity": "ssr",
+  "type": "da",
+  "plan": "anomaly",
+  "paramBonus": null,
+  "lessonSupport": [
+    66.1,
+    74.6,
+    83.1,
+    91.5,
+    100.0
+  ],
+  "eventUp": [
+    50.0,
+    75.0,
+    75.0,
+    75.0,
+    100.0
+  ],
+  "spRates": [
+    {
+      "stat": "all",
+      "values": [
+        14.0,
+        14.0,
+        21.0,
+        21.0,
+        21.0
+      ]
+    }
+  ],
+  "flats": [
+    {
+      "stat": "da",
+      "trigger": "init",
+      "cap": null,
+      "values": [
+        52.0,
+        55.0,
+        59.0,
+        62.0,
+        65.0
+      ]
+    },
+    {
+      "stat": "da",
+      "trigger": "exam",
+      "cap": 2,
+      "values": [
+        11.0,
+        11.0,
+        11.0,
+        17.0,
+        17.0
+      ]
+    }
+  ],
+  "rewardPItem": {
+    "name": "アイドルパワー測定機",
+    "rarity": "SSR",
+    "plan": "anomaly"
+  },
+  "supportEvent": {
+    "stat": "da",
+    "value": 20
+  }
+},
+{
+  "id": "sp-017",
+  "name": "1人たりとも欠ける事なく",
+  "rarity": "ssr",
+  "type": "vo",
+  "plan": "free",
+  "paramBonus": null,
+  "lessonSupport": [
+    66.1,
+    74.6,
+    83.1,
+    91.5,
+    100.0
+  ],
+  "eventUp": [
+    50.0,
+    75.0,
+    75.0,
+    75.0,
+    100.0
+  ],
+  "spRates": [
+    {
+      "stat": "all",
+      "values": [
+        14.0,
+        14.0,
+        21.0,
+        21.0,
+        21.0
+      ]
+    }
+  ],
+  "flats": [
+    {
+      "stat": "vo",
+      "trigger": "init",
+      "cap": null,
+      "values": [
+        52.0,
+        55.0,
+        59.0,
+        62.0,
+        65.0
+      ]
+    },
+    {
+      "stat": "vo",
+      "trigger": "sodan",
+      "cap": null,
+      "values": [
+        9.0,
+        9.0,
+        9.0,
+        14.0,
+        14.0
+      ]
+    }
+  ],
+  "rewardPItem": {
+    "name": "みんなの教科書",
+    "rarity": "SSR",
+    "plan": "free"
+  },
+  "supportEvent": {
+    "stat": "vo",
+    "value": 20
+  }
+},
+{
+  "id": "sp-018",
+  "name": "第2回教室パーティー！",
+  "rarity": "ssr",
+  "type": "vi",
+  "plan": "free",
+  "paramBonus": null,
+  "lessonSupport": null,
+  "eventUp": [
+    50.0,
+    75.0,
+    75.0,
+    75.0,
+    100.0
+  ],
+  "spRates": [
+    {
+      "stat": "all",
+      "values": [
+        14.0,
+        14.0,
+        21.0,
+        21.0,
+        21.0
+      ]
+    }
+  ],
+  "flats": [
+    {
+      "stat": "vi",
+      "trigger": "init",
+      "cap": null,
+      "values": [
+        52.0,
+        55.0,
+        59.0,
+        62.0,
+        65.0
+      ]
+    },
+    {
+      "stat": "vi",
+      "trigger": "lesson_normal",
+      "cap": null,
+      "values": [
+        3.0,
+        3.0,
+        3.0,
+        3.0,
+        4.0
+      ],
+      "tstat": "vi"
+    },
+    {
+      "stat": "vi",
+      "trigger": "exam",
+      "cap": 2,
+      "values": [
+        11.0,
+        11.0,
+        11.0,
+        17.0,
+        17.0
+      ]
+    }
+  ],
+  "rewardSkill": {
+    "name": "薄れゆく壁",
+    "rarity": "SSR",
+    "type": ""
+  },
+  "supportEvent": {
+    "stat": "vi",
+    "value": 20
+  }
+},
+{
+  "id": "sp-019",
+  "name": "こいつらめんどくさー",
+  "rarity": "ssr",
+  "type": "vo",
+  "plan": "sense",
+  "paramBonus": [
+    6.5,
+    7.0,
+    7.5,
+    8.0,
+    8.5
+  ],
+  "lessonSupport": null,
+  "eventUp": [
+    50.0,
+    75.0,
+    75.0,
+    75.0,
+    100.0
+  ],
+  "spRates": [],
+  "flats": [
+    {
+      "stat": "vo",
+      "trigger": "lesson_sp",
+      "cap": null,
+      "values": [
+        9.0,
+        9.0,
+        9.0,
+        9.0,
+        13.0
+      ],
+      "tstat": "vo"
+    },
+    {
+      "stat": "vo",
+      "trigger": "enhance",
+      "cap": null,
+      "values": [
+        5.0,
+        5.0,
+        5.0,
+        7.0,
+        7.0
+      ]
+    }
+  ],
+  "rewardSkill": {
+    "name": "喧嘩するほど仲がいい",
+    "rarity": "SSR",
+    "type": ""
+  },
+  "supportEvent": {
+    "stat": "vo",
+    "value": 20
+  }
+},
+{
+  "id": "sp-020",
+  "name": "わたしたち、やればできる",
+  "rarity": "ssr",
+  "type": "da",
+  "plan": "logic",
+  "paramBonus": [
+    6.5,
+    7.0,
+    7.5,
+    8.0,
+    8.5
+  ],
+  "lessonSupport": [
+    66.1,
+    74.6,
+    83.1,
+    91.5,
+    100.0
+  ],
+  "eventUp": [
+    50.0,
+    75.0,
+    75.0,
+    75.0,
+    100.0
+  ],
+  "spRates": [],
+  "flats": [
+    {
+      "stat": "da",
+      "trigger": "lesson_sp",
+      "cap": null,
+      "values": [
+        9.0,
+        9.0,
+        9.0,
+        9.0,
+        13.0
+      ],
+      "tstat": "da"
+    },
+    {
+      "stat": "da",
+      "trigger": "enhance",
+      "cap": null,
+      "values": [
+        5.0,
+        5.0,
+        5.0,
+        7.0,
+        7.0
+      ]
+    }
+  ],
+  "rewardSkill": {
+    "name": "ダメダメクッキング",
+    "rarity": "SSR",
+    "type": ""
+  },
+  "supportEvent": {
+    "stat": "da",
+    "value": 20
+  }
+},
+{
+  "id": "sp-021",
+  "name": "仕事のつもりで臨みなさい",
+  "rarity": "ssr",
+  "type": "vi",
+  "plan": "free",
+  "paramBonus": null,
+  "lessonSupport": null,
+  "eventUp": [
+    50.0,
+    75.0,
+    75.0,
+    75.0,
+    100.0
+  ],
+  "spRates": [],
+  "flats": [
+    {
+      "stat": "vi",
+      "trigger": "init",
+      "cap": null,
+      "values": [
+        52.0,
+        55.0,
+        59.0,
+        62.0,
+        65.0
+      ]
+    },
+    {
+      "stat": "vi",
+      "trigger": "lesson_normal",
+      "cap": null,
+      "values": [
+        3.0,
+        3.0,
+        3.0,
+        3.0,
+        4.0
+      ],
+      "tstat": "vi"
+    },
+    {
+      "stat": "vi",
+      "trigger": "skill",
+      "cap": null,
+      "values": [
+        1.0,
+        1.0,
+        1.0,
+        2.0,
+        2.0
+      ]
+    }
+  ],
+  "rewardSkill": {
+    "name": "新生徒会爆誕！",
+    "rarity": "SSR",
+    "type": ""
+  },
+  "supportEvent": {
+    "stat": "vi",
+    "value": 20
+  }
+},
+{
+  "id": "sp-022",
+  "name": "ずっしりスイカでりしゃす",
+  "rarity": "sr",
+  "type": "da",
+  "plan": "logic",
+  "imageUrl": "https://image02.seesaawiki.jp/g/u/gakumasu/82a0c46bad8a01ec-s.png",
+  "paramBonus": [
+    4.4,
+    4.9,
+    5.4,
+    5.9,
+    6.4
+  ],
+  "lessonSupport": [
+    59.2,
+    69.4,
+    79.6,
+    89.8,
+    100.0
+  ],
+  "eventUp": [
+    50.0,
+    50.0,
+    75.0,
+    75.0,
+    100.0
+  ],
+  "spRates": [],
+  "flats": [
+    {
+      "stat": "da",
+      "trigger": "skill",
+      "cap": null,
+      "values": [
+        2.0,
+        3.0,
+        3.0,
+        3.0,
+        3.0
+      ]
+    },
+    {
+      "stat": "da",
+      "trigger": "lesson_sp",
+      "cap": 4,
+      "values": [
+        8.0,
+        8.0,
+        8.0,
+        8.0,
+        15.0
+      ]
+    },
+    {
+      "stat": "da",
+      "trigger": "skill",
+      "cap": null,
+      "values": [
+        1.0,
+        1.0,
+        1.0,
+        2.0,
+        2.0
+      ]
+    }
+  ],
+  "rewardPItem": {
+    "name": "ドキドキ目隠し",
+    "rarity": "SR",
+    "plan": "logic"
+  },
+  "supportEvent": {
+    "stat": "da",
+    "value": 15
+  }
+},
+{
+  "id": "sp-023",
+  "name": "はじめてのお友達",
+  "rarity": "sr",
+  "type": "as",
+  "plan": "free",
+  "paramBonus": null,
+  "lessonSupport": [
+    59.2,
+    69.4,
+    79.6,
+    89.8,
+    100.0
+  ],
+  "eventUp": null,
+  "spRates": [
+    {
+      "stat": "all",
+      "values": [
+        5.2,
+        10.5,
+        10.5,
+        10.5,
+        10.5
+      ]
+    }
+  ],
+  "flats": [],
+  "rewardSkill": {
+    "name": "全力サポート",
+    "rarity": "SR",
+    "type": ""
+  }
+}
 ];
