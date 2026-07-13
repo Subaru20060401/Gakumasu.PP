@@ -167,75 +167,77 @@ export const SUPPORT_CARDS: SupportCard[] = [
   "plan": "logic",
   "imageUrl": "https://image02.seesaawiki.jp/g/u/gakumasu/72a60027a1a42ab7-s.png",
   "paramBonus": [
-   6.5,
-   7.0,
-   7.5,
-   8.0,
-   8.5
+    6.5,
+    7.0,
+    7.5,
+    8.0,
+    8.5
   ],
   "lessonSupport": [
-   66.1,
-   74.6,
-   83.1,
-   91.5,
-   100.0
+    66.1,
+    74.6,
+    83.1,
+    91.5,
+    100.0
   ],
   "eventUp": [
-   50.0,
-   75.0,
-   75.0,
-   75.0,
-   100.0
+    50.0,
+    75.0,
+    75.0,
+    75.0,
+    100.0
   ],
   "spRates": [
-   {
-    "stat": "all",
-    "values": [
-     21.0,
-     21.0,
-     28.0,
-     28.0,
-     28.0
-    ]
-   }
+    {
+      "stat": "da",
+      "values": [
+        21.0,
+        21.0,
+        28.0,
+        28.0,
+        28.0
+      ]
+    }
   ],
   "flats": [
-   {
-    "stat": "da",
-    "trigger": "shikyu",
-    "cap": 2,
-    "values": [
-     28.0,
-     28.0,
-     28.0,
-     38.0,
-     38.0
-    ]
-   },
-   {
-    "stat": "da",
-    "trigger": "enhance",
-    "cap": null,
-    "values": [
-     7.0,
-     7.0,
-     7.0,
-     7.0,
-     9.0
-    ]
-   }
+    {
+      "stat": "da",
+      "trigger": "shikyu",
+      "cap": 2,
+      "values": [
+        28.0,
+        28.0,
+        28.0,
+        38.0,
+        38.0
+      ]
+    },
+    {
+      "stat": "da",
+      "trigger": "enhance",
+      "cap": null,
+      "values": [
+        7.0,
+        7.0,
+        7.0,
+        7.0,
+        9.0
+      ]
+    }
   ],
   "rewardSkill": {
-   "name": "お手並み拝見",
-   "rarity": "SSR",
-   "type": "メンタル"
+    "name": "お手並み拝見",
+    "rarity": "SSR",
+    "type": "メンタル"
   },
   "supportEvent": {
-   "stat": "da",
-   "value": 20
+    "stat": "da",
+    "value": 20
   },
-  "eventGrants": {"enhance": 1}
- },
+  "eventGrants": {
+    "enhance": 1
+  }
+},
  {
   "id": "ssr-003",
   "name": "私たちも成長していくぞ！",
@@ -247,62 +249,64 @@ export const SUPPORT_CARDS: SupportCard[] = [
   "lessonSupport": null,
   "eventUp": null,
   "spRates": [
-   {
-    "stat": "all",
-    "values": [
-     22.5,
-     24.0,
-     25.0,
-     26.5,
-     28.0
-    ]
-   }
+    {
+      "stat": "all",
+      "values": [
+        22.5,
+        24.0,
+        25.0,
+        26.5,
+        28.0
+      ]
+    }
   ],
   "flats": [
-   {
-    "stat": "vi",
-    "trigger": "shikyu",
-    "cap": 2,
-    "values": [
-     28.0,
-     28.0,
-     38.0,
-     38.0,
-     38.0
-    ]
-   },
-   {
-    "stat": "vo",
-    "trigger": "sodan",
-    "cap": 2,
-    "values": [
-     28.0,
-     28.0,
-     28.0,
-     38.0,
-     38.0
-    ]
-   },
-   {
-    "stat": "da",
-    "trigger": "odekake",
-    "cap": 2,
-    "values": [
-     28.0,
-     28.0,
-     28.0,
-     28.0,
-     38.0
-    ]
-   }
+    {
+      "stat": "vi",
+      "trigger": "shikyu",
+      "cap": 2,
+      "values": [
+        28.0,
+        28.0,
+        38.0,
+        38.0,
+        38.0
+      ]
+    },
+    {
+      "stat": "vo",
+      "trigger": "sodan",
+      "cap": 2,
+      "values": [
+        28.0,
+        28.0,
+        28.0,
+        38.0,
+        38.0
+      ]
+    },
+    {
+      "stat": "da",
+      "trigger": "odekake",
+      "cap": 2,
+      "values": [
+        28.0,
+        28.0,
+        28.0,
+        28.0,
+        38.0
+      ]
+    }
   ],
   "rewardPItem": {
-   "name": "夢の手助け",
-   "rarity": "SSR",
-   "plan": "フリー"
+    "name": "夢の手助け",
+    "rarity": "SSR",
+    "plan": "フリー"
   },
-  "eventGrants": {"enhance": 1}
- },
+  "eventGrants": {
+    "enhance": 1
+  }
+},
  {
   "id": "ssr-004",
   "name": "……騒々しいお祭りね",
@@ -391,81 +395,83 @@ export const SUPPORT_CARDS: SupportCard[] = [
   "imageUrl": "https://image02.seesaawiki.jp/g/u/gakumasu/174e251f32518875-s.png",
   "paramBonus": null,
   "lessonSupport": [
-   66.1,
-   74.6,
-   83.1,
-   91.5,
-   100.0
+    66.1,
+    74.6,
+    83.1,
+    91.5,
+    100.0
   ],
   "eventUp": [
-   50.0,
-   75.0,
-   75.0,
-   75.0,
-   100.0
+    50.0,
+    75.0,
+    75.0,
+    75.0,
+    100.0
   ],
   "spRates": [
-   {
-    "stat": "all",
-    "values": [
-     21.0,
-     21.0,
-     28.0,
-     28.0,
-     28.0
-    ]
-   }
+    {
+      "stat": "vo",
+      "values": [
+        21.0,
+        21.0,
+        28.0,
+        28.0,
+        28.0
+      ]
+    }
   ],
   "flats": [
-   {
-    "stat": "vo",
-    "trigger": "init",
-    "cap": null,
-    "values": [
-     52.0,
-     55.0,
-     59.0,
-     62.0,
-     65.0
-    ]
-   },
-   {
-    "stat": "vo",
-    "trigger": "lesson_sp",
-    "cap": 4,
-    "values": [
-     15.0,
-     15.0,
-     15.0,
-     21.0,
-     21.0
-    ],
-    "tstat": "any"
-   },
-   {
-    "stat": "vo",
-    "trigger": "skill_ssr",
-    "cap": null,
-    "values": [
-     5.0,
-     5.0,
-     5.0,
-     5.0,
-     6.0
-    ]
-   }
+    {
+      "stat": "vo",
+      "trigger": "init",
+      "cap": null,
+      "values": [
+        52.0,
+        55.0,
+        59.0,
+        62.0,
+        65.0
+      ]
+    },
+    {
+      "stat": "vo",
+      "trigger": "lesson_sp",
+      "cap": 4,
+      "values": [
+        15.0,
+        15.0,
+        15.0,
+        21.0,
+        21.0
+      ],
+      "tstat": "any"
+    },
+    {
+      "stat": "vo",
+      "trigger": "skill_ssr",
+      "cap": null,
+      "values": [
+        5.0,
+        5.0,
+        5.0,
+        5.0,
+        6.0
+      ]
+    }
   ],
   "rewardSkill": {
-   "name": "ガタゴトすやすや",
-   "rarity": "SSR",
-   "type": "アクティブ"
+    "name": "ガタゴトすやすや",
+    "rarity": "SSR",
+    "type": "アクティブ"
   },
   "supportEvent": {
-   "stat": "vo",
-   "value": 20
+    "stat": "vo",
+    "value": 20
   },
-  "eventGrants": {"enhance": 1}
- },
+  "eventGrants": {
+    "enhance": 1
+  }
+},
  {
   "id": "ssr-006",
   "name": "上かッ！！",
@@ -550,74 +556,76 @@ export const SUPPORT_CARDS: SupportCard[] = [
   "paramBonus": null,
   "lessonSupport": null,
   "eventUp": [
-   50.0,
-   75.0,
-   0,
-   75.0,
-   100.0
+    50.0,
+    75.0,
+    0,
+    75.0,
+    100.0
   ],
   "spRates": [
-   {
-    "stat": "all",
-    "values": [
-     21.0,
-     21.0,
-     0,
-     28.0,
-     28.0
-    ]
-   }
+    {
+      "stat": "vi",
+      "values": [
+        21.0,
+        21.0,
+        0,
+        28.0,
+        28.0
+      ]
+    }
   ],
   "flats": [
-   {
-    "stat": "vi",
-    "trigger": "init",
-    "cap": null,
-    "values": [
-     52.0,
-     55.0,
-     0,
-     62.0,
-     65.0
-    ]
-   },
-   {
-    "stat": "vi",
-    "trigger": "skill",
-    "cap": null,
-    "values": [
-     3.0,
-     3.0,
-     0,
-     4.0,
-     4.0
-    ]
-   },
-   {
-    "stat": "vi",
-    "trigger": "lesson_sp",
-    "cap": 4,
-    "values": [
-     15.0,
-     15.0,
-     0,
-     15.0,
-     21.0
-    ],
-    "tstat": "any"
-   }
+    {
+      "stat": "vi",
+      "trigger": "init",
+      "cap": null,
+      "values": [
+        52.0,
+        55.0,
+        0,
+        62.0,
+        65.0
+      ]
+    },
+    {
+      "stat": "vi",
+      "trigger": "skill",
+      "cap": null,
+      "values": [
+        3.0,
+        3.0,
+        0,
+        4.0,
+        4.0
+      ]
+    },
+    {
+      "stat": "vi",
+      "trigger": "lesson_sp",
+      "cap": 4,
+      "values": [
+        15.0,
+        15.0,
+        0,
+        15.0,
+        21.0
+      ],
+      "tstat": "any"
+    }
   ],
   "rewardPItem": {
-   "name": "夢を叶えるために",
-   "rarity": "SSR",
-   "plan": "センス"
+    "name": "夢を叶えるために",
+    "rarity": "SSR",
+    "plan": "センス"
   },
   "supportEvent": {
-   "stat": "vi",
-   "value": 20
+    "stat": "vi",
+    "value": 20
   },
-  "eventGrants": {"enhance": 1}
- },
+  "eventGrants": {
+    "enhance": 1
+  }
+},
  {
   "id": "ssr-008",
   "name": "進化したお弁当、気になる",
@@ -700,80 +708,82 @@ export const SUPPORT_CARDS: SupportCard[] = [
   "imageUrl": "https://image02.seesaawiki.jp/g/u/gakumasu/a0adab653d82e1b4-s.png",
   "paramBonus": null,
   "lessonSupport": [
-   66.1,
-   74.6,
-   83.1,
-   91.5,
-   100.0
+    66.1,
+    74.6,
+    83.1,
+    91.5,
+    100.0
   ],
   "eventUp": [
-   50.0,
-   75.0,
-   75.0,
-   75.0,
-   100.0
+    50.0,
+    75.0,
+    75.0,
+    75.0,
+    100.0
   ],
   "spRates": [
-   {
-    "stat": "all",
-    "values": [
-     21.0,
-     21.0,
-     28.0,
-     28.0,
-     28.0
-    ]
-   }
+    {
+      "stat": "vi",
+      "values": [
+        21.0,
+        21.0,
+        28.0,
+        28.0,
+        28.0
+      ]
+    }
   ],
   "flats": [
-   {
-    "stat": "vi",
-    "trigger": "init",
-    "cap": null,
-    "values": [
-     52.0,
-     55.0,
-     59.0,
-     62.0,
-     65.0
-    ]
-   },
-   {
-    "stat": "vi",
-    "trigger": "shikyu",
-    "cap": null,
-    "values": [
-     12.0,
-     12.0,
-     12.0,
-     17.0,
-     17.0
-    ]
-   },
-   {
-    "stat": "vi",
-    "trigger": "skill_ssr",
-    "cap": null,
-    "values": [
-     5.0,
-     5.0,
-     5.0,
-     5.0,
-     6.0
-    ]
-   }
+    {
+      "stat": "vi",
+      "trigger": "init",
+      "cap": null,
+      "values": [
+        52.0,
+        55.0,
+        59.0,
+        62.0,
+        65.0
+      ]
+    },
+    {
+      "stat": "vi",
+      "trigger": "shikyu",
+      "cap": null,
+      "values": [
+        12.0,
+        12.0,
+        12.0,
+        17.0,
+        17.0
+      ]
+    },
+    {
+      "stat": "vi",
+      "trigger": "skill_ssr",
+      "cap": null,
+      "values": [
+        5.0,
+        5.0,
+        5.0,
+        5.0,
+        6.0
+      ]
+    }
   ],
   "rewardSkill": {
-   "name": "せーのでぱくっ！",
-   "rarity": "SSR",
-   "type": "アクティブ"
+    "name": "せーのでぱくっ！",
+    "rarity": "SSR",
+    "type": "アクティブ"
   },
   "supportEvent": {
-   "stat": "vi",
-   "value": 20
+    "stat": "vi",
+    "value": 20
   },
-  "eventGrants": {"enhance": 1}
- },
+  "eventGrants": {
+    "enhance": 1
+  }
+},
  {
   "id": "ssr-010",
   "name": "合格おめでとう！",
@@ -783,86 +793,88 @@ export const SUPPORT_CARDS: SupportCard[] = [
   "imageUrl": "https://image02.seesaawiki.jp/g/u/gakumasu/ab71abd2bd7ec989-s.png",
   "paramBonus": null,
   "lessonSupport": [
-   66.1,
-   74.6,
-   83.1,
-   91.5,
-   100.0
+    66.1,
+    74.6,
+    83.1,
+    91.5,
+    100.0
   ],
   "eventUp": [
-   50.0,
-   75.0,
-   75.0,
-   75.0,
-   100.0
+    50.0,
+    75.0,
+    75.0,
+    75.0,
+    100.0
   ],
   "spRates": [
-   {
-    "stat": "all",
-    "values": [
-     21.0,
-     21.0,
-     28.0,
-     28.0,
-     28.0
-    ]
-   }
+    {
+      "stat": "da",
+      "values": [
+        21.0,
+        21.0,
+        28.0,
+        28.0,
+        28.0
+      ]
+    }
   ],
   "flats": [
-   {
-    "stat": "da",
-    "trigger": "init",
-    "cap": null,
-    "values": [
-     52.0,
-     55.0,
-     59.0,
-     62.0,
-     65.0
-    ]
-   },
-   {
-    "stat": "da",
-    "trigger": "skill_ssr",
-    "cap": null,
-    "values": [
-     5.0,
-     5.0,
-     5.0,
-     6.0,
-     6.0
-    ]
-   },
-   {
-    "stat": "da",
-    "trigger": "skill",
-    "cap": null,
-    "values": [
-     3.0,
-     3.0,
-     3.0,
-     3.0,
-     4.0
-    ]
-   }
+    {
+      "stat": "da",
+      "trigger": "init",
+      "cap": null,
+      "values": [
+        52.0,
+        55.0,
+        59.0,
+        62.0,
+        65.0
+      ]
+    },
+    {
+      "stat": "da",
+      "trigger": "skill_ssr",
+      "cap": null,
+      "values": [
+        5.0,
+        5.0,
+        5.0,
+        6.0,
+        6.0
+      ]
+    },
+    {
+      "stat": "da",
+      "trigger": "skill",
+      "cap": null,
+      "values": [
+        3.0,
+        3.0,
+        3.0,
+        3.0,
+        4.0
+      ]
+    }
   ],
   "rewardPItem": {
-   "name": "花海メモリアル",
-   "rarity": "SSR",
-   "plan": "センス"
+    "name": "花海メモリアル",
+    "rarity": "SSR",
+    "plan": "センス"
   },
   "pItemFlat": {
-   "stat": "da",
-   "trigger": "skill",
-   "value": 35,
-   "cap": 2
+    "stat": "da",
+    "trigger": "skill",
+    "value": 35,
+    "cap": 2
   },
   "supportEvent": {
-   "stat": "da",
-   "value": 20
+    "stat": "da",
+    "value": 20
   },
-  "eventGrants": {"enhance": 1}
- },
+  "eventGrants": {
+    "enhance": 1
+  }
+},
  {
   "id": "ssr-011",
   "name": "かかってらっしゃい！",
@@ -1108,80 +1120,82 @@ export const SUPPORT_CARDS: SupportCard[] = [
   "imageUrl": "https://image02.seesaawiki.jp/g/u/gakumasu/446293bbe7d8c359-s.png",
   "paramBonus": null,
   "lessonSupport": [
-   66.1,
-   74.6,
-   83.1,
-   91.5,
-   100.0
+    66.1,
+    74.6,
+    83.1,
+    91.5,
+    100.0
   ],
   "eventUp": [
-   50.0,
-   75.0,
-   75.0,
-   75.0,
-   100.0
+    50.0,
+    75.0,
+    75.0,
+    75.0,
+    100.0
   ],
   "spRates": [
-   {
-    "stat": "all",
-    "values": [
-     21.0,
-     21.0,
-     28.0,
-     28.0,
-     28.0
-    ]
-   }
+    {
+      "stat": "vo",
+      "values": [
+        21.0,
+        21.0,
+        28.0,
+        28.0,
+        28.0
+      ]
+    }
   ],
   "flats": [
-   {
-    "stat": "vo",
-    "trigger": "init",
-    "cap": null,
-    "values": [
-     52.0,
-     55.0,
-     59.0,
-     62.0,
-     65.0
-    ]
-   },
-   {
-    "stat": "vo",
-    "trigger": "skill",
-    "cap": null,
-    "values": [
-     3.0,
-     3.0,
-     3.0,
-     4.0,
-     4.0
-    ]
-   },
-   {
-    "stat": "vo",
-    "trigger": "skill_ssr",
-    "cap": null,
-    "values": [
-     5.0,
-     5.0,
-     5.0,
-     5.0,
-     6.0
-    ]
-   }
+    {
+      "stat": "vo",
+      "trigger": "init",
+      "cap": null,
+      "values": [
+        52.0,
+        55.0,
+        59.0,
+        62.0,
+        65.0
+      ]
+    },
+    {
+      "stat": "vo",
+      "trigger": "skill",
+      "cap": null,
+      "values": [
+        3.0,
+        3.0,
+        3.0,
+        4.0,
+        4.0
+      ]
+    },
+    {
+      "stat": "vo",
+      "trigger": "skill_ssr",
+      "cap": null,
+      "values": [
+        5.0,
+        5.0,
+        5.0,
+        5.0,
+        6.0
+      ]
+    }
   ],
   "rewardSkill": {
-   "name": "あこがれ不良ムーブ",
-   "rarity": "SSR",
-   "type": "アクティブ"
+    "name": "あこがれ不良ムーブ",
+    "rarity": "SSR",
+    "type": "アクティブ"
   },
   "supportEvent": {
-   "stat": "vo",
-   "value": 20
+    "stat": "vo",
+    "value": 20
   },
-  "eventGrants": {"enhance": 1}
- },
+  "eventGrants": {
+    "enhance": 1
+  }
+},
  {
   "id": "ssr-015",
   "name": "自分と向き合う時間だ",
@@ -1271,93 +1285,95 @@ export const SUPPORT_CARDS: SupportCard[] = [
   "imageUrl": "https://image01.seesaawiki.jp/g/u/gakumasu/12fcdec46698fcd4-s.png",
   "paramBonus": null,
   "lessonSupport": [
-   66.1,
-   74.6,
-   83.1,
-   91.5,
-   100.0
+    66.1,
+    74.6,
+    83.1,
+    91.5,
+    100.0
   ],
   "eventUp": [
-   50.0,
-   75.0,
-   75.0,
-   75.0,
-   100.0
+    50.0,
+    75.0,
+    75.0,
+    75.0,
+    100.0
   ],
   "spRates": [
-   {
-    "stat": "all",
-    "values": [
-     21.0,
-     21.0,
-     28.0,
-     28.0,
-     28.0
-    ]
-   }
+    {
+      "stat": "da",
+      "values": [
+        21.0,
+        21.0,
+        28.0,
+        28.0,
+        28.0
+      ]
+    }
   ],
   "flats": [
-   {
-    "stat": "da",
-    "trigger": "init",
-    "cap": null,
-    "values": [
-     52.0,
-     55.0,
-     59.0,
-     62.0,
-     65.0
-    ]
-   },
-   {
-    "stat": "da",
-    "trigger": "skill_ssr",
-    "cap": null,
-    "values": [
-     5.0,
-     5.0,
-     5.0,
-     6.0,
-     6.0
-    ]
-   },
-   {
-    "stat": "da",
-    "trigger": "lesson_sp",
-    "cap": null,
-    "values": [
-     13.0,
-     13.0,
-     13.0,
-     13.0,
-     17.0
-    ],
-    "tstat": "da"
-   }
+    {
+      "stat": "da",
+      "trigger": "init",
+      "cap": null,
+      "values": [
+        52.0,
+        55.0,
+        59.0,
+        62.0,
+        65.0
+      ]
+    },
+    {
+      "stat": "da",
+      "trigger": "skill_ssr",
+      "cap": null,
+      "values": [
+        5.0,
+        5.0,
+        5.0,
+        6.0,
+        6.0
+      ]
+    },
+    {
+      "stat": "da",
+      "trigger": "lesson_sp",
+      "cap": null,
+      "values": [
+        13.0,
+        13.0,
+        13.0,
+        13.0,
+        17.0
+      ],
+      "tstat": "da"
+    }
   ],
   "rewardPItem": {
-   "name": "完全制覇でポン",
-   "rarity": "SSR",
-   "plan": "アノマリー"
+    "name": "完全制覇でポン",
+    "rarity": "SSR",
+    "plan": "アノマリー"
   },
   "drinkGen": {
-   "resource": "drink",
-   "trigger": "skill",
-   "count": 1,
-   "cap": 2
+    "resource": "drink",
+    "trigger": "skill",
+    "count": 1,
+    "cap": 2
   },
   "pItemFlat": {
-   "stat": "da",
-   "trigger": "skill",
-   "value": 30,
-   "cap": 2
+    "stat": "da",
+    "trigger": "skill",
+    "value": 30,
+    "cap": 2
   },
   "supportEvent": {
-   "stat": "da",
-   "value": 20
+    "stat": "da",
+    "value": 20
   },
-  "eventGrants": {"enhance": 1}
- },
+  "eventGrants": {
+    "enhance": 1
+  }
+},
  {
   "id": "ssr-017",
   "name": "メリクリ、おねーちゃん♪",
@@ -1446,81 +1462,83 @@ export const SUPPORT_CARDS: SupportCard[] = [
   "imageUrl": "https://image01.seesaawiki.jp/g/u/gakumasu/d6beb3921c9bf804-s.png",
   "paramBonus": null,
   "lessonSupport": [
-   66.1,
-   74.6,
-   83.1,
-   91.5,
-   100.0
+    66.1,
+    74.6,
+    83.1,
+    91.5,
+    100.0
   ],
   "eventUp": [
-   50.0,
-   75.0,
-   75.0,
-   75.0,
-   100.0
+    50.0,
+    75.0,
+    75.0,
+    75.0,
+    100.0
   ],
   "spRates": [
-   {
-    "stat": "all",
-    "values": [
-     21.0,
-     21.0,
-     28.0,
-     28.0,
-     28.0
-    ]
-   }
+    {
+      "stat": "da",
+      "values": [
+        21.0,
+        21.0,
+        28.0,
+        28.0,
+        28.0
+      ]
+    }
   ],
   "flats": [
-   {
-    "stat": "da",
-    "trigger": "init",
-    "cap": null,
-    "values": [
-     52.0,
-     55.0,
-     59.0,
-     62.0,
-     65.0
-    ]
-   },
-   {
-    "stat": "da",
-    "trigger": "lesson_sp",
-    "cap": null,
-    "values": [
-     13.0,
-     13.0,
-     13.0,
-     17.0,
-     17.0
-    ],
-    "tstat": "da"
-   },
-   {
-    "stat": "da",
-    "trigger": "delete",
-    "cap": null,
-    "values": [
-     8.0,
-     8.0,
-     8.0,
-     8.0,
-     11.0
-    ]
-   }
+    {
+      "stat": "da",
+      "trigger": "init",
+      "cap": null,
+      "values": [
+        52.0,
+        55.0,
+        59.0,
+        62.0,
+        65.0
+      ]
+    },
+    {
+      "stat": "da",
+      "trigger": "lesson_sp",
+      "cap": null,
+      "values": [
+        13.0,
+        13.0,
+        13.0,
+        17.0,
+        17.0
+      ],
+      "tstat": "da"
+    },
+    {
+      "stat": "da",
+      "trigger": "delete",
+      "cap": null,
+      "values": [
+        8.0,
+        8.0,
+        8.0,
+        8.0,
+        11.0
+      ]
+    }
   ],
   "rewardPItem": {
-   "name": "寝心地は良好",
-   "rarity": "SSR",
-   "plan": "ロジック"
+    "name": "寝心地は良好",
+    "rarity": "SSR",
+    "plan": "ロジック"
   },
   "supportEvent": {
-   "stat": "da",
-   "value": 20
+    "stat": "da",
+    "value": 20
   },
-  "eventGrants": {"enhance": 1}
- },
+  "eventGrants": {
+    "enhance": 1
+  }
+},
  {
   "id": "ssr-019",
   "name": "レディ・セット、ゴー！",
@@ -1530,80 +1548,82 @@ export const SUPPORT_CARDS: SupportCard[] = [
   "imageUrl": "https://image02.seesaawiki.jp/g/u/gakumasu/7d35d4831c9b772b-s.jpg",
   "paramBonus": null,
   "lessonSupport": [
-   66.1,
-   74.6,
-   83.1,
-   91.5,
-   100.0
+    66.1,
+    74.6,
+    83.1,
+    91.5,
+    100.0
   ],
   "eventUp": [
-   50.0,
-   75.0,
-   75.0,
-   75.0,
-   100.0
+    50.0,
+    75.0,
+    75.0,
+    75.0,
+    100.0
   ],
   "spRates": [
-   {
-    "stat": "all",
-    "values": [
-     21.0,
-     21.0,
-     28.0,
-     28.0,
-     28.0
-    ]
-   }
+    {
+      "stat": "vo",
+      "values": [
+        21.0,
+        21.0,
+        28.0,
+        28.0,
+        28.0
+      ]
+    }
   ],
   "flats": [
-   {
-    "stat": "vo",
-    "trigger": "init",
-    "cap": null,
-    "values": [
-     52.0,
-     55.0,
-     59.0,
-     62.0,
-     65.0
-    ]
-   },
-   {
-    "stat": "vo",
-    "trigger": "pitem",
-    "cap": 6,
-    "values": [
-     11.0,
-     11.0,
-     11.0,
-     15.0,
-     15.0
-    ]
-   },
-   {
-    "stat": "vo",
-    "trigger": "enhance",
-    "cap": null,
-    "values": [
-     7.0,
-     7.0,
-     7.0,
-     7.0,
-     9.0
-    ]
-   }
+    {
+      "stat": "vo",
+      "trigger": "init",
+      "cap": null,
+      "values": [
+        52.0,
+        55.0,
+        59.0,
+        62.0,
+        65.0
+      ]
+    },
+    {
+      "stat": "vo",
+      "trigger": "pitem",
+      "cap": 6,
+      "values": [
+        11.0,
+        11.0,
+        11.0,
+        15.0,
+        15.0
+      ]
+    },
+    {
+      "stat": "vo",
+      "trigger": "enhance",
+      "cap": null,
+      "values": [
+        7.0,
+        7.0,
+        7.0,
+        7.0,
+        9.0
+      ]
+    }
   ],
   "rewardSkill": {
-   "name": "奥義、受け流し！",
-   "rarity": "SSR",
-   "type": "アクティブ"
+    "name": "奥義、受け流し！",
+    "rarity": "SSR",
+    "type": "アクティブ"
   },
   "supportEvent": {
-   "stat": "vo",
-   "value": 20
+    "stat": "vo",
+    "value": 20
   },
-  "eventGrants": {"enhance": 1}
- },
+  "eventGrants": {
+    "enhance": 1
+  }
+},
  {
   "id": "ssr-020",
   "name": "クールダウンが大切よ！",
@@ -1860,81 +1880,83 @@ export const SUPPORT_CARDS: SupportCard[] = [
   "imageUrl": "https://image02.seesaawiki.jp/g/u/gakumasu/38673d89f4967ee4-s.jpg",
   "paramBonus": null,
   "lessonSupport": [
-   66.1,
-   74.6,
-   83.1,
-   91.5,
-   100.0
+    66.1,
+    74.6,
+    83.1,
+    91.5,
+    100.0
   ],
   "eventUp": [
-   50.0,
-   75.0,
-   75.0,
-   75.0,
-   100.0
+    50.0,
+    75.0,
+    75.0,
+    75.0,
+    100.0
   ],
   "spRates": [
-   {
-    "stat": "all",
-    "values": [
-     21.0,
-     21.0,
-     28.0,
-     28.0,
-     28.0
-    ]
-   }
+    {
+      "stat": "vi",
+      "values": [
+        21.0,
+        21.0,
+        28.0,
+        28.0,
+        28.0
+      ]
+    }
   ],
   "flats": [
-   {
-    "stat": "vi",
-    "trigger": "init",
-    "cap": null,
-    "values": [
-     52.0,
-     55.0,
-     59.0,
-     62.0,
-     65.0
-    ]
-   },
-   {
-    "stat": "vi",
-    "trigger": "lesson_sp",
-    "cap": 4,
-    "values": [
-     15.0,
-     15.0,
-     15.0,
-     21.0,
-     21.0
-    ],
-    "tstat": "any"
-   },
-   {
-    "stat": "vi",
-    "trigger": "change",
-    "cap": 6,
-    "values": [
-     8.0,
-     8.0,
-     8.0,
-     8.0,
-     11.0
-    ]
-   }
+    {
+      "stat": "vi",
+      "trigger": "init",
+      "cap": null,
+      "values": [
+        52.0,
+        55.0,
+        59.0,
+        62.0,
+        65.0
+      ]
+    },
+    {
+      "stat": "vi",
+      "trigger": "lesson_sp",
+      "cap": 4,
+      "values": [
+        15.0,
+        15.0,
+        15.0,
+        21.0,
+        21.0
+      ],
+      "tstat": "any"
+    },
+    {
+      "stat": "vi",
+      "trigger": "change",
+      "cap": 6,
+      "values": [
+        8.0,
+        8.0,
+        8.0,
+        8.0,
+        11.0
+      ]
+    }
   ],
   "rewardPItem": {
-   "name": "月刊アニメトーク♪",
-   "rarity": "SSR",
-   "plan": "ロジック"
+    "name": "月刊アニメトーク♪",
+    "rarity": "SSR",
+    "plan": "ロジック"
   },
   "supportEvent": {
-   "stat": "vi",
-   "value": 20
+    "stat": "vi",
+    "value": 20
   },
-  "eventGrants": {"enhance": 1}
- },
+  "eventGrants": {
+    "enhance": 1
+  }
+},
  {
   "id": "ssr-024",
   "name": "ｖギャルピーーースッｖ",
@@ -1944,80 +1966,82 @@ export const SUPPORT_CARDS: SupportCard[] = [
   "imageUrl": "https://image01.seesaawiki.jp/g/u/gakumasu/fe392ba26ea33fa7-s.jpg",
   "paramBonus": null,
   "lessonSupport": [
-   66.1,
-   74.6,
-   83.1,
-   91.5,
-   100.0
+    66.1,
+    74.6,
+    83.1,
+    91.5,
+    100.0
   ],
   "eventUp": [
-   50.0,
-   75.0,
-   75.0,
-   75.0,
-   100.0
+    50.0,
+    75.0,
+    75.0,
+    75.0,
+    100.0
   ],
   "spRates": [
-   {
-    "stat": "all",
-    "values": [
-     21.0,
-     21.0,
-     28.0,
-     28.0,
-     28.0
-    ]
-   }
+    {
+      "stat": "vo",
+      "values": [
+        21.0,
+        21.0,
+        28.0,
+        28.0,
+        28.0
+      ]
+    }
   ],
   "flats": [
-   {
-    "stat": "vo",
-    "trigger": "init",
-    "cap": null,
-    "values": [
-     52.0,
-     55.0,
-     59.0,
-     62.0,
-     65.0
-    ]
-   },
-   {
-    "stat": "vo",
-    "trigger": "shikyu",
-    "cap": null,
-    "values": [
-     12.0,
-     12.0,
-     12.0,
-     17.0,
-     17.0
-    ]
-   },
-   {
-    "stat": "vo",
-    "trigger": "delete",
-    "cap": null,
-    "values": [
-     8.0,
-     8.0,
-     8.0,
-     8.0,
-     11.0
-    ]
-   }
+    {
+      "stat": "vo",
+      "trigger": "init",
+      "cap": null,
+      "values": [
+        52.0,
+        55.0,
+        59.0,
+        62.0,
+        65.0
+      ]
+    },
+    {
+      "stat": "vo",
+      "trigger": "shikyu",
+      "cap": null,
+      "values": [
+        12.0,
+        12.0,
+        12.0,
+        17.0,
+        17.0
+      ]
+    },
+    {
+      "stat": "vo",
+      "trigger": "delete",
+      "cap": null,
+      "values": [
+        8.0,
+        8.0,
+        8.0,
+        8.0,
+        11.0
+      ]
+    }
   ],
   "rewardPItem": {
-   "name": "しぼまない思い出",
-   "rarity": "SSR",
-   "plan": "アノマリー"
+    "name": "しぼまない思い出",
+    "rarity": "SSR",
+    "plan": "アノマリー"
   },
   "supportEvent": {
-   "stat": "vo",
-   "value": 20
+    "stat": "vo",
+    "value": 20
   },
-  "eventGrants": {"enhance": 1}
- },
+  "eventGrants": {
+    "enhance": 1
+  }
+},
  {
   "id": "ssr-025",
   "name": "おっと、危ないよ",
@@ -2113,80 +2137,82 @@ export const SUPPORT_CARDS: SupportCard[] = [
   "paramBonus": null,
   "lessonSupport": null,
   "eventUp": [
-   50.0,
-   75.0,
-   75.0,
-   75.0,
-   100.0
+    50.0,
+    75.0,
+    75.0,
+    75.0,
+    100.0
   ],
   "spRates": [
-   {
-    "stat": "all",
-    "values": [
-     21.0,
-     21.0,
-     28.0,
-     28.0,
-     28.0
-    ]
-   }
+    {
+      "stat": "da",
+      "values": [
+        21.0,
+        21.0,
+        28.0,
+        28.0,
+        28.0
+      ]
+    }
   ],
   "flats": [
-   {
-    "stat": "da",
-    "trigger": "init",
-    "cap": null,
-    "values": [
-     52.0,
-     55.0,
-     59.0,
-     62.0,
-     65.0
-    ]
-   },
-   {
-    "stat": "da",
-    "trigger": "lesson_sp",
-    "cap": null,
-    "values": [
-     13.0,
-     13.0,
-     13.0,
-     17.0,
-     17.0
-    ],
-    "tstat": "da"
-   },
-   {
-    "stat": "da",
-    "trigger": "drink",
-    "cap": null,
-    "values": [
-     4.0,
-     4.0,
-     4.0,
-     4.0,
-     5.0
-    ]
-   }
+    {
+      "stat": "da",
+      "trigger": "init",
+      "cap": null,
+      "values": [
+        52.0,
+        55.0,
+        59.0,
+        62.0,
+        65.0
+      ]
+    },
+    {
+      "stat": "da",
+      "trigger": "lesson_sp",
+      "cap": null,
+      "values": [
+        13.0,
+        13.0,
+        13.0,
+        17.0,
+        17.0
+      ],
+      "tstat": "da"
+    },
+    {
+      "stat": "da",
+      "trigger": "drink",
+      "cap": null,
+      "values": [
+        4.0,
+        4.0,
+        4.0,
+        4.0,
+        5.0
+      ]
+    }
   ],
   "rewardPItem": {
-   "name": "ピークタイムフラッグ",
-   "rarity": "SSR",
-   "plan": "センス"
+    "name": "ピークタイムフラッグ",
+    "rarity": "SSR",
+    "plan": "センス"
   },
   "pItemFlat": {
-   "stat": "da",
-   "trigger": "skill",
-   "value": 20,
-   "cap": 3
+    "stat": "da",
+    "trigger": "skill",
+    "value": 20,
+    "cap": 3
   },
   "supportEvent": {
-   "stat": "da",
-   "value": 20
+    "stat": "da",
+    "value": 20
   },
-  "eventGrants": {"enhance": 1}
- },
+  "eventGrants": {
+    "enhance": 1
+  }
+},
  {
   "id": "ssr-027",
   "name": "いつまでも続けばいいのに",
@@ -2359,80 +2385,82 @@ export const SUPPORT_CARDS: SupportCard[] = [
   "imageUrl": "https://image01.seesaawiki.jp/g/u/gakumasu/3112f7bf02012795-s.png",
   "paramBonus": null,
   "lessonSupport": [
-   66.1,
-   74.6,
-   83.1,
-   91.5,
-   100.0
+    66.1,
+    74.6,
+    83.1,
+    91.5,
+    100.0
   ],
   "eventUp": [
-   50.0,
-   75.0,
-   75.0,
-   75.0,
-   100.0
+    50.0,
+    75.0,
+    75.0,
+    75.0,
+    100.0
   ],
   "spRates": [
-   {
-    "stat": "all",
-    "values": [
-     21.0,
-     21.0,
-     28.0,
-     28.0,
-     28.0
-    ]
-   }
+    {
+      "stat": "vo",
+      "values": [
+        21.0,
+        21.0,
+        28.0,
+        28.0,
+        28.0
+      ]
+    }
   ],
   "flats": [
-   {
-    "stat": "vo",
-    "trigger": "init",
-    "cap": null,
-    "values": [
-     52.0,
-     55.0,
-     59.0,
-     62.0,
-     65.0
-    ]
-   },
-   {
-    "stat": "vo",
-    "trigger": "skill",
-    "cap": null,
-    "values": [
-     3.0,
-     3.0,
-     3.0,
-     4.0,
-     4.0
-    ]
-   },
-   {
-    "stat": "vo",
-    "trigger": "shikyu",
-    "cap": null,
-    "values": [
-     12.0,
-     12.0,
-     12.0,
-     12.0,
-     17.0
-    ]
-   }
+    {
+      "stat": "vo",
+      "trigger": "init",
+      "cap": null,
+      "values": [
+        52.0,
+        55.0,
+        59.0,
+        62.0,
+        65.0
+      ]
+    },
+    {
+      "stat": "vo",
+      "trigger": "skill",
+      "cap": null,
+      "values": [
+        3.0,
+        3.0,
+        3.0,
+        4.0,
+        4.0
+      ]
+    },
+    {
+      "stat": "vo",
+      "trigger": "shikyu",
+      "cap": null,
+      "values": [
+        12.0,
+        12.0,
+        12.0,
+        12.0,
+        17.0
+      ]
+    }
   ],
   "rewardPItem": {
-   "name": "手作りサブスク弁当",
-   "rarity": "SSR",
-   "plan": "ロジック"
+    "name": "手作りサブスク弁当",
+    "rarity": "SSR",
+    "plan": "ロジック"
   },
   "supportEvent": {
-   "stat": "vo",
-   "value": 20
+    "stat": "vo",
+    "value": 20
   },
-  "eventGrants": {"enhance": 1}
- },
+  "eventGrants": {
+    "enhance": 1
+  }
+},
  {
   "id": "ssr-030",
   "name": "いつも頑張ってるね。",
@@ -2599,81 +2627,83 @@ export const SUPPORT_CARDS: SupportCard[] = [
   "imageUrl": "https://image02.seesaawiki.jp/g/u/gakumasu/eaa54284418c80b6-s.png",
   "paramBonus": null,
   "lessonSupport": [
-   66.1,
-   74.6,
-   83.1,
-   91.5,
-   100.0
+    66.1,
+    74.6,
+    83.1,
+    91.5,
+    100.0
   ],
   "eventUp": [
-   50.0,
-   75.0,
-   75.0,
-   75.0,
-   100.0
+    50.0,
+    75.0,
+    75.0,
+    75.0,
+    100.0
   ],
   "spRates": [
-   {
-    "stat": "all",
-    "values": [
-     21.0,
-     21.0,
-     28.0,
-     28.0,
-     28.0
-    ]
-   }
+    {
+      "stat": "da",
+      "values": [
+        21.0,
+        21.0,
+        28.0,
+        28.0,
+        28.0
+      ]
+    }
   ],
   "flats": [
-   {
-    "stat": "da",
-    "trigger": "init",
-    "cap": null,
-    "values": [
-     52.0,
-     55.0,
-     59.0,
-     62.0,
-     65.0
-    ]
-   },
-   {
-    "stat": "da",
-    "trigger": "lesson_sp",
-    "cap": null,
-    "values": [
-     13.0,
-     13.0,
-     13.0,
-     17.0,
-     17.0
-    ],
-    "tstat": "da"
-   },
-   {
-    "stat": "da",
-    "trigger": "drink",
-    "cap": null,
-    "values": [
-     4.0,
-     4.0,
-     4.0,
-     4.0,
-     5.0
-    ]
-   }
+    {
+      "stat": "da",
+      "trigger": "init",
+      "cap": null,
+      "values": [
+        52.0,
+        55.0,
+        59.0,
+        62.0,
+        65.0
+      ]
+    },
+    {
+      "stat": "da",
+      "trigger": "lesson_sp",
+      "cap": null,
+      "values": [
+        13.0,
+        13.0,
+        13.0,
+        17.0,
+        17.0
+      ],
+      "tstat": "da"
+    },
+    {
+      "stat": "da",
+      "trigger": "drink",
+      "cap": null,
+      "values": [
+        4.0,
+        4.0,
+        4.0,
+        4.0,
+        5.0
+      ]
+    }
   ],
   "rewardPItem": {
-   "name": "居残りの生徒会",
-   "rarity": "SSR",
-   "plan": "アノマリー"
+    "name": "居残りの生徒会",
+    "rarity": "SSR",
+    "plan": "アノマリー"
   },
   "supportEvent": {
-   "stat": "da",
-   "value": 20
+    "stat": "da",
+    "value": 20
   },
-  "eventGrants": {"enhance": 1}
- },
+  "eventGrants": {
+    "enhance": 1
+  }
+},
  {
   "id": "ssr-033",
   "name": "ひとりごとです",
@@ -2937,81 +2967,83 @@ export const SUPPORT_CARDS: SupportCard[] = [
   "imageUrl": "https://image02.seesaawiki.jp/g/u/gakumasu/00d137c4db49c029-s.png",
   "paramBonus": null,
   "lessonSupport": [
-   66.1,
-   74.6,
-   83.1,
-   91.5,
-   100.0
+    66.1,
+    74.6,
+    83.1,
+    91.5,
+    100.0
   ],
   "eventUp": [
-   50.0,
-   75.0,
-   75.0,
-   75.0,
-   100.0
+    50.0,
+    75.0,
+    75.0,
+    75.0,
+    100.0
   ],
   "spRates": [
-   {
-    "stat": "all",
-    "values": [
-     21.0,
-     21.0,
-     28.0,
-     28.0,
-     28.0
-    ]
-   }
+    {
+      "stat": "vi",
+      "values": [
+        21.0,
+        21.0,
+        28.0,
+        28.0,
+        28.0
+      ]
+    }
   ],
   "flats": [
-   {
-    "stat": "vi",
-    "trigger": "init",
-    "cap": null,
-    "values": [
-     52.0,
-     55.0,
-     59.0,
-     62.0,
-     65.0
-    ]
-   },
-   {
-    "stat": "vi",
-    "trigger": "lesson_sp",
-    "cap": null,
-    "values": [
-     13.0,
-     13.0,
-     13.0,
-     17.0,
-     17.0
-    ],
-    "tstat": "vi"
-   },
-   {
-    "stat": "vi",
-    "trigger": "delete",
-    "cap": 3,
-    "values": [
-     17.0,
-     17.0,
-     17.0,
-     17.0,
-     22.0
-    ]
-   }
+    {
+      "stat": "vi",
+      "trigger": "init",
+      "cap": null,
+      "values": [
+        52.0,
+        55.0,
+        59.0,
+        62.0,
+        65.0
+      ]
+    },
+    {
+      "stat": "vi",
+      "trigger": "lesson_sp",
+      "cap": null,
+      "values": [
+        13.0,
+        13.0,
+        13.0,
+        17.0,
+        17.0
+      ],
+      "tstat": "vi"
+    },
+    {
+      "stat": "vi",
+      "trigger": "delete",
+      "cap": 3,
+      "values": [
+        17.0,
+        17.0,
+        17.0,
+        17.0,
+        22.0
+      ]
+    }
   ],
   "rewardSkill": {
-   "name": "対戦お願いします！",
-   "rarity": "SSR",
-   "type": "メンタル"
+    "name": "対戦お願いします！",
+    "rarity": "SSR",
+    "type": "メンタル"
   },
   "supportEvent": {
-   "stat": "vi",
-   "value": 20
+    "stat": "vi",
+    "value": 20
   },
-  "eventGrants": {"enhance": 1}
- },
+  "eventGrants": {
+    "enhance": 1
+  }
+},
  {
   "id": "ssr-037",
   "name": "ここから始まるんだね！",
@@ -3100,81 +3132,83 @@ export const SUPPORT_CARDS: SupportCard[] = [
   "imageUrl": "https://image01.seesaawiki.jp/g/u/gakumasu/l91Zh3FaZ7-s.jpg",
   "paramBonus": null,
   "lessonSupport": [
-   66.1,
-   74.6,
-   83.1,
-   91.5,
-   100.0
+    66.1,
+    74.6,
+    83.1,
+    91.5,
+    100.0
   ],
   "eventUp": [
-   50.0,
-   75.0,
-   75.0,
-   75.0,
-   100.0
+    50.0,
+    75.0,
+    75.0,
+    75.0,
+    100.0
   ],
   "spRates": [
-   {
-    "stat": "all",
-    "values": [
-     21.0,
-     21.0,
-     28.0,
-     28.0,
-     28.0
-    ]
-   }
+    {
+      "stat": "da",
+      "values": [
+        21.0,
+        21.0,
+        28.0,
+        28.0,
+        28.0
+      ]
+    }
   ],
   "flats": [
-   {
-    "stat": "da",
-    "trigger": "init",
-    "cap": null,
-    "values": [
-     52.0,
-     55.0,
-     59.0,
-     62.0,
-     65.0
-    ]
-   },
-   {
-    "stat": "da",
-    "trigger": "lesson_sp",
-    "cap": null,
-    "values": [
-     13.0,
-     13.0,
-     13.0,
-     17.0,
-     17.0
-    ],
-    "tstat": "da"
-   },
-   {
-    "stat": "da",
-    "trigger": "skill",
-    "cap": null,
-    "values": [
-     2.0,
-     2.0,
-     2.0,
-     2.0,
-     3.0
-    ]
-   }
+    {
+      "stat": "da",
+      "trigger": "init",
+      "cap": null,
+      "values": [
+        52.0,
+        55.0,
+        59.0,
+        62.0,
+        65.0
+      ]
+    },
+    {
+      "stat": "da",
+      "trigger": "lesson_sp",
+      "cap": null,
+      "values": [
+        13.0,
+        13.0,
+        13.0,
+        17.0,
+        17.0
+      ],
+      "tstat": "da"
+    },
+    {
+      "stat": "da",
+      "trigger": "skill",
+      "cap": null,
+      "values": [
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        3.0
+      ]
+    }
   ],
   "rewardPItem": {
-   "name": "ひとりだちシューズ",
-   "rarity": "SSR",
-   "plan": "フリー"
+    "name": "ひとりだちシューズ",
+    "rarity": "SSR",
+    "plan": "フリー"
   },
   "supportEvent": {
-   "stat": "da",
-   "value": 20
+    "stat": "da",
+    "value": 20
   },
-  "eventGrants": {"change": 1}
- },
+  "eventGrants": {
+    "change": 1
+  }
+},
  {
   "id": "ssr-039",
   "name": "新生活のはじまりだね",
@@ -3184,87 +3218,89 @@ export const SUPPORT_CARDS: SupportCard[] = [
   "imageUrl": "https://image01.seesaawiki.jp/g/u/gakumasu/aLpPKi9x3t-s.jpg",
   "paramBonus": null,
   "lessonSupport": [
-   66.1,
-   74.6,
-   83.1,
-   91.5,
-   100.0
+    66.1,
+    74.6,
+    83.1,
+    91.5,
+    100.0
   ],
   "eventUp": [
-   50.0,
-   75.0,
-   75.0,
-   75.0,
-   100.0
+    50.0,
+    75.0,
+    75.0,
+    75.0,
+    100.0
   ],
   "spRates": [
-   {
-    "stat": "all",
-    "values": [
-     21.0,
-     21.0,
-     28.0,
-     28.0,
-     28.0
-    ]
-   }
+    {
+      "stat": "vi",
+      "values": [
+        21.0,
+        21.0,
+        28.0,
+        28.0,
+        28.0
+      ]
+    }
   ],
   "flats": [
-   {
-    "stat": "vi",
-    "trigger": "init",
-    "cap": null,
-    "values": [
-     52.0,
-     55.0,
-     59.0,
-     62.0,
-     65.0
-    ]
-   },
-   {
-    "stat": "vi",
-    "trigger": "lesson_normal",
-    "cap": null,
-    "values": [
-     4.0,
-     4.0,
-     4.0,
-     6.0,
-     6.0
-    ],
-    "tstat": "vi"
-   },
-   {
-    "stat": "vi",
-    "trigger": "skill",
-    "cap": null,
-    "values": [
-     3.0,
-     3.0,
-     3.0,
-     3.0,
-     4.0
-    ]
-   }
+    {
+      "stat": "vi",
+      "trigger": "init",
+      "cap": null,
+      "values": [
+        52.0,
+        55.0,
+        59.0,
+        62.0,
+        65.0
+      ]
+    },
+    {
+      "stat": "vi",
+      "trigger": "lesson_normal",
+      "cap": null,
+      "values": [
+        4.0,
+        4.0,
+        4.0,
+        6.0,
+        6.0
+      ],
+      "tstat": "vi"
+    },
+    {
+      "stat": "vi",
+      "trigger": "skill",
+      "cap": null,
+      "values": [
+        3.0,
+        3.0,
+        3.0,
+        3.0,
+        4.0
+      ]
+    }
   ],
   "rewardPItem": {
-   "name": "体力自慢の本気",
-   "rarity": "SSR",
-   "plan": "アノマリー"
+    "name": "体力自慢の本気",
+    "rarity": "SSR",
+    "plan": "アノマリー"
   },
   "pItemFlat": {
-   "stat": "vi",
-   "trigger": "odekake",
-   "value": 15,
-   "cap": null
+    "stat": "vi",
+    "trigger": "odekake",
+    "value": 15,
+    "cap": null
   },
   "supportEvent": {
-   "stat": "vi",
-   "value": 20
+    "stat": "vi",
+    "value": 20
   },
-  "eventGrants": {"enhance": 1}
- },
+  "eventGrants": {
+    "enhance": 1
+  }
+},
  {
   "id": "ssr-040",
   "name": "あなたたちのことが好き",
@@ -3274,81 +3310,83 @@ export const SUPPORT_CARDS: SupportCard[] = [
   "imageUrl": "https://image02.seesaawiki.jp/g/u/gakumasu/oSGDURinXT-s.jpg",
   "paramBonus": null,
   "lessonSupport": [
-   66.1,
-   74.6,
-   83.1,
-   91.5,
-   100.0
+    66.1,
+    74.6,
+    83.1,
+    91.5,
+    100.0
   ],
   "eventUp": [
-   50.0,
-   75.0,
-   75.0,
-   75.0,
-   100.0
+    50.0,
+    75.0,
+    75.0,
+    75.0,
+    100.0
   ],
   "spRates": [
-   {
-    "stat": "all",
-    "values": [
-     21.0,
-     21.0,
-     28.0,
-     28.0,
-     28.0
-    ]
-   }
+    {
+      "stat": "da",
+      "values": [
+        21.0,
+        21.0,
+        28.0,
+        28.0,
+        28.0
+      ]
+    }
   ],
   "flats": [
-   {
-    "stat": "da",
-    "trigger": "init",
-    "cap": null,
-    "values": [
-     52.0,
-     55.0,
-     59.0,
-     62.0,
-     65.0
-    ]
-   },
-   {
-    "stat": "da",
-    "trigger": "lesson_sp",
-    "cap": null,
-    "values": [
-     13.0,
-     13.0,
-     13.0,
-     17.0,
-     17.0
-    ],
-    "tstat": "da"
-   },
-   {
-    "stat": "da",
-    "trigger": "enhance",
-    "cap": null,
-    "values": [
-     7.0,
-     7.0,
-     7.0,
-     7.0,
-     9.0
-    ]
-   }
+    {
+      "stat": "da",
+      "trigger": "init",
+      "cap": null,
+      "values": [
+        52.0,
+        55.0,
+        59.0,
+        62.0,
+        65.0
+      ]
+    },
+    {
+      "stat": "da",
+      "trigger": "lesson_sp",
+      "cap": null,
+      "values": [
+        13.0,
+        13.0,
+        13.0,
+        17.0,
+        17.0
+      ],
+      "tstat": "da"
+    },
+    {
+      "stat": "da",
+      "trigger": "enhance",
+      "cap": null,
+      "values": [
+        7.0,
+        7.0,
+        7.0,
+        7.0,
+        9.0
+      ]
+    }
   ],
   "rewardPItem": {
-   "name": "ゆうじょーのきろく",
-   "rarity": "SSR",
-   "plan": "ロジック"
+    "name": "ゆうじょーのきろく",
+    "rarity": "SSR",
+    "plan": "ロジック"
   },
   "supportEvent": {
-   "stat": "da",
-   "value": 20
+    "stat": "da",
+    "value": 20
   },
-  "eventGrants": {"enhance": 1}
- },
+  "eventGrants": {
+    "enhance": 1
+  }
+},
  {
   "id": "ssr-041",
   "name": "絶対にお渡ししますわっ！",
@@ -3358,81 +3396,83 @@ export const SUPPORT_CARDS: SupportCard[] = [
   "imageUrl": "https://image02.seesaawiki.jp/g/u/gakumasu/4718d20b041b9db6-s.png",
   "paramBonus": null,
   "lessonSupport": [
-   66.1,
-   74.6,
-   83.1,
-   91.5,
-   100.0
+    66.1,
+    74.6,
+    83.1,
+    91.5,
+    100.0
   ],
   "eventUp": [
-   50.0,
-   75.0,
-   75.0,
-   75.0,
-   100.0
+    50.0,
+    75.0,
+    75.0,
+    75.0,
+    100.0
   ],
   "spRates": [
-   {
-    "stat": "all",
-    "values": [
-     21.0,
-     21.0,
-     28.0,
-     28.0,
-     28.0
-    ]
-   }
+    {
+      "stat": "vo",
+      "values": [
+        21.0,
+        21.0,
+        28.0,
+        28.0,
+        28.0
+      ]
+    }
   ],
   "flats": [
-   {
-    "stat": "vo",
-    "trigger": "init",
-    "cap": null,
-    "values": [
-     52.0,
-     55.0,
-     59.0,
-     62.0,
-     65.0
-    ]
-   },
-   {
-    "stat": "vo",
-    "trigger": "lesson_normal",
-    "cap": null,
-    "values": [
-     4.0,
-     4.0,
-     4.0,
-     6.0,
-     6.0
-    ],
-    "tstat": "vo"
-   },
-   {
-    "stat": "vo",
-    "trigger": "odekake",
-    "cap": null,
-    "values": [
-     11.0,
-     11.0,
-     11.0,
-     11.0,
-     15.0
-    ]
-   }
+    {
+      "stat": "vo",
+      "trigger": "init",
+      "cap": null,
+      "values": [
+        52.0,
+        55.0,
+        59.0,
+        62.0,
+        65.0
+      ]
+    },
+    {
+      "stat": "vo",
+      "trigger": "lesson_normal",
+      "cap": null,
+      "values": [
+        4.0,
+        4.0,
+        4.0,
+        6.0,
+        6.0
+      ],
+      "tstat": "vo"
+    },
+    {
+      "stat": "vo",
+      "trigger": "odekake",
+      "cap": null,
+      "values": [
+        11.0,
+        11.0,
+        11.0,
+        11.0,
+        15.0
+      ]
+    }
   ],
   "rewardPItem": {
-   "name": "お姉さまビッグラブ",
-   "rarity": "SSR",
-   "plan": "ロジック"
+    "name": "お姉さまビッグラブ",
+    "rarity": "SSR",
+    "plan": "ロジック"
   },
   "supportEvent": {
-   "stat": "vo",
-   "value": 20
+    "stat": "vo",
+    "value": 20
   },
-  "eventGrants": {"change": 1}
- },
+  "eventGrants": {
+    "change": 1
+  }
+},
  {
   "id": "ssr-042",
   "name": "バレンタイン♡会議中ーっ！",
@@ -3465,56 +3505,58 @@ export const SUPPORT_CARDS: SupportCard[] = [
   "imageUrl": "https://image01.seesaawiki.jp/g/u/gakumasu/1ed8efd0f3363cfc-s.png",
   "paramBonus": null,
   "lessonSupport": [
-   66.1,
-   74.6,
-   83.1,
-   91.5,
-   100.0
+    66.1,
+    74.6,
+    83.1,
+    91.5,
+    100.0
   ],
   "eventUp": [
-   50.0,
-   75.0,
-   75.0,
-   75.0,
-   100.0
+    50.0,
+    75.0,
+    75.0,
+    75.0,
+    100.0
   ],
   "spRates": [
-   {
-    "stat": "all",
-    "values": [
-     21.0,
-     21.0,
-     28.0,
-     28.0,
-     28.0
-    ]
-   }
+    {
+      "stat": "vo",
+      "values": [
+        21.0,
+        21.0,
+        28.0,
+        28.0,
+        28.0
+      ]
+    }
   ],
   "flats": [
-   {
-    "stat": "vo",
-    "trigger": "odekake",
-    "cap": null,
-    "values": [
-     11.0,
-     11.0,
-     11.0,
-     11.0,
-     15.0
-    ]
-   }
+    {
+      "stat": "vo",
+      "trigger": "odekake",
+      "cap": null,
+      "values": [
+        11.0,
+        11.0,
+        11.0,
+        11.0,
+        15.0
+      ]
+    }
   ],
   "rewardPItem": {
-   "name": "ぜったいいっぱい！",
-   "rarity": "SSR",
-   "plan": "アノマリー"
+    "name": "ぜったいいっぱい！",
+    "rarity": "SSR",
+    "plan": "アノマリー"
   },
   "supportEvent": {
-   "stat": "vo",
-   "value": 20
+    "stat": "vo",
+    "value": 20
   },
-  "eventGrants": {"enhance": 1}
- },
+  "eventGrants": {
+    "enhance": 1
+  }
+},
  {
   "id": "ssr-044",
   "name": "これが私達の、3年間",
@@ -3590,76 +3632,78 @@ export const SUPPORT_CARDS: SupportCard[] = [
   "plan": "sense",
   "imageUrl": "https://image01.seesaawiki.jp/g/u/gakumasu/743de1c13390d09d-s.png",
   "paramBonus": [
-   6.5,
-   7.0,
-   7.5,
-   8.0,
-   8.5
+    6.5,
+    7.0,
+    7.5,
+    8.0,
+    8.5
   ],
   "lessonSupport": [
-   66.1,
-   74.6,
-   83.1,
-   91.5,
-   100.0
+    66.1,
+    74.6,
+    83.1,
+    91.5,
+    100.0
   ],
   "eventUp": [
-   50.0,
-   75.0,
-   75.0,
-   75.0,
-   100.0
+    50.0,
+    75.0,
+    75.0,
+    75.0,
+    100.0
   ],
   "spRates": [
-   {
-    "stat": "all",
-    "values": [
-     21.0,
-     21.0,
-     28.0,
-     28.0,
-     28.0
-    ]
-   }
+    {
+      "stat": "vo",
+      "values": [
+        21.0,
+        21.0,
+        28.0,
+        28.0,
+        28.0
+      ]
+    }
   ],
   "flats": [
-   {
-    "stat": "vo",
-    "trigger": "lesson_sp",
-    "cap": null,
-    "values": [
-     13.0,
-     13.0,
-     13.0,
-     17.0,
-     17.0
-    ],
-    "tstat": "vo"
-   },
-   {
-    "stat": "vo",
-    "trigger": "jugyo",
-    "cap": null,
-    "values": [
-     5.0,
-     5.0,
-     5.0,
-     5.0,
-     7.0
-    ]
-   }
+    {
+      "stat": "vo",
+      "trigger": "lesson_sp",
+      "cap": null,
+      "values": [
+        13.0,
+        13.0,
+        13.0,
+        17.0,
+        17.0
+      ],
+      "tstat": "vo"
+    },
+    {
+      "stat": "vo",
+      "trigger": "jugyo",
+      "cap": null,
+      "values": [
+        5.0,
+        5.0,
+        5.0,
+        5.0,
+        7.0
+      ]
+    }
   ],
   "rewardSkill": {
-   "name": "練習再開！",
-   "rarity": "SSR",
-   "type": "メンタル"
+    "name": "練習再開！",
+    "rarity": "SSR",
+    "type": "メンタル"
   },
   "supportEvent": {
-   "stat": "vo",
-   "value": 20
+    "stat": "vo",
+    "value": 20
   },
-  "eventGrants": {"enhance": 1}
- },
+  "eventGrants": {
+    "enhance": 1
+  }
+},
  {
   "id": "ssr-046",
   "name": "待ちなさーい！",
@@ -3669,81 +3713,83 @@ export const SUPPORT_CARDS: SupportCard[] = [
   "imageUrl": "https://image02.seesaawiki.jp/g/u/gakumasu/cc7a44e9a308616d-s.png",
   "paramBonus": null,
   "lessonSupport": [
-   66.1,
-   74.6,
-   83.1,
-   91.5,
-   100.0
+    66.1,
+    74.6,
+    83.1,
+    91.5,
+    100.0
   ],
   "eventUp": [
-   50.0,
-   75.0,
-   75.0,
-   75.0,
-   100.0
+    50.0,
+    75.0,
+    75.0,
+    75.0,
+    100.0
   ],
   "spRates": [
-   {
-    "stat": "all",
-    "values": [
-     21.0,
-     21.0,
-     28.0,
-     28.0,
-     28.0
-    ]
-   }
+    {
+      "stat": "da",
+      "values": [
+        21.0,
+        21.0,
+        28.0,
+        28.0,
+        28.0
+      ]
+    }
   ],
   "flats": [
-   {
-    "stat": "da",
-    "trigger": "init",
-    "cap": null,
-    "values": [
-     52.0,
-     55.0,
-     59.0,
-     62.0,
-     65.0
-    ]
-   },
-   {
-    "stat": "da",
-    "trigger": "lesson_sp",
-    "cap": null,
-    "values": [
-     13.0,
-     13.0,
-     13.0,
-     17.0,
-     17.0
-    ],
-    "tstat": "da"
-   },
-   {
-    "stat": "da",
-    "trigger": "skill",
-    "cap": null,
-    "values": [
-     2.0,
-     2.0,
-     2.0,
-     2.0,
-     3.0
-    ]
-   }
+    {
+      "stat": "da",
+      "trigger": "init",
+      "cap": null,
+      "values": [
+        52.0,
+        55.0,
+        59.0,
+        62.0,
+        65.0
+      ]
+    },
+    {
+      "stat": "da",
+      "trigger": "lesson_sp",
+      "cap": null,
+      "values": [
+        13.0,
+        13.0,
+        13.0,
+        17.0,
+        17.0
+      ],
+      "tstat": "da"
+    },
+    {
+      "stat": "da",
+      "trigger": "skill",
+      "cap": null,
+      "values": [
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        3.0
+      ]
+    }
   ],
   "rewardPItem": {
-   "name": "はいぼくせんげん",
-   "rarity": "SSR",
-   "plan": "アノマリー"
+    "name": "はいぼくせんげん",
+    "rarity": "SSR",
+    "plan": "アノマリー"
   },
   "supportEvent": {
-   "stat": "da",
-   "value": 20
+    "stat": "da",
+    "value": 20
   },
-  "eventGrants": {"enhance": 1}
- },
+  "eventGrants": {
+    "enhance": 1
+  }
+},
  {
   "id": "ssr-047",
   "name": "あったかいね",
@@ -3753,80 +3799,82 @@ export const SUPPORT_CARDS: SupportCard[] = [
   "imageUrl": "https://image01.seesaawiki.jp/g/u/gakumasu/2a28df7cc377e74a-s.png",
   "paramBonus": null,
   "lessonSupport": [
-   66.1,
-   74.6,
-   83.1,
-   91.5,
-   100.0
+    66.1,
+    74.6,
+    83.1,
+    91.5,
+    100.0
   ],
   "eventUp": [
-   50.0,
-   75.0,
-   75.0,
-   75.0,
-   100.0
+    50.0,
+    75.0,
+    75.0,
+    75.0,
+    100.0
   ],
   "spRates": [
-   {
-    "stat": "all",
-    "values": [
-     21.0,
-     21.0,
-     28.0,
-     28.0,
-     28.0
-    ]
-   }
+    {
+      "stat": "vi",
+      "values": [
+        21.0,
+        21.0,
+        28.0,
+        28.0,
+        28.0
+      ]
+    }
   ],
   "flats": [
-   {
-    "stat": "vi",
-    "trigger": "init",
-    "cap": null,
-    "values": [
-     52.0,
-     55.0,
-     59.0,
-     62.0,
-     65.0
-    ]
-   },
-   {
-    "stat": "vi",
-    "trigger": "skill",
-    "cap": null,
-    "values": [
-     2.0,
-     2.0,
-     2.0,
-     3.0,
-     3.0
-    ]
-   },
-   {
-    "stat": "vi",
-    "trigger": "sodan",
-    "cap": null,
-    "values": [
-     14.0,
-     14.0,
-     14.0,
-     14.0,
-     18.0
-    ]
-   }
+    {
+      "stat": "vi",
+      "trigger": "init",
+      "cap": null,
+      "values": [
+        52.0,
+        55.0,
+        59.0,
+        62.0,
+        65.0
+      ]
+    },
+    {
+      "stat": "vi",
+      "trigger": "skill",
+      "cap": null,
+      "values": [
+        2.0,
+        2.0,
+        2.0,
+        3.0,
+        3.0
+      ]
+    },
+    {
+      "stat": "vi",
+      "trigger": "sodan",
+      "cap": null,
+      "values": [
+        14.0,
+        14.0,
+        14.0,
+        14.0,
+        18.0
+      ]
+    }
   ],
   "rewardPItem": {
-   "name": "ぬくもりふたりぶん",
-   "rarity": "SSR",
-   "plan": "ロジック"
+    "name": "ぬくもりふたりぶん",
+    "rarity": "SSR",
+    "plan": "ロジック"
   },
   "supportEvent": {
-   "stat": "vi",
-   "value": 20
+    "stat": "vi",
+    "value": 20
   },
-  "eventGrants": {"enhance": 1}
- },
+  "eventGrants": {
+    "enhance": 1
+  }
+},
  {
   "id": "ssr-048",
   "name": "キラキラして綺麗〜っ！",
@@ -3994,81 +4042,83 @@ export const SUPPORT_CARDS: SupportCard[] = [
   "imageUrl": "https://image02.seesaawiki.jp/g/u/gakumasu/69aac5919c3738a7-s.jpg",
   "paramBonus": null,
   "lessonSupport": [
-   66.1,
-   74.6,
-   83.1,
-   91.5,
-   100.0
+    66.1,
+    74.6,
+    83.1,
+    91.5,
+    100.0
   ],
   "eventUp": [
-   50.0,
-   75.0,
-   75.0,
-   75.0,
-   100.0
+    50.0,
+    75.0,
+    75.0,
+    75.0,
+    100.0
   ],
   "spRates": [
-   {
-    "stat": "all",
-    "values": [
-     21.0,
-     21.0,
-     28.0,
-     28.0,
-     28.0
-    ]
-   }
+    {
+      "stat": "da",
+      "values": [
+        21.0,
+        21.0,
+        28.0,
+        28.0,
+        28.0
+      ]
+    }
   ],
   "flats": [
-   {
-    "stat": "da",
-    "trigger": "init",
-    "cap": null,
-    "values": [
-     52.0,
-     55.0,
-     59.0,
-     62.0,
-     65.0
-    ]
-   },
-   {
-    "stat": "da",
-    "trigger": "lesson_sp",
-    "cap": null,
-    "values": [
-     13.0,
-     13.0,
-     13.0,
-     17.0,
-     17.0
-    ],
-    "tstat": "da"
-   },
-   {
-    "stat": "da",
-    "trigger": "shikyu",
-    "cap": null,
-    "values": [
-     12.0,
-     12.0,
-     12.0,
-     12.0,
-     17.0
-    ]
-   }
+    {
+      "stat": "da",
+      "trigger": "init",
+      "cap": null,
+      "values": [
+        52.0,
+        55.0,
+        59.0,
+        62.0,
+        65.0
+      ]
+    },
+    {
+      "stat": "da",
+      "trigger": "lesson_sp",
+      "cap": null,
+      "values": [
+        13.0,
+        13.0,
+        13.0,
+        17.0,
+        17.0
+      ],
+      "tstat": "da"
+    },
+    {
+      "stat": "da",
+      "trigger": "shikyu",
+      "cap": null,
+      "values": [
+        12.0,
+        12.0,
+        12.0,
+        12.0,
+        17.0
+      ]
+    }
   ],
   "rewardSkill": {
-   "name": "ほかほか焼き芋",
-   "rarity": "SSR",
-   "type": "メンタル"
+    "name": "ほかほか焼き芋",
+    "rarity": "SSR",
+    "type": "メンタル"
   },
   "supportEvent": {
-   "stat": "da",
-   "value": 20
+    "stat": "da",
+    "value": 20
   },
-  "eventGrants": {"enhance": 1}
- },
+  "eventGrants": {
+    "enhance": 1
+  }
+},
  {
   "id": "ssr-051",
   "name": "食欲の秋なんです",
@@ -4078,33 +4128,35 @@ export const SUPPORT_CARDS: SupportCard[] = [
   "imageUrl": "https://image02.seesaawiki.jp/g/u/gakumasu/6ec72d1567df77c2-s.jpg",
   "paramBonus": null,
   "lessonSupport": [
-   66.1,
-   74.6,
-   83.1,
-   91.5,
-   100.0
+    66.1,
+    74.6,
+    83.1,
+    91.5,
+    100.0
   ],
   "eventUp": null,
   "spRates": [
-   {
-    "stat": "all",
-    "values": [
-     10.5,
-     10.5,
-     14.0,
-     14.0,
-     14.0
-    ]
-   }
+    {
+      "stat": "all",
+      "values": [
+        10.5,
+        10.5,
+        14.0,
+        14.0,
+        14.0
+      ]
+    }
   ],
   "flats": [],
   "rewardPItem": {
-   "name": "ごちそうさまでした",
-   "rarity": "SSR",
-   "plan": "フリー"
+    "name": "ごちそうさまでした",
+    "rarity": "SSR",
+    "plan": "フリー"
   },
-  "eventGrants": {"delete": 1}
- },
+  "eventGrants": {
+    "delete": 1
+  }
+},
  {
   "id": "ssr-052",
   "name": "会長、準備は万端です",
@@ -4181,73 +4233,75 @@ export const SUPPORT_CARDS: SupportCard[] = [
   "paramBonus": null,
   "lessonSupport": null,
   "eventUp": [
-   50.0,
-   75.0,
-   75.0,
-   75.0,
-   100.0
+    50.0,
+    75.0,
+    75.0,
+    75.0,
+    100.0
   ],
   "spRates": [
-   {
-    "stat": "all",
-    "values": [
-     21.0,
-     21.0,
-     28.0,
-     28.0,
-     28.0
-    ]
-   }
+    {
+      "stat": "vo",
+      "values": [
+        21.0,
+        21.0,
+        28.0,
+        28.0,
+        28.0
+      ]
+    }
   ],
   "flats": [
-   {
-    "stat": "vo",
-    "trigger": "init",
-    "cap": null,
-    "values": [
-     52.0,
-     55.0,
-     59.0,
-     62.0,
-     65.0
-    ]
-   },
-   {
-    "stat": "vo",
-    "trigger": "skill",
-    "cap": null,
-    "values": [
-     3.0,
-     3.0,
-     3.0,
-     4.0,
-     4.0
-    ]
-   },
-   {
-    "stat": "vo",
-    "trigger": "shikyu",
-    "cap": null,
-    "values": [
-     12.0,
-     12.0,
-     12.0,
-     12.0,
-     17.0
-    ]
-   }
+    {
+      "stat": "vo",
+      "trigger": "init",
+      "cap": null,
+      "values": [
+        52.0,
+        55.0,
+        59.0,
+        62.0,
+        65.0
+      ]
+    },
+    {
+      "stat": "vo",
+      "trigger": "skill",
+      "cap": null,
+      "values": [
+        3.0,
+        3.0,
+        3.0,
+        4.0,
+        4.0
+      ]
+    },
+    {
+      "stat": "vo",
+      "trigger": "shikyu",
+      "cap": null,
+      "values": [
+        12.0,
+        12.0,
+        12.0,
+        12.0,
+        17.0
+      ]
+    }
   ],
   "rewardPItem": {
-   "name": "つやつやでふさふさ",
-   "rarity": "SSR",
-   "plan": "センス"
+    "name": "つやつやでふさふさ",
+    "rarity": "SSR",
+    "plan": "センス"
   },
   "supportEvent": {
-   "stat": "vo",
-   "value": 20
+    "stat": "vo",
+    "value": 20
   },
-  "eventGrants": {"enhance": 1}
- },
+  "eventGrants": {
+    "enhance": 1
+  }
+},
  {
   "id": "ssr-054",
   "name": "似合うんじゃない？",
@@ -4397,87 +4451,89 @@ export const SUPPORT_CARDS: SupportCard[] = [
   "imageUrl": "https://image01.seesaawiki.jp/g/u/gakumasu/4506d6845625abb4-s.jpg",
   "paramBonus": null,
   "lessonSupport": [
-   66.1,
-   74.6,
-   83.1,
-   91.5,
-   100.0
+    66.1,
+    74.6,
+    83.1,
+    91.5,
+    100.0
   ],
   "eventUp": [
-   50.0,
-   75.0,
-   75.0,
-   75.0,
-   100.0
+    50.0,
+    75.0,
+    75.0,
+    75.0,
+    100.0
   ],
   "spRates": [
-   {
-    "stat": "all",
-    "values": [
-     21.0,
-     21.0,
-     28.0,
-     28.0,
-     28.0
-    ]
-   }
+    {
+      "stat": "vi",
+      "values": [
+        21.0,
+        21.0,
+        28.0,
+        28.0,
+        28.0
+      ]
+    }
   ],
   "flats": [
-   {
-    "stat": "vi",
-    "trigger": "init",
-    "cap": null,
-    "values": [
-     52.0,
-     55.0,
-     59.0,
-     62.0,
-     65.0
-    ]
-   },
-   {
-    "stat": "vi",
-    "trigger": "lesson_normal",
-    "cap": null,
-    "values": [
-     4.0,
-     4.0,
-     4.0,
-     6.0,
-     6.0
-    ],
-    "tstat": "vi"
-   },
-   {
-    "stat": "vi",
-    "trigger": "skill",
-    "cap": null,
-    "values": [
-     2.0,
-     2.0,
-     2.0,
-     2.0,
-     3.0
-    ]
-   }
+    {
+      "stat": "vi",
+      "trigger": "init",
+      "cap": null,
+      "values": [
+        52.0,
+        55.0,
+        59.0,
+        62.0,
+        65.0
+      ]
+    },
+    {
+      "stat": "vi",
+      "trigger": "lesson_normal",
+      "cap": null,
+      "values": [
+        4.0,
+        4.0,
+        4.0,
+        6.0,
+        6.0
+      ],
+      "tstat": "vi"
+    },
+    {
+      "stat": "vi",
+      "trigger": "skill",
+      "cap": null,
+      "values": [
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        3.0
+      ]
+    }
   ],
   "rewardPItem": {
-   "name": "とうちょーのきろく",
-   "rarity": "SSR",
-   "plan": "フリー"
+    "name": "とうちょーのきろく",
+    "rarity": "SSR",
+    "plan": "フリー"
   },
   "pItemFlat": {
-   "stat": "vi",
-   "trigger": "jugyo",
-   "value": 15,
-   "cap": null
+    "stat": "vi",
+    "trigger": "jugyo",
+    "value": 15,
+    "cap": null
   },
   "supportEvent": {
-   "stat": "vi",
-   "value": 20
+    "stat": "vi",
+    "value": 20
   },
-  "eventGrants": {"enhance": 1}
- },
+  "eventGrants": {
+    "enhance": 1
+  }
+},
  {
   "id": "ssr-057",
   "name": "ゆっくりと過ごしましょう",
@@ -4560,87 +4616,89 @@ export const SUPPORT_CARDS: SupportCard[] = [
   "imageUrl": "https://image01.seesaawiki.jp/g/u/gakumasu/0zD8copRVB-s.jpg",
   "paramBonus": null,
   "lessonSupport": [
-   66.1,
-   74.6,
-   83.1,
-   91.5,
-   100.0
+    66.1,
+    74.6,
+    83.1,
+    91.5,
+    100.0
   ],
   "eventUp": [
-   50.0,
-   75.0,
-   75.0,
-   75.0,
-   100.0
+    50.0,
+    75.0,
+    75.0,
+    75.0,
+    100.0
   ],
   "spRates": [
-   {
-    "stat": "all",
-    "values": [
-     21.0,
-     21.0,
-     28.0,
-     28.0,
-     28.0
-    ]
-   }
+    {
+      "stat": "da",
+      "values": [
+        21.0,
+        21.0,
+        28.0,
+        28.0,
+        28.0
+      ]
+    }
   ],
   "flats": [
-   {
-    "stat": "da",
-    "trigger": "init",
-    "cap": null,
-    "values": [
-     52.0,
-     55.0,
-     59.0,
-     62.0,
-     65.0
-    ]
-   },
-   {
-    "stat": "da",
-    "trigger": "lesson_sp",
-    "cap": null,
-    "values": [
-     13.0,
-     13.0,
-     13.0,
-     17.0,
-     17.0
-    ],
-    "tstat": "da"
-   },
-   {
-    "stat": "da",
-    "trigger": "skill",
-    "cap": null,
-    "values": [
-     2.0,
-     2.0,
-     2.0,
-     2.0,
-     3.0
-    ]
-   }
+    {
+      "stat": "da",
+      "trigger": "init",
+      "cap": null,
+      "values": [
+        52.0,
+        55.0,
+        59.0,
+        62.0,
+        65.0
+      ]
+    },
+    {
+      "stat": "da",
+      "trigger": "lesson_sp",
+      "cap": null,
+      "values": [
+        13.0,
+        13.0,
+        13.0,
+        17.0,
+        17.0
+      ],
+      "tstat": "da"
+    },
+    {
+      "stat": "da",
+      "trigger": "skill",
+      "cap": null,
+      "values": [
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        3.0
+      ]
+    }
   ],
   "rewardPItem": {
-   "name": "ほっこりまんぷく",
-   "rarity": "SSR",
-   "plan": "センス"
+    "name": "ほっこりまんぷく",
+    "rarity": "SSR",
+    "plan": "センス"
   },
   "drinkGen": {
-   "resource": "drink",
-   "trigger": "skill",
-   "count": 1,
-   "cap": 4
+    "resource": "drink",
+    "trigger": "skill",
+    "count": 1,
+    "cap": 4
   },
   "supportEvent": {
-   "stat": "da",
-   "value": 20
+    "stat": "da",
+    "value": 20
   },
-  "eventGrants": {"enhance": 1}
- },
+  "eventGrants": {
+    "enhance": 1
+  }
+},
  {
   "id": "ssr-059",
   "name": "夏を満喫するわよ！",
@@ -4918,87 +4976,89 @@ export const SUPPORT_CARDS: SupportCard[] = [
  {
   "id": "ssr-063",
   "name": "もうっ！　冷たいよ！",
-  "eventGrants": { "enhance": 1 },
+  "eventGrants": {
+    "enhance": 1
+  },
   "rarity": "ssr",
   "type": "da",
   "plan": "logic",
   "imageUrl": "https://image02.seesaawiki.jp/g/u/gakumasu/FRoEBPBAve-s.jpg",
   "paramBonus": null,
   "lessonSupport": [
-   66.1,
-   74.6,
-   83.1,
-   91.5,
-   100.0
+    66.1,
+    74.6,
+    83.1,
+    91.5,
+    100.0
   ],
   "eventUp": [
-   50.0,
-   75.0,
-   75.0,
-   75.0,
-   100.0
+    50.0,
+    75.0,
+    75.0,
+    75.0,
+    100.0
   ],
   "spRates": [
-   {
-    "stat": "all",
-    "values": [
-     21.0,
-     21.0,
-     28.0,
-     28.0,
-     28.0
-    ]
-   }
+    {
+      "stat": "da",
+      "values": [
+        21.0,
+        21.0,
+        28.0,
+        28.0,
+        28.0
+      ]
+    }
   ],
   "flats": [
-   {
-    "stat": "da",
-    "trigger": "init",
-    "cap": null,
-    "values": [
-     52.0,
-     55.0,
-     59.0,
-     62.0,
-     65.0
-    ]
-   },
-   {
-    "stat": "da",
-    "trigger": "lesson_sp",
-    "cap": null,
-    "values": [
-     13.0,
-     13.0,
-     13.0,
-     17.0,
-     17.0
-    ],
-    "tstat": "da"
-   },
-   {
-    "stat": "da",
-    "trigger": "exam",
-    "cap": 2,
-    "values": [
-     17.0,
-     17.0,
-     17.0,
-     17.0,
-     22.0
-    ]
-   }
+    {
+      "stat": "da",
+      "trigger": "init",
+      "cap": null,
+      "values": [
+        52.0,
+        55.0,
+        59.0,
+        62.0,
+        65.0
+      ]
+    },
+    {
+      "stat": "da",
+      "trigger": "lesson_sp",
+      "cap": null,
+      "values": [
+        13.0,
+        13.0,
+        13.0,
+        17.0,
+        17.0
+      ],
+      "tstat": "da"
+    },
+    {
+      "stat": "da",
+      "trigger": "exam",
+      "cap": 2,
+      "values": [
+        17.0,
+        17.0,
+        17.0,
+        17.0,
+        22.0
+      ]
+    }
   ],
   "rewardPItem": {
-   "name": "負けず嫌いの勲章",
-   "rarity": "SSR",
-   "plan": "ロジック"
+    "name": "負けず嫌いの勲章",
+    "rarity": "SSR",
+    "plan": "ロジック"
   },
   "supportEvent": {
-   "stat": "da",
-   "value": 20
+    "stat": "da",
+    "value": 20
   }
- },
+},
  {
   "id": "ssr-064",
   "name": "「ア」じゃなくて「エ」！",
@@ -5008,81 +5068,83 @@ export const SUPPORT_CARDS: SupportCard[] = [
   "imageUrl": "https://image01.seesaawiki.jp/g/u/gakumasu/r7WvtQwsmz-s.jpg",
   "paramBonus": null,
   "lessonSupport": [
-   66.1,
-   74.6,
-   83.1,
-   91.5,
-   100.0
+    66.1,
+    74.6,
+    83.1,
+    91.5,
+    100.0
   ],
   "eventUp": [
-   50.0,
-   75.0,
-   75.0,
-   75.0,
-   100.0
+    50.0,
+    75.0,
+    75.0,
+    75.0,
+    100.0
   ],
   "spRates": [
-   {
-    "stat": "all",
-    "values": [
-     21.0,
-     21.0,
-     28.0,
-     28.0,
-     28.0
-    ]
-   }
+    {
+      "stat": "vi",
+      "values": [
+        21.0,
+        21.0,
+        28.0,
+        28.0,
+        28.0
+      ]
+    }
   ],
   "flats": [
-   {
-    "stat": "vi",
-    "trigger": "init",
-    "cap": null,
-    "values": [
-     52.0,
-     55.0,
-     59.0,
-     62.0,
-     65.0
-    ]
-   },
-   {
-    "stat": "vi",
-    "trigger": "lesson_normal",
-    "cap": null,
-    "values": [
-     4.0,
-     4.0,
-     4.0,
-     6.0,
-     6.0
-    ],
-    "tstat": "vi"
-   },
-   {
-    "stat": "vi",
-    "trigger": "skill",
-    "cap": null,
-    "values": [
-     2.0,
-     2.0,
-     2.0,
-     2.0,
-     3.0
-    ]
-   }
+    {
+      "stat": "vi",
+      "trigger": "init",
+      "cap": null,
+      "values": [
+        52.0,
+        55.0,
+        59.0,
+        62.0,
+        65.0
+      ]
+    },
+    {
+      "stat": "vi",
+      "trigger": "lesson_normal",
+      "cap": null,
+      "values": [
+        4.0,
+        4.0,
+        4.0,
+        6.0,
+        6.0
+      ],
+      "tstat": "vi"
+    },
+    {
+      "stat": "vi",
+      "trigger": "skill",
+      "cap": null,
+      "values": [
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        3.0
+      ]
+    }
   ],
   "rewardSkill": {
-   "name": "お泊り猛勉強",
-   "rarity": "SSR",
-   "type": "メンタル"
+    "name": "お泊り猛勉強",
+    "rarity": "SSR",
+    "type": "メンタル"
   },
   "supportEvent": {
-   "stat": "vi",
-   "value": 20
+    "stat": "vi",
+    "value": 20
   },
-  "eventGrants": {"enhance": 1}
- },
+  "eventGrants": {
+    "enhance": 1
+  }
+},
  {
   "id": "ssr-065",
   "name": "晴れたね",
@@ -5213,81 +5275,83 @@ export const SUPPORT_CARDS: SupportCard[] = [
   "imageUrl": "https://image01.seesaawiki.jp/g/u/gakumasu/2u2lN9Y8fu-s.png",
   "paramBonus": null,
   "lessonSupport": [
-   66.1,
-   74.6,
-   83.1,
-   91.5,
-   100.0
+    66.1,
+    74.6,
+    83.1,
+    91.5,
+    100.0
   ],
   "eventUp": [
-   50.0,
-   75.0,
-   75.0,
-   75.0,
-   100.0
+    50.0,
+    75.0,
+    75.0,
+    75.0,
+    100.0
   ],
   "spRates": [
-   {
-    "stat": "all",
-    "values": [
-     21.0,
-     21.0,
-     28.0,
-     28.0,
-     28.0
-    ]
-   }
+    {
+      "stat": "vo",
+      "values": [
+        21.0,
+        21.0,
+        28.0,
+        28.0,
+        28.0
+      ]
+    }
   ],
   "flats": [
-   {
-    "stat": "vo",
-    "trigger": "init",
-    "cap": null,
-    "values": [
-     52.0,
-     55.0,
-     59.0,
-     62.0,
-     65.0
-    ]
-   },
-   {
-    "stat": "vo",
-    "trigger": "lesson_normal",
-    "cap": null,
-    "values": [
-     4.0,
-     4.0,
-     4.0,
-     6.0,
-     6.0
-    ],
-    "tstat": "vo"
-   },
-   {
-    "stat": "vo",
-    "trigger": "enhance",
-    "cap": null,
-    "values": [
-     3.0,
-     3.0,
-     3.0,
-     3.0,
-     4.0
-    ]
-   }
+    {
+      "stat": "vo",
+      "trigger": "init",
+      "cap": null,
+      "values": [
+        52.0,
+        55.0,
+        59.0,
+        62.0,
+        65.0
+      ]
+    },
+    {
+      "stat": "vo",
+      "trigger": "lesson_normal",
+      "cap": null,
+      "values": [
+        4.0,
+        4.0,
+        4.0,
+        6.0,
+        6.0
+      ],
+      "tstat": "vo"
+    },
+    {
+      "stat": "vo",
+      "trigger": "enhance",
+      "cap": null,
+      "values": [
+        3.0,
+        3.0,
+        3.0,
+        3.0,
+        4.0
+      ]
+    }
   ],
   "rewardPItem": {
-   "name": "天川ラーメン巡り",
-   "rarity": "SSR",
-   "plan": "フリー"
+    "name": "天川ラーメン巡り",
+    "rarity": "SSR",
+    "plan": "フリー"
   },
   "supportEvent": {
-   "stat": "vo",
-   "value": 20
+    "stat": "vo",
+    "value": 20
   },
-  "eventGrants": {"change": 1}
- },
+  "eventGrants": {
+    "change": 1
+  }
+},
  {
   "id": "ssr-068",
   "name": "あなたにも作ってあげる！",
@@ -5613,81 +5677,83 @@ export const SUPPORT_CARDS: SupportCard[] = [
   "imageUrl": "https://image01.seesaawiki.jp/g/u/gakumasu/_aJvierryy-s.png",
   "paramBonus": null,
   "lessonSupport": [
-   66.1,
-   74.6,
-   83.1,
-   91.5,
-   100.0
+    66.1,
+    74.6,
+    83.1,
+    91.5,
+    100.0
   ],
   "eventUp": [
-   50.0,
-   75.0,
-   75.0,
-   75.0,
-   100.0
+    50.0,
+    75.0,
+    75.0,
+    75.0,
+    100.0
   ],
   "spRates": [
-   {
-    "stat": "all",
-    "values": [
-     21.0,
-     21.0,
-     28.0,
-     28.0,
-     28.0
-    ]
-   }
+    {
+      "stat": "vi",
+      "values": [
+        21.0,
+        21.0,
+        28.0,
+        28.0,
+        28.0
+      ]
+    }
   ],
   "flats": [
-   {
-    "stat": "vi",
-    "trigger": "init",
-    "cap": null,
-    "values": [
-     52.0,
-     55.0,
-     59.0,
-     62.0,
-     65.0
-    ]
-   },
-   {
-    "stat": "vi",
-    "trigger": "lesson_sp",
-    "cap": null,
-    "values": [
-     13.0,
-     13.0,
-     13.0,
-     17.0,
-     17.0
-    ],
-    "tstat": "vi"
-   },
-   {
-    "stat": "vi",
-    "trigger": "skill",
-    "cap": null,
-    "values": [
-     2.0,
-     2.0,
-     2.0,
-     2.0,
-     3.0
-    ]
-   }
+    {
+      "stat": "vi",
+      "trigger": "init",
+      "cap": null,
+      "values": [
+        52.0,
+        55.0,
+        59.0,
+        62.0,
+        65.0
+      ]
+    },
+    {
+      "stat": "vi",
+      "trigger": "lesson_sp",
+      "cap": null,
+      "values": [
+        13.0,
+        13.0,
+        13.0,
+        17.0,
+        17.0
+      ],
+      "tstat": "vi"
+    },
+    {
+      "stat": "vi",
+      "trigger": "skill",
+      "cap": null,
+      "values": [
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        3.0
+      ]
+    }
   ],
   "rewardPItem": {
-   "name": "星のリトルプリンス",
-   "rarity": "SSR",
-   "plan": "フリー"
+    "name": "星のリトルプリンス",
+    "rarity": "SSR",
+    "plan": "フリー"
   },
   "supportEvent": {
-   "stat": "vi",
-   "value": 20
+    "stat": "vi",
+    "value": 20
   },
-  "eventGrants": {"enhance": 1}
- },
+  "eventGrants": {
+    "enhance": 1
+  }
+},
  {
   "id": "ssr-074",
   "name": "おいしい顔、いただき〜！",
@@ -5697,81 +5763,83 @@ export const SUPPORT_CARDS: SupportCard[] = [
   "imageUrl": "https://image02.seesaawiki.jp/g/u/gakumasu/L3e2g0VdpM-s.png",
   "paramBonus": null,
   "lessonSupport": [
-   66.1,
-   74.6,
-   83.1,
-   91.5,
-   100.0
+    66.1,
+    74.6,
+    83.1,
+    91.5,
+    100.0
   ],
   "eventUp": [
-   50.0,
-   75.0,
-   75.0,
-   75.0,
-   100.0
+    50.0,
+    75.0,
+    75.0,
+    75.0,
+    100.0
   ],
   "spRates": [
-   {
-    "stat": "all",
-    "values": [
-     21.0,
-     21.0,
-     28.0,
-     28.0,
-     28.0
-    ]
-   }
+    {
+      "stat": "da",
+      "values": [
+        21.0,
+        21.0,
+        28.0,
+        28.0,
+        28.0
+      ]
+    }
   ],
   "flats": [
-   {
-    "stat": "da",
-    "trigger": "init",
-    "cap": null,
-    "values": [
-     52.0,
-     55.0,
-     59.0,
-     62.0,
-     65.0
-    ]
-   },
-   {
-    "stat": "da",
-    "trigger": "lesson_sp",
-    "cap": null,
-    "values": [
-     13.0,
-     13.0,
-     13.0,
-     17.0,
-     17.0
-    ],
-    "tstat": "da"
-   },
-   {
-    "stat": "da",
-    "trigger": "enhance",
-    "cap": null,
-    "values": [
-     3.0,
-     3.0,
-     3.0,
-     3.0,
-     4.0
-    ]
-   }
+    {
+      "stat": "da",
+      "trigger": "init",
+      "cap": null,
+      "values": [
+        52.0,
+        55.0,
+        59.0,
+        62.0,
+        65.0
+      ]
+    },
+    {
+      "stat": "da",
+      "trigger": "lesson_sp",
+      "cap": null,
+      "values": [
+        13.0,
+        13.0,
+        13.0,
+        17.0,
+        17.0
+      ],
+      "tstat": "da"
+    },
+    {
+      "stat": "da",
+      "trigger": "enhance",
+      "cap": null,
+      "values": [
+        3.0,
+        3.0,
+        3.0,
+        3.0,
+        4.0
+      ]
+    }
   ],
   "rewardSkill": {
-   "name": "心のアルバム",
-   "rarity": "SSR",
-   "type": "アクティブ"
+    "name": "心のアルバム",
+    "rarity": "SSR",
+    "type": "アクティブ"
   },
   "supportEvent": {
-   "stat": "da",
-   "value": 20
+    "stat": "da",
+    "value": 20
   },
-  "eventGrants": {"enhance": 1}
- },
+  "eventGrants": {
+    "enhance": 1
+  }
+},
  {
   "id": "ssr-075",
   "name": "可愛いと可愛いで可愛い！",
@@ -5781,81 +5849,83 @@ export const SUPPORT_CARDS: SupportCard[] = [
   "imageUrl": "https://image01.seesaawiki.jp/g/u/gakumasu/CxiDSap7IY-s.png",
   "paramBonus": null,
   "lessonSupport": [
-   66.1,
-   74.6,
-   83.1,
-   91.5,
-   100.0
+    66.1,
+    74.6,
+    83.1,
+    91.5,
+    100.0
   ],
   "eventUp": [
-   50.0,
-   75.0,
-   75.0,
-   75.0,
-   100.0
+    50.0,
+    75.0,
+    75.0,
+    75.0,
+    100.0
   ],
   "spRates": [
-   {
-    "stat": "all",
-    "values": [
-     21.0,
-     21.0,
-     28.0,
-     28.0,
-     28.0
-    ]
-   }
+    {
+      "stat": "vo",
+      "values": [
+        21.0,
+        21.0,
+        28.0,
+        28.0,
+        28.0
+      ]
+    }
   ],
   "flats": [
-   {
-    "stat": "vo",
-    "trigger": "init",
-    "cap": null,
-    "values": [
-     52.0,
-     55.0,
-     59.0,
-     62.0,
-     65.0
-    ]
-   },
-   {
-    "stat": "vo",
-    "trigger": "lesson_sp",
-    "cap": null,
-    "values": [
-     13.0,
-     13.0,
-     13.0,
-     17.0,
-     17.0
-    ],
-    "tstat": "vo"
-   },
-   {
-    "stat": "vo",
-    "trigger": "skill",
-    "cap": null,
-    "values": [
-     2.0,
-     2.0,
-     2.0,
-     2.0,
-     3.0
-    ]
-   }
+    {
+      "stat": "vo",
+      "trigger": "init",
+      "cap": null,
+      "values": [
+        52.0,
+        55.0,
+        59.0,
+        62.0,
+        65.0
+      ]
+    },
+    {
+      "stat": "vo",
+      "trigger": "lesson_sp",
+      "cap": null,
+      "values": [
+        13.0,
+        13.0,
+        13.0,
+        17.0,
+        17.0
+      ],
+      "tstat": "vo"
+    },
+    {
+      "stat": "vo",
+      "trigger": "skill",
+      "cap": null,
+      "values": [
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        3.0
+      ]
+    }
   ],
   "rewardSkill": {
-   "name": "ティーパーティ",
-   "rarity": "SSR",
-   "type": "メンタル"
+    "name": "ティーパーティ",
+    "rarity": "SSR",
+    "type": "メンタル"
   },
   "supportEvent": {
-   "stat": "vo",
-   "value": 20
+    "stat": "vo",
+    "value": 20
   },
-  "eventGrants": {"enhance": 1}
- },
+  "eventGrants": {
+    "enhance": 1
+  }
+},
  {
   "id": "ssr-076",
   "name": "私の目に狂いはない",
@@ -6198,32 +6268,32 @@ export const SUPPORT_CARDS: SupportCard[] = [
   "imageUrl": "https://image02.seesaawiki.jp/g/u/gakumasu/aeQ67Iplfe-s.png",
   "paramBonus": null,
   "lessonSupport": [
-   66.1,
-   74.6,
-   83.1,
-   91.5,
-   100.0
+    66.1,
+    74.6,
+    83.1,
+    91.5,
+    100.0
   ],
   "eventUp": null,
   "spRates": [
-   {
-    "stat": "all",
-    "values": [
-     10.5,
-     10.5,
-     14.0,
-     14.0,
-     14.0
-    ]
-   }
+    {
+      "stat": "all",
+      "values": [
+        10.5,
+        10.5,
+        14.0,
+        14.0,
+        14.0
+      ]
+    }
   ],
   "flats": [],
   "rewardPItem": {
-   "name": "信頼の証",
-   "rarity": "SSR",
-   "plan": "フリー"
+    "name": "信頼の証",
+    "rarity": "SSR",
+    "plan": "フリー"
   }
- },
+},
  {
   "id": "sr-082",
   "name": "ゆるるんあくび顔",
@@ -6317,86 +6387,86 @@ export const SUPPORT_CARDS: SupportCard[] = [
   "imageUrl": "https://image02.seesaawiki.jp/g/u/gakumasu/490c3af2fddb1f2a-s.png",
   "paramBonus": null,
   "lessonSupport": [
-   59.2,
-   69.4,
-   79.6,
-   89.8,
-   100.0
+    59.2,
+    69.4,
+    79.6,
+    89.8,
+    100.0
   ],
   "eventUp": [
-   50.0,
-   50.0,
-   75.0,
-   75.0,
-   100.0
+    50.0,
+    50.0,
+    75.0,
+    75.0,
+    100.0
   ],
   "spRates": [
-   {
-    "stat": "all",
-    "values": [
-     10.5,
-     21.0,
-     21.0,
-     21.0,
-     21.0
-    ]
-   }
+    {
+      "stat": "vo",
+      "values": [
+        10.5,
+        21.0,
+        21.0,
+        21.0,
+        21.0
+      ]
+    }
   ],
   "flats": [
-   {
-    "stat": "vo",
-    "trigger": "init",
-    "cap": null,
-    "values": [
-     37.0,
-     40.0,
-     43.0,
-     46.0,
-     49.0
-    ]
-   },
-   {
-    "stat": "vo",
-    "trigger": "lesson_sp",
-    "cap": null,
-    "values": [
-     7.0,
-     7.0,
-     7.0,
-     7.0,
-     13.0
-    ],
-    "tstat": "vo"
-   },
-   {
-    "stat": "vo",
-    "trigger": "shikyu",
-    "cap": 2,
-    "values": [
-     13.0,
-     13.0,
-     13.0,
-     26.0,
-     26.0
-    ]
-   }
+    {
+      "stat": "vo",
+      "trigger": "init",
+      "cap": null,
+      "values": [
+        37.0,
+        40.0,
+        43.0,
+        46.0,
+        49.0
+      ]
+    },
+    {
+      "stat": "vo",
+      "trigger": "lesson_sp",
+      "cap": null,
+      "values": [
+        7.0,
+        7.0,
+        7.0,
+        7.0,
+        13.0
+      ],
+      "tstat": "vo"
+    },
+    {
+      "stat": "vo",
+      "trigger": "shikyu",
+      "cap": 2,
+      "values": [
+        13.0,
+        13.0,
+        13.0,
+        26.0,
+        26.0
+      ]
+    }
   ],
   "rewardPItem": {
-   "name": "懐かしパーティー論争",
-   "rarity": "SR",
-   "plan": "センス"
+    "name": "懐かしパーティー論争",
+    "rarity": "SR",
+    "plan": "センス"
   },
   "pItemFlat": {
-   "stat": "vo",
-   "trigger": "shikyu",
-   "value": 20,
-   "cap": 1
+    "stat": "vo",
+    "trigger": "shikyu",
+    "value": 20,
+    "cap": 1
   },
   "supportEvent": {
-   "stat": "vo",
-   "value": 15
+    "stat": "vo",
+    "value": 15
   }
- },
+},
  {
   "id": "sr-084",
   "name": "のんびり美味しいひととき",
@@ -6407,73 +6477,73 @@ export const SUPPORT_CARDS: SupportCard[] = [
   "paramBonus": null,
   "lessonSupport": null,
   "eventUp": [
-   0,
-   50.0,
-   0,
-   0,
-   100.0
+    0,
+    50.0,
+    0,
+    0,
+    100.0
   ],
   "spRates": [
-   {
-    "stat": "all",
-    "values": [
-     0,
-     21.0,
-     0,
-     0,
-     21.0
-    ]
-   }
+    {
+      "stat": "vi",
+      "values": [
+        0,
+        21.0,
+        0,
+        0,
+        21.0
+      ]
+    }
   ],
   "flats": [
-   {
-    "stat": "vi",
-    "trigger": "init",
-    "cap": null,
-    "values": [
-     0,
-     40.0,
-     0,
-     0,
-     49.0
-    ]
-   },
-   {
-    "stat": "vi",
-    "trigger": "lesson_sp",
-    "cap": 4,
-    "values": [
-     0,
-     8.0,
-     0,
-     0,
-     15.0
-    ],
-    "tstat": "any"
-   },
-   {
-    "stat": "vi",
-    "trigger": "skill",
-    "cap": null,
-    "values": [
-     0,
-     1.0,
-     0,
-     0,
-     2.0
-    ]
-   }
+    {
+      "stat": "vi",
+      "trigger": "init",
+      "cap": null,
+      "values": [
+        0,
+        40.0,
+        0,
+        0,
+        49.0
+      ]
+    },
+    {
+      "stat": "vi",
+      "trigger": "lesson_sp",
+      "cap": 4,
+      "values": [
+        0,
+        8.0,
+        0,
+        0,
+        15.0
+      ],
+      "tstat": "any"
+    },
+    {
+      "stat": "vi",
+      "trigger": "skill",
+      "cap": null,
+      "values": [
+        0,
+        1.0,
+        0,
+        0,
+        2.0
+      ]
+    }
   ],
   "rewardPItem": {
-   "name": "のんびりアフタヌーン",
-   "rarity": "SR",
-   "plan": "アノマリー"
+    "name": "のんびりアフタヌーン",
+    "rarity": "SR",
+    "plan": "アノマリー"
   },
   "supportEvent": {
-   "stat": "vi",
-   "value": 15
+    "stat": "vi",
+    "value": 15
   }
- },
+},
  {
   "id": "sr-085",
   "name": "パクパクもぐもぐ",
@@ -6649,80 +6719,80 @@ export const SUPPORT_CARDS: SupportCard[] = [
   "imageUrl": "https://image02.seesaawiki.jp/g/u/gakumasu/4e8f0d3a8c9f1fab-s.png",
   "paramBonus": null,
   "lessonSupport": [
-   59.2,
-   69.4,
-   79.6,
-   89.8,
-   100.0
+    59.2,
+    69.4,
+    79.6,
+    89.8,
+    100.0
   ],
   "eventUp": [
-   50.0,
-   50.0,
-   75.0,
-   75.0,
-   100.0
+    50.0,
+    50.0,
+    75.0,
+    75.0,
+    100.0
   ],
   "spRates": [
-   {
-    "stat": "all",
-    "values": [
-     10.5,
-     21.0,
-     21.0,
-     21.0,
-     21.0
-    ]
-   }
+    {
+      "stat": "vi",
+      "values": [
+        10.5,
+        21.0,
+        21.0,
+        21.0,
+        21.0
+      ]
+    }
   ],
   "flats": [
-   {
-    "stat": "vi",
-    "trigger": "init",
-    "cap": null,
-    "values": [
-     37.0,
-     40.0,
-     43.0,
-     46.0,
-     49.0
-    ]
-   },
-   {
-    "stat": "vi",
-    "trigger": "skill",
-    "cap": null,
-    "values": [
-     1.0,
-     1.0,
-     1.0,
-     1.0,
-     2.0
-    ]
-   },
-   {
-    "stat": "vi",
-    "trigger": "lesson_sp",
-    "cap": 4,
-    "values": [
-     8.0,
-     8.0,
-     8.0,
-     15.0,
-     15.0
-    ],
-    "tstat": "any"
-   }
+    {
+      "stat": "vi",
+      "trigger": "init",
+      "cap": null,
+      "values": [
+        37.0,
+        40.0,
+        43.0,
+        46.0,
+        49.0
+      ]
+    },
+    {
+      "stat": "vi",
+      "trigger": "skill",
+      "cap": null,
+      "values": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        2.0
+      ]
+    },
+    {
+      "stat": "vi",
+      "trigger": "lesson_sp",
+      "cap": 4,
+      "values": [
+        8.0,
+        8.0,
+        8.0,
+        15.0,
+        15.0
+      ],
+      "tstat": "any"
+    }
   ],
   "rewardPItem": {
-   "name": "演技のたしなみ",
-   "rarity": "SR",
-   "plan": "ロジック"
+    "name": "演技のたしなみ",
+    "rarity": "SR",
+    "plan": "ロジック"
   },
   "supportEvent": {
-   "stat": "vi",
-   "value": 15
+    "stat": "vi",
+    "value": 15
   }
- },
+},
  {
   "id": "sr-088",
   "name": "お近づきの印☆",
@@ -6731,81 +6801,81 @@ export const SUPPORT_CARDS: SupportCard[] = [
   "plan": "anomaly",
   "imageUrl": "https://image02.seesaawiki.jp/g/u/gakumasu/34d27adc3310c062-s.png",
   "paramBonus": [
-   4.4,
-   4.9,
-   5.4,
-   5.9,
-   6.4
+    4.4,
+    4.9,
+    5.4,
+    5.9,
+    6.4
   ],
   "lessonSupport": [
-   59.2,
-   69.4,
-   79.6,
-   89.8,
-   100.0
+    59.2,
+    69.4,
+    79.6,
+    89.8,
+    100.0
   ],
   "eventUp": [
-   50.0,
-   50.0,
-   75.0,
-   75.0,
-   100.0
+    50.0,
+    50.0,
+    75.0,
+    75.0,
+    100.0
   ],
   "spRates": [
-   {
-    "stat": "all",
-    "values": [
-     10.5,
-     21.0,
-     21.0,
-     21.0,
-     21.0
-    ]
-   }
+    {
+      "stat": "vo",
+      "values": [
+        10.5,
+        21.0,
+        21.0,
+        21.0,
+        21.0
+      ]
+    }
   ],
   "flats": [
-   {
-    "stat": "vo",
-    "trigger": "lesson_sp",
-    "cap": null,
-    "values": [
-     7.0,
-     7.0,
-     7.0,
-     13.0,
-     13.0
-    ],
-    "tstat": "vo"
-   },
-   {
-    "stat": "vo",
-    "trigger": "sodan",
-    "cap": null,
-    "values": [
-     7.0,
-     7.0,
-     7.0,
-     14.0,
-     14.0
-    ]
-   }
+    {
+      "stat": "vo",
+      "trigger": "lesson_sp",
+      "cap": null,
+      "values": [
+        7.0,
+        7.0,
+        7.0,
+        13.0,
+        13.0
+      ],
+      "tstat": "vo"
+    },
+    {
+      "stat": "vo",
+      "trigger": "sodan",
+      "cap": null,
+      "values": [
+        7.0,
+        7.0,
+        7.0,
+        14.0,
+        14.0
+      ]
+    }
   ],
   "rewardPItem": {
-   "name": "ほくほくハンバーガー",
-   "rarity": "SR",
-   "plan": "アノマリー"
+    "name": "ほくほくハンバーガー",
+    "rarity": "SR",
+    "plan": "アノマリー"
   },
   "pItemFlat": {
-   "stat": "vo",
-   "trigger": "skill",
-   "value": 20,
-   "cap": 1
+    "stat": "vo",
+    "trigger": "skill",
+    "value": 20,
+    "cap": 1
   },
   "supportEvent": {
-   "stat": "vo",
-   "value": 15
+    "stat": "vo",
+    "value": 15
   }
- },
+},
  {
   "id": "sr-089",
   "name": "洗濯物のバランスタワー",
@@ -6892,87 +6962,87 @@ export const SUPPORT_CARDS: SupportCard[] = [
   "imageUrl": "https://image01.seesaawiki.jp/g/u/gakumasu/c005670cc01e4e8f-s.png",
   "paramBonus": null,
   "lessonSupport": [
-   59.2,
-   69.4,
-   79.6,
-   89.8,
-   100.0
+    59.2,
+    69.4,
+    79.6,
+    89.8,
+    100.0
   ],
   "eventUp": [
-   50.0,
-   50.0,
-   75.0,
-   75.0,
-   100.0
+    50.0,
+    50.0,
+    75.0,
+    75.0,
+    100.0
   ],
   "spRates": [
-   {
-    "stat": "all",
-    "values": [
-     10.5,
-     21.0,
-     21.0,
-     21.0,
-     21.0
-    ]
-   }
+    {
+      "stat": "vo",
+      "values": [
+        10.5,
+        21.0,
+        21.0,
+        21.0,
+        21.0
+      ]
+    }
   ],
   "flats": [
-   {
-    "stat": "vo",
-    "trigger": "init",
-    "cap": null,
-    "values": [
-     37.0,
-     40.0,
-     43.0,
-     46.0,
-     49.0
-    ]
-   },
-   {
-    "stat": "vo",
-    "trigger": "lesson_sp",
-    "cap": null,
-    "values": [
-     7.0,
-     7.0,
-     7.0,
-     13.0,
-     13.0
-    ],
-    "tstat": "vo"
-   },
-   {
-    "stat": "vo",
-    "trigger": "exam",
-    "cap": 2,
-    "values": [
-     9.0,
-     9.0,
-     9.0,
-     17.0,
-     17.0
-    ]
-   }
+    {
+      "stat": "vo",
+      "trigger": "init",
+      "cap": null,
+      "values": [
+        37.0,
+        40.0,
+        43.0,
+        46.0,
+        49.0
+      ]
+    },
+    {
+      "stat": "vo",
+      "trigger": "lesson_sp",
+      "cap": null,
+      "values": [
+        7.0,
+        7.0,
+        7.0,
+        13.0,
+        13.0
+      ],
+      "tstat": "vo"
+    },
+    {
+      "stat": "vo",
+      "trigger": "exam",
+      "cap": 2,
+      "values": [
+        9.0,
+        9.0,
+        9.0,
+        17.0,
+        17.0
+      ]
+    }
   ],
   "rewardPItem": {
-   "name": "幸せの詰め合わせ",
-   "rarity": "SR",
-   "plan": "ロジック"
+    "name": "幸せの詰め合わせ",
+    "rarity": "SR",
+    "plan": "ロジック"
   },
   "pItemFlat": {
-   "stat": "vo",
-   "trigger": "lesson_sp",
-   "value": 20,
-   "cap": 2,
-   "tstat": "vo"
+    "stat": "vo",
+    "trigger": "lesson_sp",
+    "value": 20,
+    "cap": 2,
+    "tstat": "vo"
   },
   "supportEvent": {
-   "stat": "vo",
-   "value": 15
+    "stat": "vo",
+    "value": 15
   }
- },
+},
  {
   "id": "sr-091",
   "name": "仲良しの証",
@@ -7567,74 +7637,74 @@ export const SUPPORT_CARDS: SupportCard[] = [
   "plan": "sense",
   "imageUrl": "https://image01.seesaawiki.jp/g/u/gakumasu/b6a5b3b39420f65f-s.jpg",
   "paramBonus": [
-   4.4,
-   4.9,
-   5.4,
-   5.9,
-   6.4
+    4.4,
+    4.9,
+    5.4,
+    5.9,
+    6.4
   ],
   "lessonSupport": [
-   59.2,
-   69.4,
-   79.6,
-   89.8,
-   100.0
+    59.2,
+    69.4,
+    79.6,
+    89.8,
+    100.0
   ],
   "eventUp": [
-   50.0,
-   50.0,
-   75.0,
-   75.0,
-   100.0
+    50.0,
+    50.0,
+    75.0,
+    75.0,
+    100.0
   ],
   "spRates": [
-   {
-    "stat": "all",
-    "values": [
-     10.5,
-     21.0,
-     21.0,
-     21.0,
-     21.0
-    ]
-   }
+    {
+      "stat": "vi",
+      "values": [
+        10.5,
+        21.0,
+        21.0,
+        21.0,
+        21.0
+      ]
+    }
   ],
   "flats": [
-   {
-    "stat": "vi",
-    "trigger": "pitem",
-    "cap": 6,
-    "values": [
-     6.0,
-     6.0,
-     6.0,
-     6.0,
-     11.0
-    ]
-   },
-   {
-    "stat": "vi",
-    "trigger": "delete",
-    "cap": null,
-    "values": [
-     4.0,
-     4.0,
-     4.0,
-     8.0,
-     8.0
-    ]
-   }
+    {
+      "stat": "vi",
+      "trigger": "pitem",
+      "cap": 6,
+      "values": [
+        6.0,
+        6.0,
+        6.0,
+        6.0,
+        11.0
+      ]
+    },
+    {
+      "stat": "vi",
+      "trigger": "delete",
+      "cap": null,
+      "values": [
+        4.0,
+        4.0,
+        4.0,
+        8.0,
+        8.0
+      ]
+    }
   ],
   "rewardPItem": {
-   "name": "ごきげんようレッスン",
-   "rarity": "SR",
-   "plan": "センス"
+    "name": "ごきげんようレッスン",
+    "rarity": "SR",
+    "plan": "センス"
   },
   "supportEvent": {
-   "stat": "vi",
-   "value": 15
+    "stat": "vi",
+    "value": 15
   }
- },
+},
  {
   "id": "sr-099",
   "name": "あったか足ツボマッサージ",
@@ -7726,87 +7796,87 @@ export const SUPPORT_CARDS: SupportCard[] = [
   "plan": "sense",
   "imageUrl": "https://image01.seesaawiki.jp/g/u/gakumasu/0bd5b0f2c2df1530-s.jpeg",
   "paramBonus": [
-   4.4,
-   4.9,
-   5.4,
-   5.9,
-   6.4
+    4.4,
+    4.9,
+    5.4,
+    5.9,
+    6.4
   ],
   "lessonSupport": [
-   59.2,
-   69.4,
-   79.6,
-   89.8,
-   100.0
+    59.2,
+    69.4,
+    79.6,
+    89.8,
+    100.0
   ],
   "eventUp": [
-   50.0,
-   50.0,
-   75.0,
-   75.0,
-   100.0
+    50.0,
+    50.0,
+    75.0,
+    75.0,
+    100.0
   ],
   "spRates": [
-   {
-    "stat": "all",
-    "values": [
-     10.5,
-     21.0,
-     21.0,
-     21.0,
-     21.0
-    ]
-   }
+    {
+      "stat": "da",
+      "values": [
+        10.5,
+        21.0,
+        21.0,
+        21.0,
+        21.0
+      ]
+    }
   ],
   "flats": [
-   {
-    "stat": "da",
-    "trigger": "lesson_sp",
-    "cap": null,
-    "values": [
-     7.0,
-     7.0,
-     7.0,
-     7.0,
-     13.0
-    ],
-    "tstat": "da"
-   },
-   {
-    "stat": "da",
-    "trigger": "delete",
-    "cap": null,
-    "values": [
-     4.0,
-     4.0,
-     4.0,
-     8.0,
-     8.0
-    ]
-   }
+    {
+      "stat": "da",
+      "trigger": "lesson_sp",
+      "cap": null,
+      "values": [
+        7.0,
+        7.0,
+        7.0,
+        7.0,
+        13.0
+      ],
+      "tstat": "da"
+    },
+    {
+      "stat": "da",
+      "trigger": "delete",
+      "cap": null,
+      "values": [
+        4.0,
+        4.0,
+        4.0,
+        8.0,
+        8.0
+      ]
+    }
   ],
   "rewardPItem": {
-   "name": "びっくり仮装グッズ",
-   "rarity": "SR",
-   "plan": "センス"
+    "name": "びっくり仮装グッズ",
+    "rarity": "SR",
+    "plan": "センス"
   },
   "drinkGen": {
-   "resource": "drink",
-   "trigger": "skill",
-   "count": 1,
-   "cap": 2
+    "resource": "drink",
+    "trigger": "skill",
+    "count": 1,
+    "cap": 2
   },
   "pItemFlat": {
-   "stat": "da",
-   "trigger": "skill",
-   "value": 20,
-   "cap": 2
+    "stat": "da",
+    "trigger": "skill",
+    "value": 20,
+    "cap": 2
   },
   "supportEvent": {
-   "stat": "da",
-   "value": 15
+    "stat": "da",
+    "value": 15
   }
- },
+},
  {
   "id": "sr-101",
   "name": "腹筋で背筋で体幹キープ！",
@@ -8373,80 +8443,80 @@ export const SUPPORT_CARDS: SupportCard[] = [
   "imageUrl": "https://image01.seesaawiki.jp/g/u/gakumasu/3e7652cca12b78c7-s.png",
   "paramBonus": null,
   "lessonSupport": [
-   59.2,
-   69.4,
-   79.6,
-   89.8,
-   100.0
+    59.2,
+    69.4,
+    79.6,
+    89.8,
+    100.0
   ],
   "eventUp": [
-   50.0,
-   50.0,
-   75.0,
-   75.0,
-   100.0
+    50.0,
+    50.0,
+    75.0,
+    75.0,
+    100.0
   ],
   "spRates": [
-   {
-    "stat": "all",
-    "values": [
-     10.5,
-     21.0,
-     21.0,
-     21.0,
-     21.0
-    ]
-   }
+    {
+      "stat": "vi",
+      "values": [
+        10.5,
+        21.0,
+        21.0,
+        21.0,
+        21.0
+      ]
+    }
   ],
   "flats": [
-   {
-    "stat": "vi",
-    "trigger": "init",
-    "cap": null,
-    "values": [
-     37.0,
-     40.0,
-     43.0,
-     46.0,
-     49.0
-    ]
-   },
-   {
-    "stat": "vi",
-    "trigger": "lesson_sp",
-    "cap": null,
-    "values": [
-     7.0,
-     7.0,
-     7.0,
-     7.0,
-     13.0
-    ],
-    "tstat": "vi"
-   },
-   {
-    "stat": "vi",
-    "trigger": "delete",
-    "cap": 3,
-    "values": [
-     8.0,
-     8.0,
-     8.0,
-     16.0,
-     16.0
-    ]
-   }
+    {
+      "stat": "vi",
+      "trigger": "init",
+      "cap": null,
+      "values": [
+        37.0,
+        40.0,
+        43.0,
+        46.0,
+        49.0
+      ]
+    },
+    {
+      "stat": "vi",
+      "trigger": "lesson_sp",
+      "cap": null,
+      "values": [
+        7.0,
+        7.0,
+        7.0,
+        7.0,
+        13.0
+      ],
+      "tstat": "vi"
+    },
+    {
+      "stat": "vi",
+      "trigger": "delete",
+      "cap": 3,
+      "values": [
+        8.0,
+        8.0,
+        8.0,
+        16.0,
+        16.0
+      ]
+    }
   ],
   "rewardPItem": {
-   "name": "へとへとできゅー",
-   "rarity": "SR",
-   "plan": "ロジック"
+    "name": "へとへとできゅー",
+    "rarity": "SR",
+    "plan": "ロジック"
   },
   "supportEvent": {
-   "stat": "vi",
-   "value": 15
+    "stat": "vi",
+    "value": 15
   }
- },
+},
  {
   "id": "sr-109",
   "name": "あん・どぅ・とろわっ！",
@@ -8456,86 +8526,86 @@ export const SUPPORT_CARDS: SupportCard[] = [
   "imageUrl": "https://image01.seesaawiki.jp/g/u/gakumasu/f39c06c4769a2164-s.png",
   "paramBonus": null,
   "lessonSupport": [
-   59.2,
-   69.4,
-   79.6,
-   89.8,
-   100.0
+    59.2,
+    69.4,
+    79.6,
+    89.8,
+    100.0
   ],
   "eventUp": [
-   50.0,
-   50.0,
-   75.0,
-   75.0,
-   100.0
+    50.0,
+    50.0,
+    75.0,
+    75.0,
+    100.0
   ],
   "spRates": [
-   {
-    "stat": "all",
-    "values": [
-     10.5,
-     21.0,
-     21.0,
-     21.0,
-     21.0
-    ]
-   }
+    {
+      "stat": "da",
+      "values": [
+        10.5,
+        21.0,
+        21.0,
+        21.0,
+        21.0
+      ]
+    }
   ],
   "flats": [
-   {
-    "stat": "da",
-    "trigger": "init",
-    "cap": null,
-    "values": [
-     37.0,
-     40.0,
-     43.0,
-     46.0,
-     49.0
-    ]
-   },
-   {
-    "stat": "da",
-    "trigger": "lesson_sp",
-    "cap": null,
-    "values": [
-     7.0,
-     7.0,
-     7.0,
-     7.0,
-     13.0
-    ],
-    "tstat": "da"
-   },
-   {
-    "stat": "da",
-    "trigger": "enhance",
-    "cap": null,
-    "values": [
-     2.0,
-     2.0,
-     2.0,
-     3.0,
-     3.0
-    ]
-   }
+    {
+      "stat": "da",
+      "trigger": "init",
+      "cap": null,
+      "values": [
+        37.0,
+        40.0,
+        43.0,
+        46.0,
+        49.0
+      ]
+    },
+    {
+      "stat": "da",
+      "trigger": "lesson_sp",
+      "cap": null,
+      "values": [
+        7.0,
+        7.0,
+        7.0,
+        7.0,
+        13.0
+      ],
+      "tstat": "da"
+    },
+    {
+      "stat": "da",
+      "trigger": "enhance",
+      "cap": null,
+      "values": [
+        2.0,
+        2.0,
+        2.0,
+        3.0,
+        3.0
+      ]
+    }
   ],
   "rewardPItem": {
-   "name": "のびのびバンド",
-   "rarity": "SR",
-   "plan": "アノマリー"
+    "name": "のびのびバンド",
+    "rarity": "SR",
+    "plan": "アノマリー"
   },
   "pItemFlat": {
-   "stat": "da",
-   "trigger": "skill",
-   "value": 6,
-   "cap": null
+    "stat": "da",
+    "trigger": "skill",
+    "value": 6,
+    "cap": null
   },
   "supportEvent": {
-   "stat": "da",
-   "value": 15
+    "stat": "da",
+    "value": 15
   }
- },
+},
  {
   "id": "sr-110",
   "name": "主菓子、甘い、薄茶、渋み",
@@ -8545,80 +8615,80 @@ export const SUPPORT_CARDS: SupportCard[] = [
   "imageUrl": "https://image02.seesaawiki.jp/g/u/gakumasu/264b11ca58e295c3-s.png",
   "paramBonus": null,
   "lessonSupport": [
-   59.2,
-   69.4,
-   79.6,
-   89.8,
-   100.0
+    59.2,
+    69.4,
+    79.6,
+    89.8,
+    100.0
   ],
   "eventUp": [
-   50.0,
-   50.0,
-   75.0,
-   75.0,
-   100.0
+    50.0,
+    50.0,
+    75.0,
+    75.0,
+    100.0
   ],
   "spRates": [
-   {
-    "stat": "all",
-    "values": [
-     10.5,
-     21.0,
-     21.0,
-     21.0,
-     21.0
-    ]
-   }
+    {
+      "stat": "vi",
+      "values": [
+        10.5,
+        21.0,
+        21.0,
+        21.0,
+        21.0
+      ]
+    }
   ],
   "flats": [
-   {
-    "stat": "vi",
-    "trigger": "init",
-    "cap": null,
-    "values": [
-     37.0,
-     40.0,
-     43.0,
-     46.0,
-     49.0
-    ]
-   },
-   {
-    "stat": "vi",
-    "trigger": "lesson_sp",
-    "cap": null,
-    "values": [
-     7.0,
-     7.0,
-     7.0,
-     7.0,
-     13.0
-    ],
-    "tstat": "vi"
-   },
-   {
-    "stat": "vi",
-    "trigger": "exam",
-    "cap": 2,
-    "values": [
-     9.0,
-     9.0,
-     9.0,
-     17.0,
-     17.0
-    ]
-   }
+    {
+      "stat": "vi",
+      "trigger": "init",
+      "cap": null,
+      "values": [
+        37.0,
+        40.0,
+        43.0,
+        46.0,
+        49.0
+      ]
+    },
+    {
+      "stat": "vi",
+      "trigger": "lesson_sp",
+      "cap": null,
+      "values": [
+        7.0,
+        7.0,
+        7.0,
+        7.0,
+        13.0
+      ],
+      "tstat": "vi"
+    },
+    {
+      "stat": "vi",
+      "trigger": "exam",
+      "cap": 2,
+      "values": [
+        9.0,
+        9.0,
+        9.0,
+        17.0,
+        17.0
+      ]
+    }
   ],
   "rewardPItem": {
-   "name": "おもてなしの気持ち",
-   "rarity": "SR",
-   "plan": "アノマリー"
+    "name": "おもてなしの気持ち",
+    "rarity": "SR",
+    "plan": "アノマリー"
   },
   "supportEvent": {
-   "stat": "vi",
-   "value": 15
+    "stat": "vi",
+    "value": 15
   }
- },
+},
  {
   "id": "sr-111",
   "name": "2名様、ご案内〜♪",
@@ -9141,75 +9211,75 @@ export const SUPPORT_CARDS: SupportCard[] = [
   "plan": "anomaly",
   "imageUrl": "https://image02.seesaawiki.jp/g/u/gakumasu/fc9539e836e3a20e-s.png",
   "paramBonus": [
-   4.4,
-   4.9,
-   5.4,
-   5.9,
-   6.4
+    4.4,
+    4.9,
+    5.4,
+    5.9,
+    6.4
   ],
   "lessonSupport": [
-   59.2,
-   69.4,
-   79.6,
-   89.8,
-   100.0
+    59.2,
+    69.4,
+    79.6,
+    89.8,
+    100.0
   ],
   "eventUp": [
-   50.0,
-   50.0,
-   75.0,
-   75.0,
-   100.0
+    50.0,
+    50.0,
+    75.0,
+    75.0,
+    100.0
   ],
   "spRates": [
-   {
-    "stat": "all",
-    "values": [
-     10.5,
-     21.0,
-     21.0,
-     21.0,
-     21.0
-    ]
-   }
+    {
+      "stat": "vi",
+      "values": [
+        10.5,
+        21.0,
+        21.0,
+        21.0,
+        21.0
+      ]
+    }
   ],
   "flats": [
-   {
-    "stat": "vi",
-    "trigger": "lesson_sp",
-    "cap": null,
-    "values": [
-     7.0,
-     7.0,
-     7.0,
-     7.0,
-     13.0
-    ],
-    "tstat": "vi"
-   },
-   {
-    "stat": "vi",
-    "trigger": "odekake",
-    "cap": null,
-    "values": [
-     5.0,
-     5.0,
-     5.0,
-     10.0,
-     10.0
-    ]
-   }
+    {
+      "stat": "vi",
+      "trigger": "lesson_sp",
+      "cap": null,
+      "values": [
+        7.0,
+        7.0,
+        7.0,
+        7.0,
+        13.0
+      ],
+      "tstat": "vi"
+    },
+    {
+      "stat": "vi",
+      "trigger": "odekake",
+      "cap": null,
+      "values": [
+        5.0,
+        5.0,
+        5.0,
+        10.0,
+        10.0
+      ]
+    }
   ],
   "rewardSkill": {
-   "name": "愛情レインボー",
-   "rarity": "SR",
-   "type": "メンタル"
+    "name": "愛情レインボー",
+    "rarity": "SR",
+    "type": "メンタル"
   },
   "supportEvent": {
-   "stat": "vi",
-   "value": 15
+    "stat": "vi",
+    "value": 15
   }
- },
+},
  {
   "id": "sr-119",
   "name": "目指すはテッペン",
@@ -9219,74 +9289,74 @@ export const SUPPORT_CARDS: SupportCard[] = [
   "imageUrl": "https://image01.seesaawiki.jp/g/u/gakumasu/f85b2cbb7a2b4707-s.png",
   "paramBonus": null,
   "lessonSupport": [
-   59.2,
-   69.4,
-   79.6,
-   89.8,
-   100.0
+    59.2,
+    69.4,
+    79.6,
+    89.8,
+    100.0
   ],
   "eventUp": [
-   50.0,
-   50.0,
-   75.0,
-   75.0,
-   100.0
+    50.0,
+    50.0,
+    75.0,
+    75.0,
+    100.0
   ],
   "spRates": [
-   {
-    "stat": "all",
-    "values": [
-     10.5,
-     21.0,
-     21.0,
-     21.0,
-     21.0
-    ]
-   }
+    {
+      "stat": "da",
+      "values": [
+        10.5,
+        21.0,
+        21.0,
+        21.0,
+        21.0
+      ]
+    }
   ],
   "flats": [
-   {
-    "stat": "da",
-    "trigger": "init",
-    "cap": null,
-    "values": [
-     37.0,
-     40.0,
-     43.0,
-     46.0,
-     49.0
-    ]
-   },
-   {
-    "stat": "da",
-    "trigger": "sodan",
-    "cap": null,
-    "values": [
-     7.0,
-     7.0,
-     7.0,
-     14.0,
-     14.0
-    ]
-   }
+    {
+      "stat": "da",
+      "trigger": "init",
+      "cap": null,
+      "values": [
+        37.0,
+        40.0,
+        43.0,
+        46.0,
+        49.0
+      ]
+    },
+    {
+      "stat": "da",
+      "trigger": "sodan",
+      "cap": null,
+      "values": [
+        7.0,
+        7.0,
+        7.0,
+        14.0,
+        14.0
+      ]
+    }
   ],
   "rewardPItem": {
-   "name": "トレーナーの優しさ",
-   "rarity": "SR",
-   "plan": "フリー"
+    "name": "トレーナーの優しさ",
+    "rarity": "SR",
+    "plan": "フリー"
   },
   "drinkGen": {
-   "resource": "drink",
-   "trigger": "lesson_sp",
-   "count": 1,
-   "cap": 2,
-   "tstat": "da"
+    "resource": "drink",
+    "trigger": "lesson_sp",
+    "count": 1,
+    "cap": 2,
+    "tstat": "da"
   },
   "supportEvent": {
-   "stat": "da",
-   "value": 15
+    "stat": "da",
+    "value": 15
   }
- },
+},
  {
   "id": "sr-120",
   "name": "まだまだのばしてー",
@@ -9296,74 +9366,74 @@ export const SUPPORT_CARDS: SupportCard[] = [
   "imageUrl": "https://image02.seesaawiki.jp/g/u/gakumasu/e1250c9ec6d97a8e-s.png",
   "paramBonus": null,
   "lessonSupport": [
-   59.2,
-   69.4,
-   79.6,
-   89.8,
-   100.0
+    59.2,
+    69.4,
+    79.6,
+    89.8,
+    100.0
   ],
   "eventUp": [
-   50.0,
-   50.0,
-   75.0,
-   75.0,
-   100.0
+    50.0,
+    50.0,
+    75.0,
+    75.0,
+    100.0
   ],
   "spRates": [
-   {
-    "stat": "all",
-    "values": [
-     10.5,
-     21.0,
-     21.0,
-     21.0,
-     21.0
-    ]
-   }
+    {
+      "stat": "vi",
+      "values": [
+        10.5,
+        21.0,
+        21.0,
+        21.0,
+        21.0
+      ]
+    }
   ],
   "flats": [
-   {
-    "stat": "vi",
-    "trigger": "init",
-    "cap": null,
-    "values": [
-     37.0,
-     40.0,
-     43.0,
-     46.0,
-     49.0
-    ]
-   },
-   {
-    "stat": "vi",
-    "trigger": "odekake",
-    "cap": null,
-    "values": [
-     5.0,
-     5.0,
-     5.0,
-     10.0,
-     10.0
-    ]
-   }
+    {
+      "stat": "vi",
+      "trigger": "init",
+      "cap": null,
+      "values": [
+        37.0,
+        40.0,
+        43.0,
+        46.0,
+        49.0
+      ]
+    },
+    {
+      "stat": "vi",
+      "trigger": "odekake",
+      "cap": null,
+      "values": [
+        5.0,
+        5.0,
+        5.0,
+        10.0,
+        10.0
+      ]
+    }
   ],
   "rewardPItem": {
-   "name": "体ほぐしローラー",
-   "rarity": "SR",
-   "plan": "フリー"
+    "name": "体ほぐしローラー",
+    "rarity": "SR",
+    "plan": "フリー"
   },
   "drinkGen": {
-   "resource": "drink",
-   "trigger": "lesson_sp",
-   "count": 1,
-   "cap": 2,
-   "tstat": "vi"
+    "resource": "drink",
+    "trigger": "lesson_sp",
+    "count": 1,
+    "cap": 2,
+    "tstat": "vi"
   },
   "supportEvent": {
-   "stat": "vi",
-   "value": 15
+    "stat": "vi",
+    "value": 15
   }
- },
+},
  {
   "id": "sr-121",
   "name": "基礎＞応用",
@@ -9373,74 +9443,74 @@ export const SUPPORT_CARDS: SupportCard[] = [
   "imageUrl": "https://image01.seesaawiki.jp/g/u/gakumasu/51324b1f8e334292-s.png",
   "paramBonus": null,
   "lessonSupport": [
-   59.2,
-   69.4,
-   79.6,
-   89.8,
-   100.0
+    59.2,
+    69.4,
+    79.6,
+    89.8,
+    100.0
   ],
   "eventUp": [
-   50.0,
-   50.0,
-   75.0,
-   75.0,
-   100.0
+    50.0,
+    50.0,
+    75.0,
+    75.0,
+    100.0
   ],
   "spRates": [
-   {
-    "stat": "all",
-    "values": [
-     10.5,
-     21.0,
-     21.0,
-     21.0,
-     21.0
-    ]
-   }
+    {
+      "stat": "vo",
+      "values": [
+        10.5,
+        21.0,
+        21.0,
+        21.0,
+        21.0
+      ]
+    }
   ],
   "flats": [
-   {
-    "stat": "vo",
-    "trigger": "init",
-    "cap": null,
-    "values": [
-     37.0,
-     40.0,
-     43.0,
-     46.0,
-     49.0
-    ]
-   },
-   {
-    "stat": "vo",
-    "trigger": "skill",
-    "cap": null,
-    "values": [
-     1.0,
-     1.0,
-     1.0,
-     2.0,
-     2.0
-    ]
-   }
+    {
+      "stat": "vo",
+      "trigger": "init",
+      "cap": null,
+      "values": [
+        37.0,
+        40.0,
+        43.0,
+        46.0,
+        49.0
+      ]
+    },
+    {
+      "stat": "vo",
+      "trigger": "skill",
+      "cap": null,
+      "values": [
+        1.0,
+        1.0,
+        1.0,
+        2.0,
+        2.0
+      ]
+    }
   ],
   "rewardPItem": {
-   "name": "うるおいのどケア",
-   "rarity": "SR",
-   "plan": "フリー"
+    "name": "うるおいのどケア",
+    "rarity": "SR",
+    "plan": "フリー"
   },
   "drinkGen": {
-   "resource": "drink",
-   "trigger": "lesson_sp",
-   "count": 1,
-   "cap": 2,
-   "tstat": "vo"
+    "resource": "drink",
+    "trigger": "lesson_sp",
+    "count": 1,
+    "cap": 2,
+    "tstat": "vo"
   },
   "supportEvent": {
-   "stat": "vo",
-   "value": 15
+    "stat": "vo",
+    "value": 15
   }
- },
+},
  {
   "id": "sr-122",
   "name": "カロリー/2でハッピー×2",
@@ -9534,86 +9604,86 @@ export const SUPPORT_CARDS: SupportCard[] = [
   "imageUrl": "https://image02.seesaawiki.jp/g/u/gakumasu/8dedfd2ba3b70ee2-s.png",
   "paramBonus": null,
   "lessonSupport": [
-   59.2,
-   69.4,
-   79.6,
-   89.8,
-   100.0
+    59.2,
+    69.4,
+    79.6,
+    89.8,
+    100.0
   ],
   "eventUp": [
-   50.0,
-   50.0,
-   75.0,
-   75.0,
-   100.0
+    50.0,
+    50.0,
+    75.0,
+    75.0,
+    100.0
   ],
   "spRates": [
-   {
-    "stat": "all",
-    "values": [
-     10.5,
-     21.0,
-     21.0,
-     21.0,
-     21.0
-    ]
-   }
+    {
+      "stat": "da",
+      "values": [
+        10.5,
+        21.0,
+        21.0,
+        21.0,
+        21.0
+      ]
+    }
   ],
   "flats": [
-   {
-    "stat": "da",
-    "trigger": "init",
-    "cap": null,
-    "values": [
-     37.0,
-     40.0,
-     43.0,
-     46.0,
-     49.0
-    ]
-   },
-   {
-    "stat": "da",
-    "trigger": "lesson_sp",
-    "cap": null,
-    "values": [
-     7.0,
-     7.0,
-     7.0,
-     7.0,
-     13.0
-    ],
-    "tstat": "da"
-   },
-   {
-    "stat": "da",
-    "trigger": "exam",
-    "cap": 2,
-    "values": [
-     9.0,
-     9.0,
-     9.0,
-     17.0,
-     17.0
-    ]
-   }
+    {
+      "stat": "da",
+      "trigger": "init",
+      "cap": null,
+      "values": [
+        37.0,
+        40.0,
+        43.0,
+        46.0,
+        49.0
+      ]
+    },
+    {
+      "stat": "da",
+      "trigger": "lesson_sp",
+      "cap": null,
+      "values": [
+        7.0,
+        7.0,
+        7.0,
+        7.0,
+        13.0
+      ],
+      "tstat": "da"
+    },
+    {
+      "stat": "da",
+      "trigger": "exam",
+      "cap": 2,
+      "values": [
+        9.0,
+        9.0,
+        9.0,
+        17.0,
+        17.0
+      ]
+    }
   ],
   "rewardPItem": {
-   "name": "カワイイのつくり方",
-   "rarity": "SR",
-   "plan": "ロジック"
+    "name": "カワイイのつくり方",
+    "rarity": "SR",
+    "plan": "ロジック"
   },
   "pItemFlat": {
-   "stat": "da",
-   "trigger": "skill",
-   "value": 6,
-   "cap": null
+    "stat": "da",
+    "trigger": "skill",
+    "value": 6,
+    "cap": null
   },
   "supportEvent": {
-   "stat": "da",
-   "value": 15
+    "stat": "da",
+    "value": 15
   }
- },
+},
  {
   "id": "sr-124",
   "name": "ディカプルエックスエル！",
@@ -9904,80 +9974,80 @@ export const SUPPORT_CARDS: SupportCard[] = [
   "imageUrl": "https://image01.seesaawiki.jp/g/u/gakumasu/7d96c04b1d3a213c-s.jpg",
   "paramBonus": null,
   "lessonSupport": [
-   59.2,
-   69.4,
-   79.6,
-   89.8,
-   100.0
+    59.2,
+    69.4,
+    79.6,
+    89.8,
+    100.0
   ],
   "eventUp": [
-   50.0,
-   50.0,
-   75.0,
-   75.0,
-   100.0
+    50.0,
+    50.0,
+    75.0,
+    75.0,
+    100.0
   ],
   "spRates": [
-   {
-    "stat": "all",
-    "values": [
-     10.5,
-     21.0,
-     21.0,
-     21.0,
-     21.0
-    ]
-   }
+    {
+      "stat": "vi",
+      "values": [
+        10.5,
+        21.0,
+        21.0,
+        21.0,
+        21.0
+      ]
+    }
   ],
   "flats": [
-   {
-    "stat": "vi",
-    "trigger": "init",
-    "cap": null,
-    "values": [
-     37.0,
-     40.0,
-     43.0,
-     46.0,
-     49.0
-    ]
-   },
-   {
-    "stat": "vi",
-    "trigger": "lesson_sp",
-    "cap": null,
-    "values": [
-     7.0,
-     7.0,
-     7.0,
-     7.0,
-     13.0
-    ],
-    "tstat": "vi"
-   },
-   {
-    "stat": "vi",
-    "trigger": "shikyu",
-    "cap": null,
-    "values": [
-     6.0,
-     6.0,
-     6.0,
-     11.0,
-     11.0
-    ]
-   }
+    {
+      "stat": "vi",
+      "trigger": "init",
+      "cap": null,
+      "values": [
+        37.0,
+        40.0,
+        43.0,
+        46.0,
+        49.0
+      ]
+    },
+    {
+      "stat": "vi",
+      "trigger": "lesson_sp",
+      "cap": null,
+      "values": [
+        7.0,
+        7.0,
+        7.0,
+        7.0,
+        13.0
+      ],
+      "tstat": "vi"
+    },
+    {
+      "stat": "vi",
+      "trigger": "shikyu",
+      "cap": null,
+      "values": [
+        6.0,
+        6.0,
+        6.0,
+        11.0,
+        11.0
+      ]
+    }
   ],
   "rewardPItem": {
-   "name": "ぜったいマル秘レシピ",
-   "rarity": "SR",
-   "plan": "ロジック"
+    "name": "ぜったいマル秘レシピ",
+    "rarity": "SR",
+    "plan": "ロジック"
   },
   "supportEvent": {
-   "stat": "vi",
-   "value": 15
+    "stat": "vi",
+    "value": 15
   }
- },
+},
  {
   "id": "sr-129",
   "name": "興味深い飲み物",
@@ -9987,80 +10057,80 @@ export const SUPPORT_CARDS: SupportCard[] = [
   "imageUrl": "https://image01.seesaawiki.jp/g/u/gakumasu/bae25953c6e41dba-s.jpg",
   "paramBonus": null,
   "lessonSupport": [
-   59.2,
-   69.4,
-   79.6,
-   89.8,
-   100.0
+    59.2,
+    69.4,
+    79.6,
+    89.8,
+    100.0
   ],
   "eventUp": [
-   50.0,
-   50.0,
-   75.0,
-   75.0,
-   100.0
+    50.0,
+    50.0,
+    75.0,
+    75.0,
+    100.0
   ],
   "spRates": [
-   {
-    "stat": "all",
-    "values": [
-     10.5,
-     21.0,
-     21.0,
-     21.0,
-     21.0
-    ]
-   }
+    {
+      "stat": "vo",
+      "values": [
+        10.5,
+        21.0,
+        21.0,
+        21.0,
+        21.0
+      ]
+    }
   ],
   "flats": [
-   {
-    "stat": "vo",
-    "trigger": "init",
-    "cap": null,
-    "values": [
-     37.0,
-     40.0,
-     43.0,
-     46.0,
-     49.0
-    ]
-   },
-   {
-    "stat": "vo",
-    "trigger": "lesson_sp",
-    "cap": null,
-    "values": [
-     7.0,
-     7.0,
-     7.0,
-     7.0,
-     13.0
-    ],
-    "tstat": "vo"
-   },
-   {
-    "stat": "vo",
-    "trigger": "jugyo",
-    "cap": null,
-    "values": [
-     3.0,
-     3.0,
-     3.0,
-     5.0,
-     5.0
-    ]
-   }
+    {
+      "stat": "vo",
+      "trigger": "init",
+      "cap": null,
+      "values": [
+        37.0,
+        40.0,
+        43.0,
+        46.0,
+        49.0
+      ]
+    },
+    {
+      "stat": "vo",
+      "trigger": "lesson_sp",
+      "cap": null,
+      "values": [
+        7.0,
+        7.0,
+        7.0,
+        7.0,
+        13.0
+      ],
+      "tstat": "vo"
+    },
+    {
+      "stat": "vo",
+      "trigger": "jugyo",
+      "cap": null,
+      "values": [
+        3.0,
+        3.0,
+        3.0,
+        5.0,
+        5.0
+      ]
+    }
   ],
   "rewardSkill": {
-   "name": "気になる……",
-   "rarity": "SR",
-   "type": "メンタル"
+    "name": "気になる……",
+    "rarity": "SR",
+    "type": "メンタル"
   },
   "supportEvent": {
-   "stat": "vo",
-   "value": 15
+    "stat": "vo",
+    "value": 15
   }
- },
+},
  {
   "id": "sr-130",
   "name": "千奈の恩返し",
@@ -10370,80 +10440,80 @@ export const SUPPORT_CARDS: SupportCard[] = [
   "imageUrl": "https://image02.seesaawiki.jp/g/u/gakumasu/0VvNzKMAhr-s.jpg",
   "paramBonus": null,
   "lessonSupport": [
-   59.2,
-   69.4,
-   79.6,
-   89.8,
-   100.0
+    59.2,
+    69.4,
+    79.6,
+    89.8,
+    100.0
   ],
   "eventUp": [
-   50.0,
-   50.0,
-   75.0,
-   75.0,
-   100.0
+    50.0,
+    50.0,
+    75.0,
+    75.0,
+    100.0
   ],
   "spRates": [
-   {
-    "stat": "all",
-    "values": [
-     10.5,
-     21.0,
-     21.0,
-     21.0,
-     21.0
-    ]
-   }
+    {
+      "stat": "da",
+      "values": [
+        10.5,
+        21.0,
+        21.0,
+        21.0,
+        21.0
+      ]
+    }
   ],
   "flats": [
-   {
-    "stat": "da",
-    "trigger": "init",
-    "cap": null,
-    "values": [
-     37.0,
-     40.0,
-     43.0,
-     46.0,
-     49.0
-    ]
-   },
-   {
-    "stat": "da",
-    "trigger": "lesson_sp",
-    "cap": null,
-    "values": [
-     7.0,
-     7.0,
-     7.0,
-     7.0,
-     13.0
-    ],
-    "tstat": "da"
-   },
-   {
-    "stat": "da",
-    "trigger": "odekake",
-    "cap": null,
-    "values": [
-     5.0,
-     5.0,
-     5.0,
-     10.0,
-     10.0
-    ]
-   }
+    {
+      "stat": "da",
+      "trigger": "init",
+      "cap": null,
+      "values": [
+        37.0,
+        40.0,
+        43.0,
+        46.0,
+        49.0
+      ]
+    },
+    {
+      "stat": "da",
+      "trigger": "lesson_sp",
+      "cap": null,
+      "values": [
+        7.0,
+        7.0,
+        7.0,
+        7.0,
+        13.0
+      ],
+      "tstat": "da"
+    },
+    {
+      "stat": "da",
+      "trigger": "odekake",
+      "cap": null,
+      "values": [
+        5.0,
+        5.0,
+        5.0,
+        10.0,
+        10.0
+      ]
+    }
   ],
   "rewardPItem": {
-   "name": "ハンターの戦利品",
-   "rarity": "SR",
-   "plan": "フリー"
+    "name": "ハンターの戦利品",
+    "rarity": "SR",
+    "plan": "フリー"
   },
   "supportEvent": {
-   "stat": "da",
-   "value": 15
+    "stat": "da",
+    "value": 15
   }
- },
+},
  {
   "id": "sr-135",
   "name": "やさしさ、あったかい",
@@ -10722,86 +10792,86 @@ export const SUPPORT_CARDS: SupportCard[] = [
   "imageUrl": "https://image02.seesaawiki.jp/g/u/gakumasu/AKF4pEdwbd-s.png",
   "paramBonus": null,
   "lessonSupport": [
-   59.2,
-   69.4,
-   79.6,
-   89.8,
-   100.0
+    59.2,
+    69.4,
+    79.6,
+    89.8,
+    100.0
   ],
   "eventUp": [
-   50.0,
-   50.0,
-   75.0,
-   75.0,
-   100.0
+    50.0,
+    50.0,
+    75.0,
+    75.0,
+    100.0
   ],
   "spRates": [
-   {
-    "stat": "all",
-    "values": [
-     10.5,
-     21.0,
-     21.0,
-     21.0,
-     21.0
-    ]
-   }
+    {
+      "stat": "da",
+      "values": [
+        10.5,
+        21.0,
+        21.0,
+        21.0,
+        21.0
+      ]
+    }
   ],
   "flats": [
-   {
-    "stat": "da",
-    "trigger": "init",
-    "cap": null,
-    "values": [
-     37.0,
-     40.0,
-     43.0,
-     46.0,
-     49.0
-    ]
-   },
-   {
-    "stat": "da",
-    "trigger": "lesson_normal",
-    "cap": null,
-    "values": [
-     2.0,
-     2.0,
-     2.0,
-     2.0,
-     4.0
-    ],
-    "tstat": "da"
-   },
-   {
-    "stat": "da",
-    "trigger": "shikyu",
-    "cap": null,
-    "values": [
-     6.0,
-     6.0,
-     6.0,
-     11.0,
-     11.0
-    ]
-   }
+    {
+      "stat": "da",
+      "trigger": "init",
+      "cap": null,
+      "values": [
+        37.0,
+        40.0,
+        43.0,
+        46.0,
+        49.0
+      ]
+    },
+    {
+      "stat": "da",
+      "trigger": "lesson_normal",
+      "cap": null,
+      "values": [
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        4.0
+      ],
+      "tstat": "da"
+    },
+    {
+      "stat": "da",
+      "trigger": "shikyu",
+      "cap": null,
+      "values": [
+        6.0,
+        6.0,
+        6.0,
+        11.0,
+        11.0
+      ]
+    }
   ],
   "rewardPItem": {
-   "name": "ダブルボトル",
-   "rarity": "SR",
-   "plan": "センス"
+    "name": "ダブルボトル",
+    "rarity": "SR",
+    "plan": "センス"
   },
   "pItemFlat": {
-   "stat": "da",
-   "trigger": "skill",
-   "value": 6,
-   "cap": null
+    "stat": "da",
+    "trigger": "skill",
+    "value": 6,
+    "cap": null
   },
   "supportEvent": {
-   "stat": "da",
-   "value": 15
+    "stat": "da",
+    "value": 15
   }
- },
+},
  {
   "id": "sr-140",
   "name": "パシャっとキメポ",
@@ -10953,75 +11023,75 @@ export const SUPPORT_CARDS: SupportCard[] = [
   "plan": "free",
   "imageUrl": "https://image02.seesaawiki.jp/g/u/gakumasu/fP2xElWmnt-s.jpg",
   "paramBonus": [
-   4.4,
-   4.9,
-   5.4,
-   5.9,
-   6.4
+    4.4,
+    4.9,
+    5.4,
+    5.9,
+    6.4
   ],
   "lessonSupport": [
-   59.2,
-   69.4,
-   79.6,
-   89.8,
-   100.0
+    59.2,
+    69.4,
+    79.6,
+    89.8,
+    100.0
   ],
   "eventUp": [
-   50.0,
-   50.0,
-   75.0,
-   75.0,
-   100.0
+    50.0,
+    50.0,
+    75.0,
+    75.0,
+    100.0
   ],
   "spRates": [
-   {
-    "stat": "all",
-    "values": [
-     10.5,
-     21.0,
-     21.0,
-     21.0,
-     21.0
-    ]
-   }
+    {
+      "stat": "vi",
+      "values": [
+        10.5,
+        21.0,
+        21.0,
+        21.0,
+        21.0
+      ]
+    }
   ],
   "flats": [
-   {
-    "stat": "vi",
-    "trigger": "lesson_sp",
-    "cap": null,
-    "values": [
-     7.0,
-     7.0,
-     7.0,
-     7.0,
-     13.0
-    ],
-    "tstat": "vi"
-   },
-   {
-    "stat": "vi",
-    "trigger": "exam",
-    "cap": 2,
-    "values": [
-     9.0,
-     9.0,
-     9.0,
-     17.0,
-     17.0
-    ]
-   }
+    {
+      "stat": "vi",
+      "trigger": "lesson_sp",
+      "cap": null,
+      "values": [
+        7.0,
+        7.0,
+        7.0,
+        7.0,
+        13.0
+      ],
+      "tstat": "vi"
+    },
+    {
+      "stat": "vi",
+      "trigger": "exam",
+      "cap": 2,
+      "values": [
+        9.0,
+        9.0,
+        9.0,
+        17.0,
+        17.0
+      ]
+    }
   ],
   "rewardSkill": {
-   "name": "お姉ちゃんだもの！",
-   "rarity": "SR",
-   "type": "アクティブ"
+    "name": "お姉ちゃんだもの！",
+    "rarity": "SR",
+    "type": "アクティブ"
   },
   "supportEvent": {
-   "stat": "vi",
-   "value": 15
+    "stat": "vi",
+    "value": 15
   }
- },
+},
  {
   "id": "sr-143",
   "name": "今はあえて、背を向けて",
@@ -11030,75 +11100,75 @@ export const SUPPORT_CARDS: SupportCard[] = [
   "plan": "free",
   "imageUrl": "https://image02.seesaawiki.jp/g/u/gakumasu/cWpl2CQS6Y-s.jpg",
   "paramBonus": [
-   4.4,
-   4.9,
-   5.4,
-   5.9,
-   6.4
+    4.4,
+    4.9,
+    5.4,
+    5.9,
+    6.4
   ],
   "lessonSupport": [
-   59.2,
-   69.4,
-   79.6,
-   89.8,
-   100.0
+    59.2,
+    69.4,
+    79.6,
+    89.8,
+    100.0
   ],
   "eventUp": [
-   50.0,
-   50.0,
-   75.0,
-   75.0,
-   100.0
+    50.0,
+    50.0,
+    75.0,
+    75.0,
+    100.0
   ],
   "spRates": [
-   {
-    "stat": "all",
-    "values": [
-     10.5,
-     21.0,
-     21.0,
-     21.0,
-     21.0
-    ]
-   }
+    {
+      "stat": "vo",
+      "values": [
+        10.5,
+        21.0,
+        21.0,
+        21.0,
+        21.0
+      ]
+    }
   ],
   "flats": [
-   {
-    "stat": "vo",
-    "trigger": "lesson_sp",
-    "cap": null,
-    "values": [
-     7.0,
-     7.0,
-     7.0,
-     7.0,
-     13.0
-    ],
-    "tstat": "vo"
-   },
-   {
-    "stat": "vo",
-    "trigger": "exam",
-    "cap": 2,
-    "values": [
-     9.0,
-     9.0,
-     9.0,
-     17.0,
-     17.0
-    ]
-   }
+    {
+      "stat": "vo",
+      "trigger": "lesson_sp",
+      "cap": null,
+      "values": [
+        7.0,
+        7.0,
+        7.0,
+        7.0,
+        13.0
+      ],
+      "tstat": "vo"
+    },
+    {
+      "stat": "vo",
+      "trigger": "exam",
+      "cap": 2,
+      "values": [
+        9.0,
+        9.0,
+        9.0,
+        17.0,
+        17.0
+      ]
+    }
   ],
   "rewardPItem": {
-   "name": "美鈴からの贈り物",
-   "rarity": "SR",
-   "plan": "フリー"
+    "name": "美鈴からの贈り物",
+    "rarity": "SR",
+    "plan": "フリー"
   },
   "supportEvent": {
-   "stat": "vo",
-   "value": 15
+    "stat": "vo",
+    "value": 15
   }
- },
+},
  {
   "id": "sr-144",
   "name": "のらりくらりしっかり",
@@ -11461,82 +11531,82 @@ export const SUPPORT_CARDS: SupportCard[] = [
   "plan": "free",
   "imageUrl": "https://image01.seesaawiki.jp/g/u/gakumasu/pplmHqBqqv-s.jpg",
   "paramBonus": [
-   4.4,
-   4.9,
-   5.4,
-   5.9,
-   6.4
+    4.4,
+    4.9,
+    5.4,
+    5.9,
+    6.4
   ],
   "lessonSupport": [
-   59.2,
-   69.4,
-   79.6,
-   89.8,
-   100.0
+    59.2,
+    69.4,
+    79.6,
+    89.8,
+    100.0
   ],
   "eventUp": [
-   50.0,
-   50.0,
-   75.0,
-   75.0,
-   100.0
+    50.0,
+    50.0,
+    75.0,
+    75.0,
+    100.0
   ],
   "spRates": [
-   {
-    "stat": "all",
-    "values": [
-     10.5,
-     21.0,
-     21.0,
-     21.0,
-     21.0
-    ]
-   }
+    {
+      "stat": "da",
+      "values": [
+        10.5,
+        21.0,
+        21.0,
+        21.0,
+        21.0
+      ]
+    }
   ],
   "flats": [
-   {
-    "stat": "da",
-    "trigger": "lesson_sp",
-    "cap": null,
-    "values": [
-     7.0,
-     7.0,
-     7.0,
-     7.0,
-     13.0
-    ],
-    "tstat": "da"
-   },
-   {
-    "stat": "da",
-    "trigger": "exam",
-    "cap": 2,
-    "values": [
-     9.0,
-     9.0,
-     9.0,
-     17.0,
-     17.0
-    ]
-   }
+    {
+      "stat": "da",
+      "trigger": "lesson_sp",
+      "cap": null,
+      "values": [
+        7.0,
+        7.0,
+        7.0,
+        7.0,
+        13.0
+      ],
+      "tstat": "da"
+    },
+    {
+      "stat": "da",
+      "trigger": "exam",
+      "cap": 2,
+      "values": [
+        9.0,
+        9.0,
+        9.0,
+        17.0,
+        17.0
+      ]
+    }
   ],
   "rewardPItem": {
-   "name": "ふわふわでもこもこ",
-   "rarity": "SR",
-   "plan": "フリー"
+    "name": "ふわふわでもこもこ",
+    "rarity": "SR",
+    "plan": "フリー"
   },
   "drinkGen": {
-   "resource": "drink",
-   "trigger": "lesson_sp",
-   "count": 2,
-   "cap": null,
-   "tstat": "da"
+    "resource": "drink",
+    "trigger": "lesson_sp",
+    "count": 2,
+    "cap": null,
+    "tstat": "da"
   },
   "supportEvent": {
-   "stat": "da",
-   "value": 15
+    "stat": "da",
+    "value": 15
   }
- },
+},
  {
   "id": "sr-150",
   "name": "嬉し恥ずかし夢心地",
@@ -13025,7 +13095,7 @@ export const SUPPORT_CARDS: SupportCard[] = [
   ],
   "spRates": [
     {
-      "stat": "all",
+      "stat": "vi",
       "values": [
         14.0,
         14.0,
@@ -13094,7 +13164,7 @@ export const SUPPORT_CARDS: SupportCard[] = [
   ],
   "spRates": [
     {
-      "stat": "all",
+      "stat": "vo",
       "values": [
         14.0,
         14.0,
@@ -13299,7 +13369,7 @@ export const SUPPORT_CARDS: SupportCard[] = [
   ],
   "spRates": [
     {
-      "stat": "all",
+      "stat": "da",
       "values": [
         14.0,
         14.0,
@@ -13448,7 +13518,7 @@ export const SUPPORT_CARDS: SupportCard[] = [
   ],
   "spRates": [
     {
-      "stat": "all",
+      "stat": "da",
       "values": [
         14.0,
         14.0,
@@ -13525,7 +13595,7 @@ export const SUPPORT_CARDS: SupportCard[] = [
   ],
   "spRates": [
     {
-      "stat": "all",
+      "stat": "vi",
       "values": [
         14.0,
         14.0,
@@ -13601,7 +13671,7 @@ export const SUPPORT_CARDS: SupportCard[] = [
   ],
   "spRates": [
     {
-      "stat": "all",
+      "stat": "vo",
       "values": [
         14.0,
         14.0,
@@ -13880,7 +13950,7 @@ export const SUPPORT_CARDS: SupportCard[] = [
   ],
   "spRates": [
     {
-      "stat": "all",
+      "stat": "da",
       "values": [
         14.0,
         14.0,
@@ -13949,7 +14019,7 @@ export const SUPPORT_CARDS: SupportCard[] = [
   ],
   "spRates": [
     {
-      "stat": "all",
+      "stat": "vo",
       "values": [
         14.0,
         14.0,
@@ -14012,7 +14082,7 @@ export const SUPPORT_CARDS: SupportCard[] = [
   ],
   "spRates": [
     {
-      "stat": "all",
+      "stat": "vi",
       "values": [
         14.0,
         14.0,

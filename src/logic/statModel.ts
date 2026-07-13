@@ -75,11 +75,7 @@ export const MODEL = {
   } as Record<string, number>,
   skillSsrOccDefault: 12,
   skillOcc: 8, // 通常スキルカード獲得（温存/好調など特定化カード種別ごとに変わる想定、暫定）
-  enhanceOcc: 4, // スキルカード強化（暫定）
-  // 削除は「Pアイテム効果による削除」＋「相談でn回踏むとn+1回削除できる」の合算。相談分のみモデル化、Pアイテム分はチャレンジ/固有アイテム側で別途カウント。
-  deleteOcc: 3,
-  // 交換(チェンジ)は「お出かけのトラブル追加」時に発生。お出かけ回数に比例する想定だが発生率が未提供のため暫定固定値。
-  changeOcc: 3,
+  // 削除/強化/チェンジは相談ベース(相談回数+1)＋サポイベ/Pアイテム付与分で算出（statModel内で計算）。
   customizeOcc: 4, // スキルカードカスタム時（cap=6等、上限はカード側で規定。暫定値）
   examOcc: 2, // 中間+最終
 };
@@ -202,8 +198,10 @@ export function estimateStats(input: ProduceInput): StatEstimate {
   const skillSsrOcc =
     MODEL.skillSsrOccByEffect[idol.recommendedEffect] ?? MODEL.skillSsrOccDefault;
 
-  // サポートイベント／固有Pアイテムが付与する削除・強化・チェンジのアクション回数。
-  // 「削除時+X」等のアビリティ発動回数 = 相談ベース(MODEL) + デッキ付与分。
+  // 削除・強化・チェンジの発動回数 = 相談ベース + デッキ付与分。
+  //   相談ベース: 相談をn回踏むとn+1回のアクション（強化/削除/チェンジ）ができる（ユーザー確認）。
+  //   デッキ付与: サポートイベント／固有Pアイテムが付与するアクション。
+  const sodanActions = input.schedule.sodan > 0 ? input.schedule.sodan + 1 : 0;
   const deckGrants = { delete: 0, enhance: 0, change: 0 };
   for (const c of selected) {
     if (!c.eventGrants) continue;
@@ -273,11 +271,11 @@ export function estimateStats(input: ProduceInput): StatEstimate {
       case "skill":
         return MODEL.skillOcc;
       case "enhance":
-        return MODEL.enhanceOcc + deckGrants.enhance;
+        return sodanActions + deckGrants.enhance;
       case "delete":
-        return MODEL.deleteOcc + deckGrants.delete;
+        return sodanActions + deckGrants.delete;
       case "change":
-        return MODEL.changeOcc + deckGrants.change;
+        return sodanActions + deckGrants.change;
       case "customize":
         return MODEL.customizeOcc;
       case "init":
