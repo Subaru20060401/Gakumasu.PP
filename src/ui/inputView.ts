@@ -36,10 +36,10 @@ const STAT_OPTS: { value: ParamType; label: string }[] = [
 ];
 const TYPE_JP: Record<string, string> = { vo: "ボーカル", da: "ダンス", vi: "ビジュアル", as: "アシスト" };
 
-function field(label: string, control: Node): HTMLElement {
+export function field(label: string, control: Node): HTMLElement {
   return h("label", { class: "field" }, h("span", { class: "field-label" }, label), control);
 }
-function sectionTitle(text: string): HTMLElement {
+export function sectionTitle(text: string): HTMLElement {
   return h("h3", { class: "section-title" }, text);
 }
 
@@ -75,7 +75,7 @@ function supportItem(c: SupportCard): PickerItem {
 const IDOL_ITEMS = IDOLS.map(idolItem);
 
 /** 数値入力（ステッパー）。 */
-function numberField(
+export function numberField(
   label: string,
   value: number,
   onChange: (v: number) => void,

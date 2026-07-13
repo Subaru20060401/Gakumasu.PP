@@ -290,6 +290,12 @@ body {
   color: var(--primary);
 }
 
+.bd-block {
+  margin-top: 14px;
+  padding: 10px 14px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+}
 .bd-row {
   display: flex;
   justify-content: space-between;
@@ -766,4 +772,72 @@ body {
   text-align: center;
   color: var(--muted);
   padding: 24px;
+}
+
+/* ---- モード切替タブ ---- */
+.mode-tabs {
+  display: flex;
+  gap: 8px;
+  margin: 0 0 16px;
+}
+.mode-tab {
+  flex: 1;
+  padding: 11px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: var(--surface);
+  color: var(--muted);
+  font-size: 0.95rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+.mode-tab.active {
+  border-color: var(--primary);
+  background: var(--primary);
+  color: #fff;
+}
+
+/* ---- 評価値ちぇっく：各ランク必要スコア表 ---- */
+.rc-table {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  overflow: hidden;
+}
+.rc-row {
+  display: grid;
+  grid-template-columns: 56px 1fr auto;
+  align-items: center;
+  gap: 8px;
+  padding: 9px 12px;
+  font-size: 0.9rem;
+}
+.rc-row + .rc-row {
+  border-top: 1px solid var(--border);
+}
+.rc-rank {
+  font-weight: 800;
+}
+.rc-req {
+  color: var(--muted);
+  font-size: 0.82rem;
+}
+.rc-detail {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+  font-weight: 600;
+}
+.rc-row.is-reached {
+  background: color-mix(in srgb, var(--primary) 9%, transparent);
+}
+.rc-row.is-reached .rc-detail {
+  color: var(--primary);
+}
+.rc-row.is-unreachable {
+  opacity: 0.5;
+}
+.rc-row.is-unreachable .rc-detail {
+  color: var(--muted);
+  font-weight: 500;
 }

@@ -5,6 +5,7 @@ import { predict } from "./logic/predict";
 import type { ProduceInput } from "./types";
 import { h } from "./ui/dom";
 import { buildInputForm } from "./ui/inputView";
+import { buildRankCalcView } from "./ui/rankCalcView";
 import { buildResult, buildResultPlaceholder } from "./ui/resultView";
 
 // 現状は Version1（初・初レジェンド）固定。
@@ -39,6 +40,45 @@ function runPrediction() {
   resultPane.scrollIntoView({ behavior: "smooth", block: "nearest" });
 }
 
+// ---- モード切替（編成予測 / 評価値ちぇっく） ----
+type Mode = "predict" | "calc";
+let mode: Mode = "predict";
+
+const headerSub = h("p", { class: "muted" });
+const modeBody = h("div", {});
+
+// 編成予測モードのDOM（1度だけ生成して使い回す）。
+const predictLayout = h(
+  "main",
+  { class: "layout" },
+  h("section", { class: "pane input-pane" }, buildInputForm(input, runPrediction)),
+  h("section", { class: "pane" }, resultPane),
+);
+
+function renderMode() {
+  if (mode === "predict") {
+    headerSub.textContent = `編成から最終ステータスと評価値を予測　·　シナリオ: ${scenario.name}`;
+    modeBody.replaceChildren(predictLayout);
+  } else {
+    headerSub.textContent = "スコアとパラメータを入力して評価値・必要最終スコアを計算";
+    modeBody.replaceChildren(buildRankCalcView());
+  }
+  tabPredict.className = mode === "predict" ? "mode-tab active" : "mode-tab";
+  tabCalc.className = mode === "calc" ? "mode-tab active" : "mode-tab";
+}
+
+const tabPredict = h(
+  "button",
+  { type: "button", onclick: () => ((mode = "predict"), renderMode()) },
+  "🎯 編成から予測",
+);
+const tabCalc = h(
+  "button",
+  { type: "button", onclick: () => ((mode = "calc"), renderMode()) },
+  "🧮 評価値ちぇっく",
+);
+const modeTabs = h("div", { class: "mode-tabs" }, tabPredict, tabCalc);
+
 const app = h(
   "div",
   { class: "app" },
@@ -46,18 +86,10 @@ const app = h(
     "header",
     { class: "app-header" },
     h("h1", {}, "学マス プロデュース評価予測ツール"),
-    h(
-      "p",
-      { class: "muted" },
-      `編成から最終ステータスと評価値を予測　·　シナリオ: ${scenario.name}`,
-    ),
+    headerSub,
   ),
-  h(
-    "main",
-    { class: "layout" },
-    h("section", { class: "pane input-pane" }, buildInputForm(input, runPrediction)),
-    h("section", { class: "pane" }, resultPane),
-  ),
+  modeTabs,
+  modeBody,
   h(
     "footer",
     { class: "app-footer" },
@@ -66,3 +98,4 @@ const app = h(
 );
 
 document.querySelector<HTMLDivElement>("#app")!.replaceChildren(app);
+renderMode();
