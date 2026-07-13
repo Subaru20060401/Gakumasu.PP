@@ -1,24 +1,32 @@
-// スコア＆パラメータ直接入力 → 評価値・到達ランク・各ランク必要最終スコアを計算する。
+// 評価値ちぇっく：最終試験前のパラメータ等を入力し、評価値・到達ランク・
+// 各ランクに必要な最終試験スコアを計算する。
+// 参考: haru計算機 https://haru-1125.github.io/pages/hajime-r-calculator.html （初レジェ）。
 //
-// 「編成から予測」モードとは別の軽量モード。主に最終試験前に
-// 「目標評価値に届くには最終試験で何点必要か」を逆算するために使う。
-// 出力の評価値式は evaluation.ts（実データ準拠）をそのまま利用する。
+// 最終パラメータ = 各stat min(上限, 試験前 + 試験終了時アビ点数 + 順位補正[160/80/40])
+// 評価値 = パラメータ評価(2.1×合計) + 中間スコア評価 + 最終スコア評価 + 順位評価
 
 import { RANKS, rankForValue } from "../data/ranks";
-import type { Difficulty, ExamInput } from "../types";
+import { type Difficulty, PARAM_CAP } from "../types";
 import {
-  examScoreEval,
-  examScoreForEval,
+  finalScoreEval,
+  finalScoreForEval,
   isLegend,
-  paramEval as calcParamEval,
+  midScoreEval,
   rankEval as calcRankEval,
 } from "./evaluation";
 
 export interface RankCalcInput {
-  vo: number;
-  da: number;
-  vi: number;
-  exam: ExamInput;
+  // 試験前パラメータ（最終試験に入る前の表示値）。
+  preVo: number;
+  preDa: number;
+  preVi: number;
+  // 試験終了時に加算されるアビリティ点数（例: ふわもこ完凸で Da+17）。
+  abiVo: number;
+  abiDa: number;
+  abiVi: number;
+  midScore: number;
+  finalScore: number;
+  finalRank: number; // 1/2/3/4(不合格)
   difficulty: Difficulty;
 }
 
@@ -26,23 +34,27 @@ export interface RankCalcInput {
 export interface RankRow {
   rankName: string;
   requiredValue: number;
-  reached: boolean; // 現在の入力（最終スコア込み）で到達済みか
-  gap: number; // 不足評価値（0なら到達済み）
+  reached: boolean;
+  gap: number;
   requiredFinalScore: number; // このランクに必要な最終試験スコア
   reachable: boolean; // 最終スコア上限内で到達可能か
 }
 
 export interface RankCalcResult {
+  finalVo: number;
+  finalDa: number;
+  finalVi: number;
+  finalStatTotal: number; // 順位補正込みの最終合計パラメータ
   evaluationValue: number;
   paramEval: number;
-  examEval: number; // 中間＋最終
   midEval: number;
+  finalEval: number;
   rankEval: number;
   reachedRankName: string;
-  finalScoreCap: number; // 最終試験スコアの上限
   rows: RankRow[];
 }
 
+const RANK_ADD: Record<number, number> = { 1: 160, 2: 80, 3: 40 };
 const FINAL_SCORE_CAP: Record<Difficulty, number> = {
   hajime: 999_999,
   hajimeMaster: 999_999,
@@ -51,45 +63,52 @@ const FINAL_SCORE_CAP: Record<Difficulty, number> = {
 
 export function calcRank(input: RankCalcInput): RankCalcResult {
   const legend = isLegend(input.difficulty);
-  const { vo, da, vi } = input;
-  const { midScore, finalScore, finalRank } = input.exam;
+  const cap = PARAM_CAP[input.difficulty];
+  const coef = legend ? 2.1 : 2.3;
+  const rankAdd = legend ? (RANK_ADD[input.finalRank] ?? 0) : 0;
 
-  const rankEval = calcRankEval(finalRank);
-  const paramEval = calcParamEval(vo, da, vi, finalRank, legend);
-  const midEval = legend ? examScoreEval(midScore, legend) : 0;
-  const examEval = examScoreEval(finalScore, legend) + midEval;
-  const evaluationValue = paramEval + examEval + rankEval;
+  // 最終パラメータ（試験前 + アビ点数 + 順位補正、各上限クランプ）。
+  const finalVo = Math.min(cap, input.preVo + input.abiVo + rankAdd);
+  const finalDa = Math.min(cap, input.preDa + input.abiDa + rankAdd);
+  const finalVi = Math.min(cap, input.preVi + input.abiVi + rankAdd);
+  const finalStatTotal = finalVo + finalDa + finalVi;
+
+  const paramEval = Math.floor(coef * finalStatTotal);
+  const midEval = midScoreEval(input.midScore, legend);
+  const finalEval = finalScoreEval(input.finalScore, legend);
+  const rankEval = calcRankEval(input.finalRank);
+  const evaluationValue = paramEval + midEval + finalEval + rankEval;
 
   const reachedRankName = rankForValue(evaluationValue).name;
-  const cap = FINAL_SCORE_CAP[input.difficulty];
-  // 最終試験スコアを上限まで盛った時に稼げる評価点（逓減の頭打ち）。
-  const maxFinalEval = examScoreEval(cap, legend);
+  const scoreCap = FINAL_SCORE_CAP[input.difficulty];
 
-  // 各ランクへ必要な最終試験スコア（現在のパラメータ・順位・中間スコアを固定して逆算）。
-  const fixed = paramEval + rankEval + midEval;
+  // 各ランクに必要な最終試験スコア（パラメータ・順位・中間を固定して逆算）。
+  const fixed = paramEval + midEval + rankEval;
   const rows: RankRow[] = RANKS.map((rank) => {
     const neededFinalEval = rank.requiredValue - fixed;
-    // 上限スコアでも評価点が足りなければ到達不可（examScoreForEval は上限で頭打ちになるため別途判定）。
-    const reachable = neededFinalEval <= maxFinalEval;
-    const requiredFinalScore = reachable ? Math.max(0, examScoreForEval(neededFinalEval, legend)) : cap;
+    const req = finalScoreForEval(neededFinalEval, legend); // 届かない場合 Infinity
+    const reachable = Number.isFinite(req) && req <= scoreCap;
     return {
       rankName: rank.name,
       requiredValue: rank.requiredValue,
       reached: evaluationValue >= rank.requiredValue,
       gap: Math.max(0, rank.requiredValue - evaluationValue),
-      requiredFinalScore,
+      requiredFinalScore: reachable ? Math.max(0, Math.ceil(req)) : scoreCap,
       reachable,
     };
   });
 
   return {
+    finalVo,
+    finalDa,
+    finalVi,
+    finalStatTotal,
     evaluationValue,
     paramEval,
-    examEval,
     midEval,
+    finalEval,
     rankEval,
     reachedRankName,
-    finalScoreCap: cap,
     rows,
   };
 }

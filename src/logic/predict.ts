@@ -7,9 +7,10 @@
 import { RANKS, rankForValue } from "../data/ranks";
 import { type PredictionResult, type ProduceInput, type RankTarget } from "../types";
 import {
-  examScoreEval,
-  examScoreForEval,
+  finalScoreEval,
+  finalScoreForEval,
   isLegend,
+  midScoreEval,
   paramEval as calcParamEval,
   rankEval as calcRankEval,
 } from "./evaluation";
@@ -30,8 +31,8 @@ export function predict(input: ProduceInput): PredictionResult {
   // 評価値内訳（順位評価 + パラメータ評価 + 試験スコア評価）。
   const rankEval = calcRankEval(finalRank);
   const paramEval = calcParamEval(vo, da, vi, finalRank, legend);
-  const midEval = legend ? examScoreEval(midScore, legend) : 0;
-  const examEval = examScoreEval(finalScore, legend) + midEval;
+  const midEval = midScoreEval(midScore, legend);
+  const examEval = finalScoreEval(finalScore, legend) + midEval;
   const evaluationValue = paramEval + examEval + rankEval;
 
   const reachedRank = rankForValue(evaluationValue);
@@ -42,7 +43,7 @@ export function predict(input: ProduceInput): PredictionResult {
     const rank = RANKS[i];
     if (rank.requiredValue <= reachedRank.requiredValue) continue;
     const neededFinalExamEval = rank.requiredValue - paramEval - rankEval - midEval;
-    const requiredFinalExamScore = examScoreForEval(neededFinalExamEval, legend);
+    const requiredFinalExamScore = finalScoreForEval(neededFinalExamEval, legend);
     targets.push({
       rankName: rank.name,
       requiredValue: rank.requiredValue,

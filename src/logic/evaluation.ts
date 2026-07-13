@@ -55,13 +55,51 @@ export function paramEval(
   return Math.round((vo + bonus + (da + bonus) + (vi + bonus)) * coef);
 }
 
-/** 試験スコア評価の逓減レート [上限スコア, レート/点]。 */
+// ===== 試験スコア → 評価点 =====
+// レジェンドは実測式（haru計算機 https://haru-1125.github.io/pages/hajime-r-calculator.html 準拠）。
+// 中間試験と最終試験で別カーブの区分線形。
+// 初・初マスターの換算は未確定のため暫定の逓減テーブルを流用。
+
+/** レジェンド中間試験スコア → 評価点。 */
+function midEvalLegend(s: number): number {
+  let e: number;
+  if (s < 10000) e = 0.11 * s;
+  else if (s < 20000) e = 1100 + 0.08 * (s - 10000);
+  else if (s < 30000) e = 1900 + 0.05 * (s - 20000);
+  else if (s < 40000) e = 2400 + 0.008 * (s - 30000);
+  else if (s < 50000) e = 2480 + 0.003 * (s - 40000);
+  else if (s < 60000) e = 2510 + 0.002 * (s - 50000);
+  else if (s <= 200000) e = 2530 + 0.001 * (s - 60000);
+  else e = 2670;
+  return Math.floor(e);
+}
+
+/** レジェンド最終試験スコア → 評価点。 */
+function finalEvalLegend(s: number): number {
+  let e: number;
+  if (s < 300000) e = 0.015 * s;
+  else if (s < 500000) e = 4500 + 0.01 * (s - 300000);
+  else if (s < 600000) e = 6500 + 0.008 * (s - 500000);
+  else if (s <= 2000000) e = 7300 + 0.001 * (s - 600000);
+  else e = 8700;
+  return Math.floor(e);
+}
+
+/** レジェンド最終スコアの逆関数：必要評価点 → 必要最終スコア（届かない場合 Infinity）。 */
+function finalScoreForEvalLegend(e: number): number {
+  if (e <= 0) return 0;
+  if (e < 4500) return e / 0.015;
+  if (e < 6500) return 300000 + (e - 4500) / 0.01;
+  if (e < 7300) return 500000 + (e - 6500) / 0.008;
+  if (e <= 8700) return 600000 + (e - 7300) / 0.001;
+  return Infinity; // 上限200万でも届かない
+}
+
+// 初・初マスター用の暫定逓減テーブル（未確定）。
 interface Bracket {
   upTo: number;
   rate: number;
 }
-
-// 通常（初・初マスター）の換算テーブル。
 const EXAM_BRACKETS_NORMAL: Bracket[] = [
   { upTo: 5000, rate: 0.3 },
   { upTo: 10000, rate: 0.15 },
@@ -70,55 +108,52 @@ const EXAM_BRACKETS_NORMAL: Bracket[] = [
   { upTo: 40000, rate: 0.02 },
   { upTo: Infinity, rate: 0.01 },
 ];
-
-// レジェンドの換算（上限: 中間20万 / 最終200万）。逓減カーブ。
-// ⚠️ 第一次較正: りすさんS4(評価値26,186, 実ステから試験評価≈1万)に整合させた暫定値。
-//   実スコアが判明したら要微調整（thresholds/rates）。
-// 中間・最終は同じカーブを共有し、入力上限(200万/20万)で頭打ちにする。
-const EXAM_BRACKETS_LEGEND: Bracket[] = [
-  { upTo: 250000, rate: 0.014 },
-  { upTo: 500000, rate: 0.007 },
-  { upTo: 1000000, rate: 0.004 },
-  { upTo: 1500000, rate: 0.002 },
-  { upTo: 2000000, rate: 0.001 },
-];
-
-const brackets = (legend: boolean) =>
-  legend ? EXAM_BRACKETS_LEGEND : EXAM_BRACKETS_NORMAL;
-
-/** 試験スコア → 評価点（逓減）。 */
-export function examScoreEval(score: number, legend: boolean): number {
+function bracketEval(score: number, table: Bracket[]): number {
   let remaining = Math.max(0, score);
   let prev = 0;
   let total = 0;
-  for (const b of brackets(legend)) {
+  for (const b of table) {
     if (remaining <= 0) break;
-    const span = b.upTo - prev;
-    const used = Math.min(remaining, span);
+    const used = Math.min(remaining, b.upTo - prev);
     total += used * b.rate;
     remaining -= used;
     prev = b.upTo;
   }
   return Math.round(total);
 }
-
-/** 評価点 → 必要スコア（examScoreEval の逆関数）。 */
-export function examScoreForEval(targetEval: number, legend: boolean): number {
+function bracketInverse(targetEval: number, table: Bracket[]): number {
   let remainingEval = Math.max(0, targetEval);
   let prev = 0;
   let score = 0;
-  for (const b of brackets(legend)) {
+  for (const b of table) {
     if (remainingEval <= 0) break;
     const span = b.upTo - prev;
-    const evalCapacity = span * b.rate; // この帯で稼げる評価点
-    if (remainingEval <= evalCapacity) {
+    const cap = span * b.rate;
+    if (remainingEval <= cap) {
       score += remainingEval / b.rate;
       remainingEval = 0;
     } else {
       score += span;
-      remainingEval -= evalCapacity;
+      remainingEval -= cap;
       prev = b.upTo;
     }
   }
   return Math.ceil(score);
+}
+
+/** 中間試験スコア → 評価点（レジェンドのみ加算、他は0）。 */
+export function midScoreEval(score: number, legend: boolean): number {
+  return legend ? midEvalLegend(Math.max(0, score)) : 0;
+}
+
+/** 最終試験スコア → 評価点。 */
+export function finalScoreEval(score: number, legend: boolean): number {
+  const s = Math.max(0, score);
+  return legend ? finalEvalLegend(s) : bracketEval(s, EXAM_BRACKETS_NORMAL);
+}
+
+/** 評価点 → 必要最終試験スコア（finalScoreEval の逆関数。届かない場合 Infinity）。 */
+export function finalScoreForEval(targetEval: number, legend: boolean): number {
+  if (targetEval <= 0) return 0;
+  return legend ? finalScoreForEvalLegend(targetEval) : bracketInverse(targetEval, EXAM_BRACKETS_NORMAL);
 }

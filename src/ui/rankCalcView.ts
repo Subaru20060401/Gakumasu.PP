@@ -1,6 +1,6 @@
-// 評価値ちぇっくモード：スコア＆パラメータを入力するだけで評価値・ランク・
-// 各ランクに必要な最終試験スコアを表示する。編成予測より軽量。
-// 主用途：最終試験前に「目標ランクに届くには何点必要か」を逆算する。
+// 評価値ちぇっくモード：最終試験前のパラメータ等を入力するだけで
+// 評価値・ランク・各ランクに必要な最終試験スコアを表示する。
+// 参考: haru計算機（初レジェ）。主用途：最終試験でどれだけ取れば目標ランクに届くか。
 
 import { type RankCalcInput, calcRank } from "../logic/rankCalc";
 import { DIFFICULTY_LABEL, type Difficulty, PARAM_CAP } from "../types";
@@ -11,19 +11,29 @@ const fmt = (n: number) => n.toLocaleString("ja-JP");
 
 export function buildRankCalcView(): HTMLElement {
   const state: RankCalcInput = {
-    vo: 1500,
-    da: 1500,
-    vi: 1500,
-    exam: { midScore: 0, midRank: 1, finalScore: 0, finalRank: 1 },
+    preVo: 1500,
+    preDa: 1500,
+    preVi: 1500,
+    abiVo: 0,
+    abiDa: 0,
+    abiVi: 0,
+    midScore: 0,
+    finalScore: 0,
+    finalRank: 1,
     difficulty: "hajimeLegend",
   };
 
-  const resultPane = h("div", { class: "pane" });
   const formPane = h("div", { class: "pane input-pane" });
+  const resultPane = h("div", { class: "pane" });
 
-  function render() {
-    formPane.replaceChildren(buildForm());
+  // 結果だけ再描画（入力欄は作り直さない＝連続入力できる）。
+  function renderResult() {
     resultPane.replaceChildren(buildRankCalcResult());
+  }
+  // 難易度変更時のみフォームを作り直す（中間欄の有無・上限が変わるため）。
+  function renderForm() {
+    formPane.replaceChildren(buildForm());
+    renderResult();
   }
 
   function buildForm(): HTMLElement {
@@ -31,51 +41,65 @@ export function buildRankCalcView(): HTMLElement {
     const cap = PARAM_CAP[state.difficulty];
     const finalCap = legend ? 2_000_000 : 999_999;
 
-    const rankOpts = [
-      { value: 1, label: "1位" },
-      { value: 2, label: "2位" },
-      { value: 3, label: "3位" },
-      { value: 4, label: "4位以下" },
-    ];
-
     const form = h("form", { class: "form", onsubmit: (e: Event) => e.preventDefault() });
 
     form.append(sectionTitle("難易度"));
     form.append(
       segmented(
-        (Object.keys(DIFFICULTY_LABEL) as Difficulty[]).map((d) => ({
-          value: d,
-          label: DIFFICULTY_LABEL[d],
-        })),
+        (Object.keys(DIFFICULTY_LABEL) as Difficulty[]).map((d) => ({ value: d, label: DIFFICULTY_LABEL[d] })),
         state.difficulty,
         (v) => {
           state.difficulty = v;
-          // 上限を超えていたらクランプ。
           const c = PARAM_CAP[v];
-          state.vo = Math.min(state.vo, c);
-          state.da = Math.min(state.da, c);
-          state.vi = Math.min(state.vi, c);
-          render();
+          state.preVo = Math.min(state.preVo, c);
+          state.preDa = Math.min(state.preDa, c);
+          state.preVi = Math.min(state.preVi, c);
+          renderForm();
         },
       ),
     );
 
-    form.append(sectionTitle(`パラメータ（各上限 ${fmt(cap)}）`));
+    form.append(sectionTitle(`試験前パラメータ（各上限 ${fmt(cap)}）`));
+    form.append(
+      h(
+        "p",
+        { class: "muted small", style: "margin:-4px 0 8px" },
+        "最終試験に入る前の Vo/Da/Vi。",
+      ),
+    );
     form.append(
       h(
         "div",
         { class: "sched-grid" },
-        numberField("Vo", state.vo, (v) => ((state.vo = Math.min(v, cap)), render()), { min: 0, max: cap, step: 10 }),
-        numberField("Da", state.da, (v) => ((state.da = Math.min(v, cap)), render()), { min: 0, max: cap, step: 10 }),
-        numberField("Vi", state.vi, (v) => ((state.vi = Math.min(v, cap)), render()), { min: 0, max: cap, step: 10 }),
+        numberField("Vo", state.preVo, (v) => ((state.preVo = Math.min(v, cap)), renderResult()), { min: 0, max: cap, step: 10 }),
+        numberField("Da", state.preDa, (v) => ((state.preDa = Math.min(v, cap)), renderResult()), { min: 0, max: cap, step: 10 }),
+        numberField("Vi", state.preVi, (v) => ((state.preVi = Math.min(v, cap)), renderResult()), { min: 0, max: cap, step: 10 }),
       ),
     );
 
-    form.append(sectionTitle("試験"));
+    form.append(sectionTitle("試験終了時アビ点数（任意）"));
+    form.append(
+      h(
+        "p",
+        { class: "muted small", style: "margin:-4px 0 8px" },
+        "最終試験終了時に加算されるアビ点数（例: ふわもこ完凸編成で Da+17）。無ければ0。",
+      ),
+    );
+    form.append(
+      h(
+        "div",
+        { class: "sched-grid" },
+        numberField("Vo", state.abiVo, (v) => ((state.abiVo = v), renderResult()), { min: 0, step: 1 }),
+        numberField("Da", state.abiDa, (v) => ((state.abiDa = v), renderResult()), { min: 0, step: 1 }),
+        numberField("Vi", state.abiVi, (v) => ((state.abiVi = v), renderResult()), { min: 0, step: 1 }),
+      ),
+    );
+
+    form.append(sectionTitle("試験スコア・順位"));
     const examGrid = h("div", { class: "sched-grid" });
     if (legend) {
       examGrid.append(
-        numberField("中間 スコア(上限20万)", state.exam.midScore, (v) => ((state.exam.midScore = v), render()), {
+        numberField("中間 スコア(上限20万)", state.midScore, (v) => ((state.midScore = v), renderResult()), {
           min: 0,
           max: 200000,
           step: 1000,
@@ -85,13 +109,27 @@ export function buildRankCalcView(): HTMLElement {
     examGrid.append(
       numberField(
         `最終 スコア(上限${legend ? "200万" : fmt(finalCap)})`,
-        state.exam.finalScore,
-        (v) => ((state.exam.finalScore = v), render()),
+        state.finalScore,
+        (v) => ((state.finalScore = v), renderResult()),
         { min: 0, max: finalCap, step: 1000 },
       ),
     );
     form.append(examGrid);
-    form.append(field("最終試験の順位", segmented(rankOpts, state.exam.finalRank, (v) => ((state.exam.finalRank = v), render()))));
+    form.append(
+      field(
+        "最終試験の順位（パラメータ+160/80/40）",
+        segmented(
+          [
+            { value: 1, label: "1位" },
+            { value: 2, label: "2位" },
+            { value: 3, label: "3位" },
+            { value: 4, label: "不合格" },
+          ],
+          state.finalRank,
+          (v) => ((state.finalRank = v), renderResult()),
+        ),
+      ),
+    );
 
     form.append(
       h(
@@ -140,21 +178,23 @@ export function buildRankCalcView(): HTMLElement {
       h(
         "div",
         { class: "bd-block" },
+        bd(`最終パラメータ合計（${fmt(r.finalVo)}/${fmt(r.finalDa)}/${fmt(r.finalVi)}）`, r.finalStatTotal),
         bd("パラメータ評価", r.paramEval),
-        bd("試験スコア評価（中間＋最終）", r.examEval),
+        bd("中間スコア評価", r.midEval),
+        bd("最終スコア評価", r.finalEval),
         bd("順位評価", r.rankEval),
       ),
-      h("h3", { class: "section-title", style: "margin-top:16px" }, "各ランクに必要な最終試験スコア"),
+      h("h3", { class: "section-title", style: "margin-top:16px" }, "目標ランク別 必要最終試験スコア"),
       h(
         "p",
         { class: "muted small", style: "margin:-4px 0 8px" },
-        "現在のパラメータ・順位・中間スコアを固定して逆算。",
+        "試験前パラメータ・アビ点数・順位・中間スコアを固定して逆算。",
       ),
       h("div", { class: "rc-table" }, ...rows),
       h(
         "p",
         { class: "muted small", style: "margin-top:12px" },
-        "評価値 = パラメータ評価 + 試験スコア評価 + 順位評価（実データ式）。",
+        "評価値 = パラメータ評価(2.1×合計) + 中間 + 最終 + 順位評価（haru計算機の実測式準拠）。",
       ),
     );
   }
@@ -164,6 +204,6 @@ export function buildRankCalcView(): HTMLElement {
   }
 
   const wrap = h("div", { class: "layout" }, formPane, resultPane);
-  render();
+  renderForm();
   return wrap;
 }
