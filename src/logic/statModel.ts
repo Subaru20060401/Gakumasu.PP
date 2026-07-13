@@ -138,7 +138,11 @@ export interface StatEstimate {
   lessonGain: Triple; // レッスン由来（参考）
   cardCount: Triple;
   contributions: CardContribution[]; // サポカ別 貢献明細
+  spRate: Triple; // 属性別SPレッスン発生率%（アイドル基礎＋サポカ）
 }
+
+/** アイドルの基礎SPレッスン発生率%（特訓6, 全属性一律。SSR実測: 全キャラ+10%）。 */
+export const IDOL_BASE_SP_RATE = 10;
 
 export function estimateStats(input: ProduceInput): StatEstimate {
   const idol = idolById(input.idolId);
@@ -206,6 +210,29 @@ export function estimateStats(input: ProduceInput): StatEstimate {
     deckGrants.delete += c.eventGrants.delete ?? 0;
     deckGrants.enhance += c.eventGrants.enhance ?? 0;
     deckGrants.change += c.eventGrants.change ?? 0;
+  }
+
+  // 属性別SPレッスン発生率 = アイドル基礎(全属性+10%) + サポカのSP率アビリティ。
+  const spRate: Record<Stat, number> = {
+    vo: IDOL_BASE_SP_RATE,
+    da: IDOL_BASE_SP_RATE,
+    vi: IDOL_BASE_SP_RATE,
+  };
+  for (let i = 0; i < input.supports.length; i++) {
+    const c = selected.find((x) => x.id === input.supports[i]?.cardId);
+    if (!c) continue;
+    const k = clampLb(input.supports[i].limitBreak);
+    for (const sr of c.spRates) {
+      const v = at(sr.values, k);
+      if (!v) continue;
+      if (sr.stat === "all" || sr.stat === "as") {
+        spRate.vo += v;
+        spRate.da += v;
+        spRate.vi += v;
+      } else {
+        spRate[sr.stat] += v;
+      }
+    }
   }
 
   let totalDrinks = 0; // 下で算出（occurrenceのdrinkケースが参照）
@@ -419,5 +446,6 @@ export function estimateStats(input: ProduceInput): StatEstimate {
     },
     cardCount,
     contributions,
+    spRate: { vo: r1(spRate.vo), da: r1(spRate.da), vi: r1(spRate.vi) },
   };
 }

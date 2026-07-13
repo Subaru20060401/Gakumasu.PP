@@ -365,4 +365,5 @@ export interface PredictionResult {
   lessonGain: { vo: number; da: number; vi: number };
   cardCount: { vo: number; da: number; vi: number };
   contributions: CardContribution[];
+  spRate: { vo: number; da: number; vi: number }; // 属性別SPレッスン発生率%
 }

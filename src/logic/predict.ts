@@ -77,5 +77,6 @@ export function predict(input: ProduceInput): PredictionResult {
     lessonGain: est.lessonGain,
     cardCount: est.cardCount,
     contributions: est.contributions,
+    spRate: est.spRate,
   };
 }

@@ -119,6 +119,32 @@ export function buildResult(r: PredictionResult): HTMLElement {
         ),
       ),
     ),
+    // SPレッスン発生率（属性別）
+    h(
+      "div",
+      { class: "card" },
+      h(
+        "div",
+        { class: "bonus-breakdown" },
+        h(
+          "div",
+          { class: "bd-row bd-head" },
+          h("span", {}, "SPレッスン発生率（アイドル＋サポカ）"),
+          h("span", {}, "Vo / Da / Vi"),
+        ),
+        h(
+          "div",
+          { class: "bd-row bd-total" },
+          h("span", {}, "属性別 発生率"),
+          h("span", { class: "bd-value" }, `${r.spRate.vo}/${r.spRate.da}/${r.spRate.vi}%`),
+        ),
+      ),
+      h(
+        "p",
+        { class: "muted small" },
+        "理論値編成は全レッスンSPが前提。SPを踏める確率の目安（属性ごとの合計SP発生率）。",
+      ),
+    ),
     // サポカ別 貢献詳細
     r.contributions.length > 0 &&
       h(
