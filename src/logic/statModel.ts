@@ -197,6 +197,17 @@ export function estimateStats(input: ProduceInput): StatEstimate {
   const pitemCardCount = selected.filter((c) => c.rewardPItem).length;
   const skillSsrOcc =
     MODEL.skillSsrOccByEffect[idol.recommendedEffect] ?? MODEL.skillSsrOccDefault;
+
+  // サポートイベント／固有Pアイテムが付与する削除・強化・チェンジのアクション回数。
+  // 「削除時+X」等のアビリティ発動回数 = 相談ベース(MODEL) + デッキ付与分。
+  const deckGrants = { delete: 0, enhance: 0, change: 0 };
+  for (const c of selected) {
+    if (!c.eventGrants) continue;
+    deckGrants.delete += c.eventGrants.delete ?? 0;
+    deckGrants.enhance += c.eventGrants.enhance ?? 0;
+    deckGrants.change += c.eventGrants.change ?? 0;
+  }
+
   let totalDrinks = 0; // 下で算出（occurrenceのdrinkケースが参照）
 
   const occurrence = (trigger: FlatTrigger, tstat: Stat | "any" | undefined): number => {
@@ -235,11 +246,11 @@ export function estimateStats(input: ProduceInput): StatEstimate {
       case "skill":
         return MODEL.skillOcc;
       case "enhance":
-        return MODEL.enhanceOcc;
+        return MODEL.enhanceOcc + deckGrants.enhance;
       case "delete":
-        return MODEL.deleteOcc;
+        return MODEL.deleteOcc + deckGrants.delete;
       case "change":
-        return MODEL.changeOcc;
+        return MODEL.changeOcc + deckGrants.change;
       case "customize":
         return MODEL.customizeOcc;
       case "init":

@@ -178,6 +178,30 @@ body {
   background: #c8c5db;
   cursor: not-allowed;
 }
+.score-row {
+  display: flex;
+  gap: 6px;
+  align-items: stretch;
+}
+.score-row .num-input {
+  flex: 1;
+  min-width: 0;
+}
+.max-btn {
+  flex: 0 0 auto;
+  padding: 0 10px;
+  border: 1px solid var(--primary);
+  border-radius: 8px;
+  background: color-mix(in srgb, var(--primary) 10%, transparent);
+  color: var(--primary);
+  font-size: 0.8rem;
+  font-weight: 700;
+  cursor: pointer;
+  white-space: nowrap;
+}
+.max-btn:hover {
+  background: color-mix(in srgb, var(--primary) 18%, transparent);
+}
 .btn-optimize {
   width: 100%;
   margin-top: 12px;

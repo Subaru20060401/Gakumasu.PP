@@ -93,6 +93,45 @@ export function numberField(
   return h("label", { class: "num-field" }, h("span", { class: "field-label" }, label), input);
 }
 
+/** 試験スコア入力（1の位まで任意・「上限」ボタンで最大値をワンクリック入力）。 */
+export function scoreField(
+  label: string,
+  value: number,
+  onChange: (v: number) => void,
+  max: number,
+): HTMLElement {
+  const input = h("input", {
+    class: "num-input",
+    type: "number",
+    value: String(value),
+    min: "0",
+    max: String(max),
+    step: "1", // 1の位まで任意の数値を許可（キリの悪い数字でも予測可）
+    oninput: (e: Event) => {
+      const v = Math.min(max, Number((e.target as HTMLInputElement).value) || 0);
+      onChange(v);
+    },
+  }) as HTMLInputElement;
+  const maxBtn = h(
+    "button",
+    {
+      type: "button",
+      class: "max-btn",
+      onclick: () => {
+        input.value = String(max);
+        onChange(max);
+      },
+    },
+    "上限",
+  );
+  return h(
+    "label",
+    { class: "num-field" },
+    h("span", { class: "field-label" }, label),
+    h("div", { class: "score-row" }, input, maxBtn),
+  );
+}
+
 export function buildInputForm(input: ProduceInput, onSubmit: () => void): HTMLElement {
   const form = h("form", {
     class: "input-form",
@@ -379,9 +418,9 @@ export function buildInputForm(input: ProduceInput, onSubmit: () => void): HTMLE
     h(
       "div",
       { class: "sched-grid" },
-      numberField("中間 スコア(上限20万)", input.exam.midScore, (v) => (input.exam.midScore = v), { min: 0, max: 200000, step: 1000 }),
+      scoreField("中間 スコア(上限20万)", input.exam.midScore, (v) => (input.exam.midScore = v), 200000),
       numberField("中間 順位", input.exam.midRank, (v) => (input.exam.midRank = v), { min: 1, max: 20 }),
-      numberField("最終 スコア(上限200万)", input.exam.finalScore, (v) => (input.exam.finalScore = v), { min: 0, max: 2000000, step: 1000 }),
+      scoreField("最終 スコア(上限200万)", input.exam.finalScore, (v) => (input.exam.finalScore = v), 2000000),
       numberField("最終 順位", input.exam.finalRank, (v) => (input.exam.finalRank = v), { min: 1, max: 20 }),
     ),
   );

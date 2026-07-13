@@ -5,7 +5,7 @@
 import { type RankCalcInput, calcRank } from "../logic/rankCalc";
 import { DIFFICULTY_LABEL, type Difficulty, PARAM_CAP } from "../types";
 import { h, segmented } from "./dom";
-import { field, numberField, sectionTitle } from "./inputView";
+import { field, numberField, scoreField, sectionTitle } from "./inputView";
 
 const fmt = (n: number) => n.toLocaleString("ja-JP");
 
@@ -99,19 +99,15 @@ export function buildRankCalcView(): HTMLElement {
     const examGrid = h("div", { class: "sched-grid" });
     if (legend) {
       examGrid.append(
-        numberField("中間 スコア(上限20万)", state.midScore, (v) => ((state.midScore = v), renderResult()), {
-          min: 0,
-          max: 200000,
-          step: 1000,
-        }),
+        scoreField("中間 スコア(上限20万)", state.midScore, (v) => ((state.midScore = v), renderResult()), 200000),
       );
     }
     examGrid.append(
-      numberField(
+      scoreField(
         `最終 スコア(上限${legend ? "200万" : fmt(finalCap)})`,
         state.finalScore,
         (v) => ((state.finalScore = v), renderResult()),
-        { min: 0, max: finalCap, step: 1000 },
+        finalCap,
       ),
     );
     form.append(examGrid);

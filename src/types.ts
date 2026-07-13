@@ -195,6 +195,9 @@ export interface SupportCard {
   pItemFlat?: { stat: ParamType; trigger: FlatTrigger; tstat?: ParamType | "any"; value: number; cap: number | null };
   // サポートイベント（1プロデュース1回発生）のパラメータ。eventUpで増幅（SSR20/SR15/R10）。
   supportEvent?: { stat: ParamType; value: number };
+  // サポートイベント／固有Pアイテムが付与する削除・強化・チェンジのアクション回数。
+  // 「削除時+X」等のアビリティ発動回数（相談ベース＋これ）に加算する。
+  eventGrants?: { delete?: number; enhance?: number; change?: number };
 }
 
 /** メモリーアビリティのレアリティ（虹+/虹/金/銀）。 */

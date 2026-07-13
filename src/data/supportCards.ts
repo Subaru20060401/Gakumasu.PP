@@ -83,7 +83,8 @@ export const SUPPORT_CARDS: SupportCard[] = [
   "supportEvent": {
    "stat": "vi",
    "value": 20
-  }
+  },
+  "eventGrants": {"enhance": 1}
  },
  {
   "id": "ssr-001",
@@ -155,7 +156,8 @@ export const SUPPORT_CARDS: SupportCard[] = [
   "supportEvent": {
    "stat": "vi",
    "value": 20
-  }
+  },
+  "eventGrants": {"enhance": 1}
  },
  {
   "id": "ssr-002",
@@ -231,7 +233,8 @@ export const SUPPORT_CARDS: SupportCard[] = [
   "supportEvent": {
    "stat": "da",
    "value": 20
-  }
+  },
+  "eventGrants": {"enhance": 1}
  },
  {
   "id": "ssr-003",
@@ -297,7 +300,8 @@ export const SUPPORT_CARDS: SupportCard[] = [
    "name": "夢の手助け",
    "rarity": "SSR",
    "plan": "フリー"
-  }
+  },
+  "eventGrants": {"enhance": 1}
  },
  {
   "id": "ssr-004",
@@ -375,7 +379,8 @@ export const SUPPORT_CARDS: SupportCard[] = [
   "supportEvent": {
    "stat": "vi",
    "value": 20
-  }
+  },
+  "eventGrants": {"enhance": 1}
  },
  {
   "id": "ssr-005",
@@ -458,7 +463,8 @@ export const SUPPORT_CARDS: SupportCard[] = [
   "supportEvent": {
    "stat": "vo",
    "value": 20
-  }
+  },
+  "eventGrants": {"enhance": 1}
  },
  {
   "id": "ssr-006",
@@ -531,7 +537,8 @@ export const SUPPORT_CARDS: SupportCard[] = [
   "supportEvent": {
    "stat": "da",
    "value": 20
-  }
+  },
+  "eventGrants": {"enhance": 1}
  },
  {
   "id": "ssr-007",
@@ -608,7 +615,8 @@ export const SUPPORT_CARDS: SupportCard[] = [
   "supportEvent": {
    "stat": "vi",
    "value": 20
-  }
+  },
+  "eventGrants": {"enhance": 1}
  },
  {
   "id": "ssr-008",
@@ -680,7 +688,8 @@ export const SUPPORT_CARDS: SupportCard[] = [
   "supportEvent": {
    "stat": "vi",
    "value": 20
-  }
+  },
+  "eventGrants": {"enhance": 1}
  },
  {
   "id": "ssr-009",
@@ -762,7 +771,8 @@ export const SUPPORT_CARDS: SupportCard[] = [
   "supportEvent": {
    "stat": "vi",
    "value": 20
-  }
+  },
+  "eventGrants": {"enhance": 1}
  },
  {
   "id": "ssr-010",
@@ -850,7 +860,8 @@ export const SUPPORT_CARDS: SupportCard[] = [
   "supportEvent": {
    "stat": "da",
    "value": 20
-  }
+  },
+  "eventGrants": {"enhance": 1}
  },
  {
   "id": "ssr-011",
@@ -934,7 +945,8 @@ export const SUPPORT_CARDS: SupportCard[] = [
   "supportEvent": {
    "stat": "vi",
    "value": 20
-  }
+  },
+  "eventGrants": {"enhance": 1}
  },
  {
   "id": "ssr-012",
@@ -1011,7 +1023,8 @@ export const SUPPORT_CARDS: SupportCard[] = [
   "supportEvent": {
    "stat": "vo",
    "value": 20
-  }
+  },
+  "eventGrants": {"enhance": 1}
  },
  {
   "id": "ssr-013",
@@ -1083,7 +1096,8 @@ export const SUPPORT_CARDS: SupportCard[] = [
   "supportEvent": {
    "stat": "vo",
    "value": 20
-  }
+  },
+  "eventGrants": {"enhance": 1}
  },
  {
   "id": "ssr-014",
@@ -1165,7 +1179,8 @@ export const SUPPORT_CARDS: SupportCard[] = [
   "supportEvent": {
    "stat": "vo",
    "value": 20
-  }
+  },
+  "eventGrants": {"enhance": 1}
  },
  {
   "id": "ssr-015",
@@ -1244,7 +1259,8 @@ export const SUPPORT_CARDS: SupportCard[] = [
   "supportEvent": {
    "stat": "da",
    "value": 20
-  }
+  },
+  "eventGrants": {"enhance": 1}
  },
  {
   "id": "ssr-016",
@@ -1339,7 +1355,8 @@ export const SUPPORT_CARDS: SupportCard[] = [
   "supportEvent": {
    "stat": "da",
    "value": 20
-  }
+  },
+  "eventGrants": {"enhance": 1}
  },
  {
   "id": "ssr-017",
@@ -1417,7 +1434,8 @@ export const SUPPORT_CARDS: SupportCard[] = [
   "supportEvent": {
    "stat": "da",
    "value": 20
-  }
+  },
+  "eventGrants": {"enhance": 1}
  },
  {
   "id": "ssr-018",
@@ -1500,7 +1518,8 @@ export const SUPPORT_CARDS: SupportCard[] = [
   "supportEvent": {
    "stat": "da",
    "value": 20
-  }
+  },
+  "eventGrants": {"enhance": 1}
  },
  {
   "id": "ssr-019",
@@ -1582,7 +1601,8 @@ export const SUPPORT_CARDS: SupportCard[] = [
   "supportEvent": {
    "stat": "vo",
    "value": 20
-  }
+  },
+  "eventGrants": {"enhance": 1}
  },
  {
   "id": "ssr-020",
@@ -1659,7 +1679,8 @@ export const SUPPORT_CARDS: SupportCard[] = [
   "supportEvent": {
    "stat": "vi",
    "value": 20
-  }
+  },
+  "eventGrants": {"enhance": 1}
  },
  {
   "id": "ssr-021",
@@ -1737,7 +1758,8 @@ export const SUPPORT_CARDS: SupportCard[] = [
   "supportEvent": {
    "stat": "vo",
    "value": 20
-  }
+  },
+  "eventGrants": {"enhance": 1}
  },
  {
   "id": "ssr-022",
@@ -1826,7 +1848,8 @@ export const SUPPORT_CARDS: SupportCard[] = [
   "supportEvent": {
    "stat": "vo",
    "value": 20
-  }
+  },
+  "eventGrants": {"enhance": 1}
  },
  {
   "id": "ssr-023",
@@ -1909,7 +1932,8 @@ export const SUPPORT_CARDS: SupportCard[] = [
   "supportEvent": {
    "stat": "vi",
    "value": 20
-  }
+  },
+  "eventGrants": {"enhance": 1}
  },
  {
   "id": "ssr-024",
@@ -1991,7 +2015,8 @@ export const SUPPORT_CARDS: SupportCard[] = [
   "supportEvent": {
    "stat": "vo",
    "value": 20
-  }
+  },
+  "eventGrants": {"enhance": 1}
  },
  {
   "id": "ssr-025",
@@ -2075,7 +2100,8 @@ export const SUPPORT_CARDS: SupportCard[] = [
   "supportEvent": {
    "stat": "vo",
    "value": 20
-  }
+  },
+  "eventGrants": {"enhance": 1}
  },
  {
   "id": "ssr-026",
@@ -2158,7 +2184,8 @@ export const SUPPORT_CARDS: SupportCard[] = [
   "supportEvent": {
    "stat": "da",
    "value": 20
-  }
+  },
+  "eventGrants": {"enhance": 1}
  },
  {
   "id": "ssr-027",
@@ -2236,7 +2263,8 @@ export const SUPPORT_CARDS: SupportCard[] = [
   "supportEvent": {
    "stat": "da",
    "value": 20
-  }
+  },
+  "eventGrants": {"enhance": 1}
  },
  {
   "id": "ssr-028",
@@ -2319,7 +2347,8 @@ export const SUPPORT_CARDS: SupportCard[] = [
   "supportEvent": {
    "stat": "vo",
    "value": 20
-  }
+  },
+  "eventGrants": {"enhance": 1}
  },
  {
   "id": "ssr-029",
@@ -2401,7 +2430,8 @@ export const SUPPORT_CARDS: SupportCard[] = [
   "supportEvent": {
    "stat": "vo",
    "value": 20
-  }
+  },
+  "eventGrants": {"enhance": 1}
  },
  {
   "id": "ssr-030",
@@ -2479,7 +2509,8 @@ export const SUPPORT_CARDS: SupportCard[] = [
   "supportEvent": {
    "stat": "vi",
    "value": 20
-  }
+  },
+  "eventGrants": {"enhance": 1}
  },
  {
   "id": "ssr-031",
@@ -2556,7 +2587,8 @@ export const SUPPORT_CARDS: SupportCard[] = [
   "supportEvent": {
    "stat": "vi",
    "value": 20
-  }
+  },
+  "eventGrants": {"enhance": 1}
  },
  {
   "id": "ssr-032",
@@ -2639,7 +2671,8 @@ export const SUPPORT_CARDS: SupportCard[] = [
   "supportEvent": {
    "stat": "da",
    "value": 20
-  }
+  },
+  "eventGrants": {"enhance": 1}
  },
  {
   "id": "ssr-033",
@@ -2717,7 +2750,8 @@ export const SUPPORT_CARDS: SupportCard[] = [
   "supportEvent": {
    "stat": "vi",
    "value": 20
-  }
+  },
+  "eventGrants": {"change": 1}
  },
  {
   "id": "ssr-034",
@@ -2806,7 +2840,8 @@ export const SUPPORT_CARDS: SupportCard[] = [
   "supportEvent": {
    "stat": "da",
    "value": 20
-  }
+  },
+  "eventGrants": {"change": 1}
  },
  {
   "id": "ssr-035",
@@ -2890,7 +2925,8 @@ export const SUPPORT_CARDS: SupportCard[] = [
   "supportEvent": {
    "stat": "vo",
    "value": 20
-  }
+  },
+  "eventGrants": {"enhance": 1}
  },
  {
   "id": "ssr-036",
@@ -2973,7 +3009,8 @@ export const SUPPORT_CARDS: SupportCard[] = [
   "supportEvent": {
    "stat": "vi",
    "value": 20
-  }
+  },
+  "eventGrants": {"enhance": 1}
  },
  {
   "id": "ssr-037",
@@ -3051,7 +3088,8 @@ export const SUPPORT_CARDS: SupportCard[] = [
   "supportEvent": {
    "stat": "da",
    "value": 20
-  }
+  },
+  "eventGrants": {"enhance": 1}
  },
  {
   "id": "ssr-038",
@@ -3134,7 +3172,8 @@ export const SUPPORT_CARDS: SupportCard[] = [
   "supportEvent": {
    "stat": "da",
    "value": 20
-  }
+  },
+  "eventGrants": {"change": 1}
  },
  {
   "id": "ssr-039",
@@ -3223,7 +3262,8 @@ export const SUPPORT_CARDS: SupportCard[] = [
   "supportEvent": {
    "stat": "vi",
    "value": 20
-  }
+  },
+  "eventGrants": {"enhance": 1}
  },
  {
   "id": "ssr-040",
@@ -3306,7 +3346,8 @@ export const SUPPORT_CARDS: SupportCard[] = [
   "supportEvent": {
    "stat": "da",
    "value": 20
-  }
+  },
+  "eventGrants": {"enhance": 1}
  },
  {
   "id": "ssr-041",
@@ -3389,11 +3430,13 @@ export const SUPPORT_CARDS: SupportCard[] = [
   "supportEvent": {
    "stat": "vo",
    "value": 20
-  }
+  },
+  "eventGrants": {"change": 1}
  },
  {
   "id": "ssr-042",
   "name": "バレンタイン♡会議中ーっ！",
+  "eventGrants": { "enhance": 1 },
   "rarity": "ssr",
   "type": "vi",
   "plan": "anomaly",
@@ -3469,7 +3512,8 @@ export const SUPPORT_CARDS: SupportCard[] = [
   "supportEvent": {
    "stat": "vo",
    "value": 20
-  }
+  },
+  "eventGrants": {"enhance": 1}
  },
  {
   "id": "ssr-044",
@@ -3535,7 +3579,8 @@ export const SUPPORT_CARDS: SupportCard[] = [
   "supportEvent": {
    "stat": "da",
    "value": 20
-  }
+  },
+  "eventGrants": {"enhance": 1}
  },
  {
   "id": "ssr-045",
@@ -3612,7 +3657,8 @@ export const SUPPORT_CARDS: SupportCard[] = [
   "supportEvent": {
    "stat": "vo",
    "value": 20
-  }
+  },
+  "eventGrants": {"enhance": 1}
  },
  {
   "id": "ssr-046",
@@ -3695,7 +3741,8 @@ export const SUPPORT_CARDS: SupportCard[] = [
   "supportEvent": {
    "stat": "da",
    "value": 20
-  }
+  },
+  "eventGrants": {"enhance": 1}
  },
  {
   "id": "ssr-047",
@@ -3777,7 +3824,8 @@ export const SUPPORT_CARDS: SupportCard[] = [
   "supportEvent": {
    "stat": "vi",
    "value": 20
-  }
+  },
+  "eventGrants": {"enhance": 1}
  },
  {
   "id": "ssr-048",
@@ -3855,7 +3903,8 @@ export const SUPPORT_CARDS: SupportCard[] = [
   "supportEvent": {
    "stat": "da",
    "value": 20
-  }
+  },
+  "eventGrants": {"enhance": 1}
  },
  {
   "id": "ssr-049",
@@ -3933,7 +3982,8 @@ export const SUPPORT_CARDS: SupportCard[] = [
   "supportEvent": {
    "stat": "vi",
    "value": 20
-  }
+  },
+  "eventGrants": {"enhance": 1}
  },
  {
   "id": "ssr-050",
@@ -4016,7 +4066,8 @@ export const SUPPORT_CARDS: SupportCard[] = [
   "supportEvent": {
    "stat": "da",
    "value": 20
-  }
+  },
+  "eventGrants": {"enhance": 1}
  },
  {
   "id": "ssr-051",
@@ -4051,7 +4102,8 @@ export const SUPPORT_CARDS: SupportCard[] = [
    "name": "ごちそうさまでした",
    "rarity": "SSR",
    "plan": "フリー"
-  }
+  },
+  "eventGrants": {"delete": 1}
  },
  {
   "id": "ssr-052",
@@ -4116,7 +4168,8 @@ export const SUPPORT_CARDS: SupportCard[] = [
   "supportEvent": {
    "stat": "vi",
    "value": 20
-  }
+  },
+  "eventGrants": {"enhance": 1}
  },
  {
   "id": "ssr-053",
@@ -4192,7 +4245,8 @@ export const SUPPORT_CARDS: SupportCard[] = [
   "supportEvent": {
    "stat": "vo",
    "value": 20
-  }
+  },
+  "eventGrants": {"enhance": 1}
  },
  {
   "id": "ssr-054",
@@ -4252,7 +4306,8 @@ export const SUPPORT_CARDS: SupportCard[] = [
   "supportEvent": {
    "stat": "da",
    "value": 20
-  }
+  },
+  "eventGrants": {"enhance": 1}
  },
  {
   "id": "ssr-055",
@@ -4330,7 +4385,8 @@ export const SUPPORT_CARDS: SupportCard[] = [
   "supportEvent": {
    "stat": "vo",
    "value": 20
-  }
+  },
+  "eventGrants": {"enhance": 1}
  },
  {
   "id": "ssr-056",
@@ -4419,7 +4475,8 @@ export const SUPPORT_CARDS: SupportCard[] = [
   "supportEvent": {
    "stat": "vi",
    "value": 20
-  }
+  },
+  "eventGrants": {"enhance": 1}
  },
  {
   "id": "ssr-057",
@@ -4491,7 +4548,8 @@ export const SUPPORT_CARDS: SupportCard[] = [
   "supportEvent": {
    "stat": "vi",
    "value": 20
-  }
+  },
+  "eventGrants": {"enhance": 1}
  },
  {
   "id": "ssr-058",
@@ -4580,7 +4638,8 @@ export const SUPPORT_CARDS: SupportCard[] = [
   "supportEvent": {
    "stat": "da",
    "value": 20
-  }
+  },
+  "eventGrants": {"enhance": 1}
  },
  {
   "id": "ssr-059",
@@ -4652,7 +4711,8 @@ export const SUPPORT_CARDS: SupportCard[] = [
   "supportEvent": {
    "stat": "da",
    "value": 20
-  }
+  },
+  "eventGrants": {"enhance": 1}
  },
  {
   "id": "ssr-060",
@@ -4724,7 +4784,8 @@ export const SUPPORT_CARDS: SupportCard[] = [
   "supportEvent": {
    "stat": "vi",
    "value": 20
-  }
+  },
+  "eventGrants": {"enhance": 1}
  },
  {
   "id": "ssr-061",
@@ -4784,7 +4845,8 @@ export const SUPPORT_CARDS: SupportCard[] = [
   "supportEvent": {
    "stat": "vo",
    "value": 20
-  }
+  },
+  "eventGrants": {"enhance": 1}
  },
  {
   "id": "ssr-062",
@@ -4850,11 +4912,13 @@ export const SUPPORT_CARDS: SupportCard[] = [
   "supportEvent": {
    "stat": "vo",
    "value": 20
-  }
+  },
+  "eventGrants": {"change": 1}
  },
  {
   "id": "ssr-063",
   "name": "もうっ！　冷たいよ！",
+  "eventGrants": { "enhance": 1 },
   "rarity": "ssr",
   "type": "da",
   "plan": "logic",
@@ -5016,7 +5080,8 @@ export const SUPPORT_CARDS: SupportCard[] = [
   "supportEvent": {
    "stat": "vi",
    "value": 20
-  }
+  },
+  "eventGrants": {"enhance": 1}
  },
  {
   "id": "ssr-065",
@@ -5075,7 +5140,8 @@ export const SUPPORT_CARDS: SupportCard[] = [
   "supportEvent": {
    "stat": "da",
    "value": 20
-  }
+  },
+  "eventGrants": {"enhance": 1}
  },
  {
   "id": "ssr-066",
@@ -5135,7 +5201,8 @@ export const SUPPORT_CARDS: SupportCard[] = [
   "supportEvent": {
    "stat": "vo",
    "value": 20
-  }
+  },
+  "eventGrants": {"enhance": 1}
  },
  {
   "id": "ssr-067",
@@ -5218,7 +5285,8 @@ export const SUPPORT_CARDS: SupportCard[] = [
   "supportEvent": {
    "stat": "vo",
    "value": 20
-  }
+  },
+  "eventGrants": {"change": 1}
  },
  {
   "id": "ssr-068",
@@ -5290,7 +5358,8 @@ export const SUPPORT_CARDS: SupportCard[] = [
   "supportEvent": {
    "stat": "vi",
    "value": 20
-  }
+  },
+  "eventGrants": {"change": 1}
  },
  {
   "id": "ssr-069",
@@ -5350,7 +5419,8 @@ export const SUPPORT_CARDS: SupportCard[] = [
   "supportEvent": {
    "stat": "vi",
    "value": 20
-  }
+  },
+  "eventGrants": {"enhance": 1}
  },
  {
   "id": "ssr-070",
@@ -5409,7 +5479,8 @@ export const SUPPORT_CARDS: SupportCard[] = [
   "supportEvent": {
    "stat": "da",
    "value": 20
-  }
+  },
+  "eventGrants": {"change": 1}
  },
  {
   "id": "ssr-071",
@@ -5469,7 +5540,8 @@ export const SUPPORT_CARDS: SupportCard[] = [
   "supportEvent": {
    "stat": "vo",
    "value": 20
-  }
+  },
+  "eventGrants": {"enhance": 1}
  },
  {
   "id": "ssr-072",
@@ -5529,7 +5601,8 @@ export const SUPPORT_CARDS: SupportCard[] = [
   "supportEvent": {
    "stat": "vi",
    "value": 20
-  }
+  },
+  "eventGrants": {"enhance": 1}
  },
  {
   "id": "ssr-073",
@@ -5612,7 +5685,8 @@ export const SUPPORT_CARDS: SupportCard[] = [
   "supportEvent": {
    "stat": "vi",
    "value": 20
-  }
+  },
+  "eventGrants": {"enhance": 1}
  },
  {
   "id": "ssr-074",
@@ -5695,7 +5769,8 @@ export const SUPPORT_CARDS: SupportCard[] = [
   "supportEvent": {
    "stat": "da",
    "value": 20
-  }
+  },
+  "eventGrants": {"enhance": 1}
  },
  {
   "id": "ssr-075",
@@ -5778,7 +5853,8 @@ export const SUPPORT_CARDS: SupportCard[] = [
   "supportEvent": {
    "stat": "vo",
    "value": 20
-  }
+  },
+  "eventGrants": {"enhance": 1}
  },
  {
   "id": "ssr-076",
@@ -5837,7 +5913,8 @@ export const SUPPORT_CARDS: SupportCard[] = [
   "supportEvent": {
    "stat": "vi",
    "value": 20
-  }
+  },
+  "eventGrants": {"change": 1}
  },
  {
   "id": "ssr-077",
@@ -5896,7 +5973,8 @@ export const SUPPORT_CARDS: SupportCard[] = [
   "supportEvent": {
    "stat": "vo",
    "value": 20
-  }
+  },
+  "eventGrants": {"enhance": 1}
  },
  {
   "id": "ssr-078",
@@ -5968,7 +6046,8 @@ export const SUPPORT_CARDS: SupportCard[] = [
   "supportEvent": {
    "stat": "vo",
    "value": 20
-  }
+  },
+  "eventGrants": {"enhance": 1}
  },
  {
   "id": "ssr-079",
@@ -6040,7 +6119,8 @@ export const SUPPORT_CARDS: SupportCard[] = [
   "supportEvent": {
    "stat": "da",
    "value": 20
-  }
+  },
+  "eventGrants": {"enhance": 1}
  },
  {
   "id": "ssr-080",
@@ -6106,7 +6186,8 @@ export const SUPPORT_CARDS: SupportCard[] = [
   "supportEvent": {
    "stat": "da",
    "value": 20
-  }
+  },
+  "eventGrants": {"change": 1}
  },
  {
   "id": "ssr-081",
@@ -12722,8 +12803,9 @@ export const SUPPORT_CARDS: SupportCard[] = [
   "supportEvent": {
     "stat": "vo",
     "value": 20
-  }
-},
+  },
+  "eventGrants": {"enhance": 1}
+ },
 {
   "id": "sp-001",
   "name": "パーティー楽しみだねっ！",
