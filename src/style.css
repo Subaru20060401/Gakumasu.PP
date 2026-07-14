@@ -389,6 +389,10 @@ body {
   margin-top: 28px;
   text-align: center;
 }
+.app-footer span {
+  display: block;
+  margin-top: 4px;
+}
 
 /* ---- サポカ別 貢献 ---- */
 .contrib {

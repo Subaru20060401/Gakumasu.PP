@@ -94,6 +94,11 @@ const app = h(
     "footer",
     { class: "app-footer" },
     h("span", { class: "muted small" }, "ベース版 · 予測ロジックは暫定（仮）"),
+    h(
+      "span",
+      { class: "muted small" },
+      "非公式のファンツールです。『学園アイドルマスター』および関連する権利は各権利者に帰属します（本サイトは公式とは一切関係ありません）。",
+    ),
   ),
 );
 
