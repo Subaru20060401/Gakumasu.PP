@@ -7,14 +7,12 @@ import { idolById, IDOLS, SUPPORT_CARDS } from "../data/sampleData";
 import { optimizeLessonRouting, planTotal } from "../logic/optimize";
 import { computeIdolBonus } from "../logic/statModel";
 import {
-  DIFFICULTY_LABEL,
   MEMORY_BONUS_VALUE,
   MEMORY_INIT_VALUE,
   MEMORY_SLOT_STATS,
   PLAN_LABEL,
   RARITY_LABEL,
   SUPPORT_TYPE_LABEL,
-  type Difficulty,
   type Idol,
   type Memory,
   type MemoryAbility,
@@ -425,14 +423,11 @@ export function buildInputForm(input: ProduceInput, onSubmit: () => void): HTMLE
     ),
   );
 
-  // ⑩ 難易度
+  // ⑩ 難易度（現状このモードは初レジェンドのみ対応）
+  input.difficulty = "hajimeLegend";
   form.append(sectionTitle("難易度"));
   form.append(
-    segmented(
-      (Object.keys(DIFFICULTY_LABEL) as Difficulty[]).map((d) => ({ value: d, label: DIFFICULTY_LABEL[d] })),
-      input.difficulty,
-      (v) => (input.difficulty = v),
-    ),
+    h("div", { class: "locked-field" }, "初レジェンド（現在このモードは初レジェンドのみ対応）"),
   );
 
   form.append(submitBtn);

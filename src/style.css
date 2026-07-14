@@ -385,6 +385,15 @@ body {
   color: #c0392b;
 }
 
+.locked-field {
+  padding: 10px 14px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: var(--primary-weak);
+  color: var(--primary);
+  font-weight: 700;
+  font-size: 0.9rem;
+}
 .app-footer {
   margin-top: 28px;
   text-align: center;
