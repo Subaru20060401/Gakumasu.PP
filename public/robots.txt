@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://gakumasu-pp.vercel.app/sitemap.xml

@@ -1,4 +1,5 @@
 import "./style.css";
+import { inject } from "@vercel/analytics";
 import { scenarioById } from "./data/sampleData";
 import { defaultMemories } from "./logic/memory";
 import { predict } from "./logic/predict";
@@ -103,4 +104,7 @@ const app = h(
 );
 
 document.querySelector<HTMLDivElement>("#app")!.replaceChildren(app);
+
+// Vercel Web Analytics（アクセス数計測）。Vercelダッシュボードの Analytics 有効化が必要。
+inject();
 renderMode();

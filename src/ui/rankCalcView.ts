@@ -3,7 +3,7 @@
 // 参考: haru計算機（初レジェ）。主用途：最終試験でどれだけ取れば目標ランクに届くか。
 
 import { type RankCalcInput, calcRank } from "../logic/rankCalc";
-import { DIFFICULTY_LABEL, type Difficulty, PARAM_CAP } from "../types";
+import { PARAM_CAP } from "../types";
 import { h, segmented } from "./dom";
 import { field, numberField, scoreField, sectionTitle } from "./inputView";
 
@@ -45,18 +45,7 @@ export function buildRankCalcView(): HTMLElement {
 
     form.append(sectionTitle("難易度"));
     form.append(
-      segmented(
-        (Object.keys(DIFFICULTY_LABEL) as Difficulty[]).map((d) => ({ value: d, label: DIFFICULTY_LABEL[d] })),
-        state.difficulty,
-        (v) => {
-          state.difficulty = v;
-          const c = PARAM_CAP[v];
-          state.preVo = Math.min(state.preVo, c);
-          state.preDa = Math.min(state.preDa, c);
-          state.preVi = Math.min(state.preVi, c);
-          renderForm();
-        },
-      ),
+      h("div", { class: "locked-field" }, "初レジェンド（現在このモードは初レジェンドのみ対応）"),
     );
 
     form.append(sectionTitle(`試験前パラメータ（各上限 ${fmt(cap)}）`));
