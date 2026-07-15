@@ -132,6 +132,7 @@ export interface StatEstimate {
     challenge: Triple;
   };
   lessonGain: Triple; // レッスン由来（参考）
+  classGain: Triple; // 授業由来（フラット・パラボ非対象）
   cardCount: Triple;
   contributions: CardContribution[]; // サポカ別 貢献明細
   spRate: Triple; // 属性別SPレッスン発生率%（アイドル基礎＋サポカ）
@@ -179,10 +180,12 @@ export function estimateStats(input: ProduceInput): StatEstimate {
     const bonus = ((slot.sp ? LESSON.spBonus : LESSON.normalBonus)[i] ?? 0) * capFactor;
     for (const s of STATS) lessonGain[s] += s === slot.stat ? clear + bonus : bonus;
   });
-  // 授業4回（週1/2/6/15, 上昇値100/100/150/200）。パラボ対象なのでレッスン獲得に加算。
+  // 授業4回（週1/2/6/15, 上昇値100/100/150/200）。
+  // フラット加算（パラボ非対象）＝どの属性を選んでも合計上昇量は固定550、振り分け先だけが変わる。
   const CLASS_VALUES = [100, 100, 150, 200];
+  const classGain: Record<Stat, number> = { vo: 0, da: 0, vi: 0 };
   input.classes.forEach((stat, i) => {
-    lessonGain[stat] += CLASS_VALUES[i] ?? 0;
+    classGain[stat] += CLASS_VALUES[i] ?? 0;
   });
 
   // 通常/SP レッスン回数（フラット発動用）。
@@ -407,9 +410,12 @@ export function estimateStats(input: ProduceInput): StatEstimate {
   for (const s of STATS) {
     bonusParam[s] = (lessonGain[s] * passiveBonus[s]) / 100;
     // レッスン上昇値はレジェンド固定値なので難易度係数は掛けない。
+    // 授業(classGain)はフラット＝パラボ非対象で加算。
     out[s] = Math.min(
       cap,
-      Math.round(base[s] + initGain[s] + lessonGain[s] + bonusParam[s] + flatGain[s] + examParamGain),
+      Math.round(
+        base[s] + initGain[s] + lessonGain[s] + bonusParam[s] + flatGain[s] + classGain[s] + examParamGain,
+      ),
     );
   }
 
@@ -442,6 +448,7 @@ export function estimateStats(input: ProduceInput): StatEstimate {
       da: Math.round(lessonGain.da),
       vi: Math.round(lessonGain.vi),
     },
+    classGain: { vo: classGain.vo, da: classGain.da, vi: classGain.vi },
     cardCount,
     contributions,
     spRate: { vo: r1(spRate.vo), da: r1(spRate.da), vi: r1(spRate.vi) },

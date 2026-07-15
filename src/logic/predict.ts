@@ -75,6 +75,7 @@ export function predict(input: ProduceInput): PredictionResult {
     bonusParam: est.bonusParam,
     bonusParamBySource: est.bonusParamBySource,
     lessonGain: est.lessonGain,
+    classGain: est.classGain,
     cardCount: est.cardCount,
     contributions: est.contributions,
     spRate: est.spRate,

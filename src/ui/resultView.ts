@@ -77,7 +77,7 @@ export function buildResult(r: PredictionResult): HTMLElement {
       h(
         "p",
         { class: "muted small" },
-        `根拠: レッスン獲得 Vo${r.lessonGain.vo}/Da${r.lessonGain.da}/Vi${r.lessonGain.vi}　·　合算パラボ Vo${r.bonusPct.vo}/Da${r.bonusPct.da}/Vi${r.bonusPct.vi}%　·　サポカ Vo${r.cardCount.vo}/Da${r.cardCount.da}/Vi${r.cardCount.vi}`,
+        `根拠: レッスン獲得 Vo${r.lessonGain.vo}/Da${r.lessonGain.da}/Vi${r.lessonGain.vi}　·　授業(フラット) Vo${r.classGain.vo}/Da${r.classGain.da}/Vi${r.classGain.vi}　·　合算パラボ Vo${r.bonusPct.vo}/Da${r.bonusPct.da}/Vi${r.bonusPct.vi}%　·　サポカ Vo${r.cardCount.vo}/Da${r.cardCount.da}/Vi${r.cardCount.vi}`,
       ),
       h(
         "div",

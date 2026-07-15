@@ -363,6 +363,7 @@ export interface PredictionResult {
     challenge: { vo: number; da: number; vi: number };
   };
   lessonGain: { vo: number; da: number; vi: number };
+  classGain: { vo: number; da: number; vi: number }; // 授業由来（フラット）
   cardCount: { vo: number; da: number; vi: number };
   contributions: CardContribution[];
   spRate: { vo: number; da: number; vi: number }; // 属性別SPレッスン発生率%
