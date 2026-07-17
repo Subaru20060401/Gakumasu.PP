@@ -4,6 +4,7 @@
 
 import { challengePItemsFor } from "../data/challengePItems";
 import { idolById, IDOLS, SUPPORT_CARDS } from "../data/sampleData";
+import { autoBuild } from "../logic/autoBuild";
 import { optimizeLessonRouting, planTotal } from "../logic/optimize";
 import { computeIdolBonus } from "../logic/statModel";
 import {
@@ -130,7 +131,14 @@ export function scoreField(
   );
 }
 
-export function buildInputForm(input: ProduceInput, onSubmit: () => void): HTMLElement {
+// 自動編成のサマリ（フォーム再構築を跨いで表示を維持する）。
+let lastAutoSummary: string | null = null;
+
+export function buildInputForm(
+  input: ProduceInput,
+  onSubmit: () => void,
+  opts: { onRebuild?: () => void } = {},
+): HTMLElement {
   const form = h("form", {
     class: "input-form",
     onsubmit: (e: Event) => {
@@ -296,6 +304,44 @@ export function buildInputForm(input: ProduceInput, onSubmit: () => void): HTMLE
         },
       ),
     ),
+  );
+
+  // 🤖 全自動 理論値編成
+  form.append(sectionTitle("🤖 全自動 理論値編成"));
+  const autoNote = h("p", { class: "field-label", style: "margin:6px 0 0" });
+  if (lastAutoSummary) autoNote.textContent = lastAutoSummary;
+  form.append(
+    h(
+      "p",
+      { class: "muted small", style: "margin:-4px 0 6px" },
+      "サポカ6枚・メモリー・チャレンジP・レッスン踏み順・授業を自動で最適化します（完凸・虹+メモリー・全SP・試験上限スコア1位前提）。アイドルの得意/苦手で絞り込まず全カードを候補にします。",
+    ),
+    h(
+      "button",
+      {
+        type: "button",
+        class: "btn-optimize",
+        onclick: () => {
+          if (!input.idolId) {
+            autoNote.textContent = "先にアイドルを選択してください。";
+            return;
+          }
+          autoNote.textContent = "計算中…（数秒かかります）";
+          setTimeout(() => {
+            try {
+              const s = autoBuild(input);
+              lastAutoSummary = `理論値編成: 合計ステ ${s.total.toLocaleString()}（${s.evals.toLocaleString()}回評価 / ${(s.ms / 1000).toFixed(1)}秒）`;
+            } catch (e) {
+              lastAutoSummary = (e as Error).message;
+            }
+            opts.onRebuild?.();
+            onSubmit();
+          }, 30);
+        },
+      },
+      "🤖 自動で理論値編成を作る",
+    ),
+    autoNote,
   );
 
   // ③ サポカ

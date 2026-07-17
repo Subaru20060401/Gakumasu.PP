@@ -48,11 +48,16 @@ let mode: Mode = "predict";
 const headerSub = h("p", { class: "muted" });
 const modeBody = h("div", {});
 
-// 編成予測モードのDOM（1度だけ生成して使い回す）。
+// 編成予測モードのDOM。自動編成後はフォーム全体を作り直して結果を反映する。
+const formPane = h("section", { class: "pane input-pane" });
+function renderForm() {
+  formPane.replaceChildren(buildInputForm(input, runPrediction, { onRebuild: renderForm }));
+}
+renderForm();
 const predictLayout = h(
   "main",
   { class: "layout" },
-  h("section", { class: "pane input-pane" }, buildInputForm(input, runPrediction)),
+  formPane,
   h("section", { class: "pane" }, resultPane),
 );
 
