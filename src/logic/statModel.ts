@@ -63,17 +63,15 @@ const EXAM_PARAM_REWARD_LEGEND = {
 
 /** 調整パラメータ。 */
 export const MODEL = {
-  // スキルカード(SSR)獲得回数はプラン×おすすめ効果(6種)ごとに変わる想定。
-  // 現在判明しているのは「全力」(アノマリー)のみ=10〜15枚平均で12。他5種は要提供、暫定的に同値を流用。
-  skillSsrOccByEffect: {
-    全力: 12,
-    強気: 12,
-    集中: 12,
-    好調: 12,
-    好印象: 12,
-    やる気: 12,
+  // スキルカード(SSR)獲得回数：プラン別の現実的理論獲得枚数（ユーザー提供、サポカSSRは含まない）。
+  // 合計SSR獲得 = この枚数 + デッキ内のサポカSSRスキル(rewardSkill rarity=SSR)枚数。
+  skillSsrByPlan: {
+    sense: 10,
+    logic: 10,
+    anomaly: 13,
+    free: 10,
   } as Record<string, number>,
-  skillSsrOccDefault: 12,
+  skillSsrDefault: 10,
   skillOcc: 8, // 通常スキルカード獲得（温存/好調など特定化カード種別ごとに変わる想定、暫定）
   // 削除/強化/チェンジは相談ベース(相談回数+1)＋サポイベ/Pアイテム付与分で算出（statModel内で計算）。
   customizeOcc: 4, // スキルカードカスタム時（cap=6等、上限はカード側で規定。暫定値）
@@ -198,8 +196,12 @@ export function estimateStats(input: ProduceInput): StatEstimate {
   const cardCount: Record<Stat, number> = { vo: 0, da: 0, vi: 0 };
   const selected = input.supports.map((s) => supportById(s.cardId)).filter(Boolean) as SupportCard[];
   const pitemCardCount = selected.filter((c) => c.rewardPItem).length;
+  // SSRスキル獲得回数 = プラン別の現実的獲得枚数 + デッキ内サポカSSRスキル(rewardSkill=SSR)枚数。
+  const ssrRewardCount = selected.filter(
+    (c) => (c.rewardSkill?.rarity ?? "").toUpperCase() === "SSR",
+  ).length;
   const skillSsrOcc =
-    MODEL.skillSsrOccByEffect[idol.recommendedEffect] ?? MODEL.skillSsrOccDefault;
+    (MODEL.skillSsrByPlan[idol.plan] ?? MODEL.skillSsrDefault) + ssrRewardCount;
 
   // 削除・強化・チェンジの発動回数 = 相談ベース + デッキ付与分。
   //   相談ベース: 相談をn回踏むとn+1回のアクション（強化/削除/チェンジ）ができる（ユーザー確認）。
