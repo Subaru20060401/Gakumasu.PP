@@ -72,7 +72,7 @@ export const MODEL = {
     free: 10,
   } as Record<string, number>,
   skillSsrDefault: 10,
-  skillOcc: 8, // 通常スキルカード獲得（温存/好調など特定化カード種別ごとに変わる想定、暫定）
+  skillOcc: 10, // 通常スキルカード獲得（平均10枚, ユーザー提供）
   // 削除/強化/チェンジは相談ベース(相談回数+1)＋サポイベ/Pアイテム付与分で算出（statModel内で計算）。
   customizeOcc: 4, // スキルカードカスタム時（cap=6等、上限はカード側で規定。暫定値）
   examOcc: 2, // 中間+最終
