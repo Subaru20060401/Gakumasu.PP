@@ -86,6 +86,19 @@ export interface Scenario {
 }
 
 /** アイドル（Pアイドル）。数値は初期ステータス/レッスンボーナス%。出典: wiki。 */
+/** スキルカード（プロデュース中に獲得/初期デッキ）。Wiki用IDにプラン/レア度/タイプ内包。 */
+export interface SkillCard {
+  id: string; // 例 com_S_SR_M_0001（com_プラン_レア_タイプ_連番）
+  name: string;
+  plan: "free" | "sense" | "logic" | "anomaly" | "special"; // free=共通
+  rarity: "n" | "r" | "sr" | "ssr" | "legend";
+  type: "mental" | "active" | null; // メンタル/アクティブ
+  source: "initial" | "acquire"; // 初期デッキ / 獲得
+  cost?: string; // 無印時の消費（体力/P）
+  effect?: string; // 無印時の効果（概要）
+  imageUrl?: string;
+}
+
 export interface Idol {
   id: string;
   name: string; // 【スキル名】キャラ名
