@@ -46,6 +46,44 @@ export function autoBuild(input: ProduceInput): AutoBuildSummary {
 
   const pool = SUPPORT_CARDS.filter((c) => c.plan === "free" || c.plan === idol.plan);
 
+  // レッスン+授業を貪欲に各枠へ最適配分し、その時の合計ステを返す（デッキ評価の目的関数）。
+  // 「全部1属性」で評価するとVi等を活かす2属性デッキが過小評価され局所解に陥るため、
+  // デッキ候補ごとにレッスン配分まで含めて評価する。
+  const greedyLessonScore = (passes: number): number => {
+    let last = score();
+    for (let p = 0; p < passes; p++) {
+      let improved = false;
+      for (let i = 0; i < input.lessons.length; i++) {
+        let bestStat = input.lessons[i].stat;
+        for (const st of STATS) {
+          input.lessons[i].stat = st;
+          const v = score();
+          if (v > last) {
+            last = v;
+            bestStat = st;
+            improved = true;
+          }
+        }
+        input.lessons[i].stat = bestStat;
+      }
+      for (let i = 0; i < input.classes.length; i++) {
+        let bestStat = input.classes[i];
+        for (const st of STATS) {
+          input.classes[i] = st;
+          const v = score();
+          if (v > last) {
+            last = v;
+            bestStat = st;
+            improved = true;
+          }
+        }
+        input.classes[i] = bestStat;
+      }
+      if (!improved) break;
+    }
+    return last;
+  };
+
   // ---- サポカ: 単体スコアで貪欲初期化 ----
   const singleScore = new Map<string, number>();
   for (const c of pool) {
@@ -53,21 +91,23 @@ export function autoBuild(input: ProduceInput): AutoBuildSummary {
     singleScore.set(c.id, score());
   }
   const ranked = [...pool].sort((a, b) => (singleScore.get(b.id) ?? 0) - (singleScore.get(a.id) ?? 0));
+  // 探索プールは単体スコア上位に絞る（最適解はほぼここに含まれる。速度と精度の両立）。
+  const searchPool = ranked.slice(0, Math.min(30, ranked.length));
   ranked.slice(0, 6).forEach((c, i) => (input.supports[i].cardId = c.id));
 
-  // ---- 局所探索（スワップ改善） ----
+  // ---- 局所探索（スワップ改善・各候補はレッスン配分込みで評価） ----
   const deckSearch = () => {
-    let best = score();
-    for (let pass = 0; pass < 6; pass++) {
+    let best = greedyLessonScore(2);
+    for (let pass = 0; pass < 5; pass++) {
       let improved = false;
       for (let slot = 0; slot < input.supports.length; slot++) {
         const cur = input.supports[slot].cardId;
         let bestCard = cur;
-        for (const c of pool) {
+        for (const c of searchPool) {
           if (input.supports.some((s, i) => i !== slot && s.cardId === c.id)) continue; // 重複不可
           if (c.id === cur) continue;
           input.supports[slot].cardId = c.id;
-          const v = score();
+          const v = greedyLessonScore(1); // 候補評価は1パス貪欲で軽量に
           if (v > best) {
             best = v;
             bestCard = c.id;
@@ -127,31 +167,13 @@ export function autoBuild(input: ProduceInput): AutoBuildSummary {
     return best;
   };
 
-  // ---- レッスン: ラウンド中は軽量（全部同一属性×3案）、最後に全列挙 ----
-  const quickLessons = () => {
-    let best = -1;
-    let bestStat: (typeof STATS)[number] = "vo";
-    for (const st of STATS) {
-      input.lessons.forEach((l) => (l.stat = st));
-      input.classes = [st, st, st, st];
-      const v = score();
-      if (v > best) {
-        best = v;
-        bestStat = st;
-      }
-    }
-    input.lessons.forEach((l) => (l.stat = bestStat));
-    input.classes = [bestStat, bestStat, bestStat, bestStat];
-    return best;
-  };
-
-  // ---- 座標降下: (レッスン→デッキ→チャレンジ→メモリー) ×2ラウンド ----
-  quickLessons();
+  // ---- 座標降下: (レッスン配分→デッキ→チャレンジ→メモリー) ×2ラウンド ----
+  greedyLessonScore(2);
   for (let round = 0; round < 2; round++) {
     deckSearch();
     challengeSearch();
     memorySearch();
-    quickLessons();
+    greedyLessonScore(2);
   }
 
   // ---- 仕上げ: レッスン+授業の全列挙(3^9) ----
