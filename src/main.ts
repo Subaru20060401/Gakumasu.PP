@@ -5,6 +5,7 @@ import { defaultMemories } from "./logic/memory";
 import { predict } from "./logic/predict";
 import type { ProduceInput } from "./types";
 import { h } from "./ui/dom";
+import { buildHifCalcView } from "./ui/hifCalcView";
 import { buildInputForm } from "./ui/inputView";
 import { buildRankCalcView } from "./ui/rankCalcView";
 import { buildResult, buildResultPlaceholder } from "./ui/resultView";
@@ -42,7 +43,7 @@ function runPrediction() {
 }
 
 // ---- モード切替（編成予測 / 評価値ちぇっく） ----
-type Mode = "predict" | "calc";
+type Mode = "predict" | "calc" | "hif";
 let mode: Mode = "predict";
 
 const headerSub = h("p", { class: "muted" });
@@ -65,12 +66,16 @@ function renderMode() {
   if (mode === "predict") {
     headerSub.textContent = `編成から最終ステータスと評価値を予測　·　シナリオ: ${scenario.name}`;
     modeBody.replaceChildren(predictLayout);
-  } else {
-    headerSub.textContent = "スコアとパラメータを入力して評価値・必要最終スコアを計算";
+  } else if (mode === "calc") {
+    headerSub.textContent = "スコアとパラメータを入力して評価値・必要最終スコアを計算（初レジェンド）";
     modeBody.replaceChildren(buildRankCalcView());
+  } else {
+    headerSub.textContent = "H.I.F 本戦のパラメータ・スコア・スター性から評価値を計算";
+    modeBody.replaceChildren(buildHifCalcView());
   }
   tabPredict.className = mode === "predict" ? "mode-tab active" : "mode-tab";
   tabCalc.className = mode === "calc" ? "mode-tab active" : "mode-tab";
+  tabHif.className = mode === "hif" ? "mode-tab active" : "mode-tab";
 }
 
 const tabPredict = h(
@@ -83,7 +88,12 @@ const tabCalc = h(
   { type: "button", onclick: () => ((mode = "calc"), renderMode()) },
   "🧮 評価値ちぇっく",
 );
-const modeTabs = h("div", { class: "mode-tabs" }, tabPredict, tabCalc);
+const tabHif = h(
+  "button",
+  { type: "button", onclick: () => ((mode = "hif"), renderMode()) },
+  "⭐ HIF評価値",
+);
+const modeTabs = h("div", { class: "mode-tabs" }, tabPredict, tabCalc, tabHif);
 
 const app = h(
   "div",
